@@ -147,12 +147,35 @@
     </section>
 
     <!-- Mapa de Ubicación -->
-    <section id="ubicacion" class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-5">Ubicación</h2>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.668944456789!2d-80.234567!3d-1.234567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d7b4c5a6b7c89%3A0xabcdef1234567890!2sAyampe%2C%20Manab%C3%AD!5e0!3m2!1ses!2sec!4v1234567890123" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </div>
-    </section>
+ <!-- Mapa de Ubicación -->
+<section id="ubicacion" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Ubicación</h2>
+        <div id="map" style="width: 100%; height: 450px;"></div>
+    </div>
+</section>
+
+<!-- Google Maps API -->
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=TU_API_KEY&callback=initMap"></script>
+<script>
+    function initMap() {
+        // Coordenadas exactas de tu propiedad
+        const propiedad = { lat: -1.656126, lng: -80.820145 };
+
+        // Crear el mapa
+        const map = new google.maps.Map(document.getElementById("map"), {
+            center: propiedad,
+            zoom: 15, // Nivel de zoom (15 es ideal para ver una propiedad)
+        });
+
+        // Agregar un marcador
+        const marker = new google.maps.Marker({
+            position: propiedad,
+            map: map,
+            title: "Tu Propiedad en Ayampe",
+        });
+    }
+</script>
 
     <!-- Footer -->
     <footer class="bg-dark text-white py-4">
