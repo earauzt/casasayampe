@@ -11,6 +11,8 @@ body {
     font-family: 'Roboto Condensed', sans-serif;
     color: var(--accent-color);
     background-color: var(--primary-color);
+    margin: 0;
+    padding: 0;
 }
 
 .hero-section {
@@ -39,6 +41,11 @@ body {
     background-color: var(--primary-color);
     border: 1px solid var(--accent-color);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-10px);
 }
 
 .card-title {
@@ -55,6 +62,7 @@ body {
     background-color: var(--brown-wood);
     border-color: var(--brown-wood);
     color: var(--primary-color);
+    transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 .card a.btn:hover {
@@ -66,10 +74,13 @@ footer {
     background-color: var(--secondary-color);
     color: var(--primary-color);
     margin-top: 50px;
+    padding: 20px 0;
 }
 
 footer .social-icons a {
     color: var(--primary-color);
+    margin-right: 10px;
+    transition: color 0.3s ease;
 }
 
 footer .social-icons a:hover {
@@ -77,22 +88,25 @@ footer .social-icons a:hover {
 }
 
 footer .contact-info {
-    color: var(--primary-color);
+    margin-top: 10px;
 }
 
 /* Navbar */
 .navbar {
     background-color: var(--primary-color);
     border-bottom: 1px solid var(--accent-color);
+    padding: 10px 0;
 }
 
 .navbar-brand {
     font-family: 'Roboto Slab', serif;
     color: var(--secondary-color);
+    font-size: 1.5rem;
 }
 
 .navbar-nav .nav-link {
     color: var(--accent-color);
+    transition: color 0.3s ease;
 }
 
 .navbar-nav .nav-link:hover {
@@ -107,6 +121,7 @@ section {
 section h2 {
     font-family: 'Roboto Slab', serif;
     color: var(--secondary-color);
+    font-size: 2.5rem;
 }
 
 /* Botones */
@@ -114,6 +129,9 @@ section h2 {
     background-color: var(--brown-wood);
     border-color: var(--brown-wood);
     color: var(--primary-color);
+    border-radius: 25px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 .btn-primary:hover {
@@ -125,4 +143,34 @@ section h2 {
 #map {
     border: 1px solid var(--accent-color);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .hero-section h1 {
+        font-size: 3rem;
+    }
+
+    section h2 {
+        font-size: 2rem;
+    }
+
+    .btn-primary {
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+
+    section h2 {
+        font-size: 1.8rem;
+    }
+
+    .btn-primary {
+        padding: 6px 12px;
+    }
 }
