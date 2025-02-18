@@ -10,41 +10,107 @@
     
     <!-- Open Graph y Twitter Cards mejorados -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Casas en Ayampe - Tu Hogar Frente al Mar">
-    <meta property="og:description" content="Encuentra tu hogar frente al mar en Ayampe, Manabí. Casas modernas, terrenos y propiedades familiares.">
+    <meta property="og:title" content="Casas Ayampe | Propiedades Premium Frente al Mar en Ecuador">
+    <meta property="og:description" content="Propiedades exclusivas frente al mar en Ayampe, Manabí. Inversiones seguras con vista al océano y estilo de vida premium.">
     <meta property="og:image" content="https://casasayampe.com/images/hero-optimized.jpg">
     <meta property="og:url" content="https://casasayampe.com/">
     <meta name="twitter:card" content="summary_large_image">
     
-    <title>Casas en Ayampe - Tu Hogar Frente al Mar</title>
+    <title>Casas Ayampe | Propiedades Premium Frente al Mar en Ecuador</title>
     
     <!-- Preconnect para recursos externos -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400&family=Roboto+Slab:wght@400&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <!-- Fonts optimizados -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     
-    <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
-    <!-- Bootstrap CSS -->
+    <!-- CSS con versiones específicas -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/styles.css">
+    <!-- Custom CSS con media queries -->
+    <style>
+        :root {
+            --primary-color: #1a75ff;
+            --secondary-color: #f8f9fa;
+            --text-dark: #2c3e50;
+            --text-light: #ffffff;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: var(--text-dark);
+            background-color: var(--secondary-color);
+        }
+
+        .hero-section {
+            min-height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/hero-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            color: var(--text-light);
+        }
+
+        .navbar {
+            background-color: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(5px);
+            transition: all 0.3s ease;
+        }
+
+        .property-card {
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        .property-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .social-icons a {
+            font-size: 1.5rem;
+            transition: color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: var(--primary-color) !important;
+        }
+
+        @media (max-width: 768px) {
+            .hero-section {
+                min-height: 70vh;
+            }
+            
+            .navbar-brand img {
+                height: 30px;
+            }
+        }
+
+        /* Animaciones de scroll */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.5s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
 </head>
 <body>
+    <!-- Header mejorado con navegación fija -->
     <header class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#home">
-                <img src="images/logo.png" alt="Casas Ayampe Logo" height="40" loading="lazy">
+                <img src="images/logo.png" alt="Casas Ayampe Logo" height="40" width="auto" loading="lazy">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
+            <nav class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="#home">Inicio</a>
@@ -59,105 +125,173 @@
                         <a class="nav-link" href="#contacto">Contacto</a>
                     </li>
                 </ul>
-            </div>
+            </nav>
         </div>
     </header>
 
     <main>
-        <!-- Hero Section -->
-        <section id="home" class="hero-section d-flex align-items-center justify-content-center">
+        <!-- Hero Section mejorada -->
+        <section id="home" class="hero-section d-flex align-items-center justify-content-center text-center">
             <div class="container">
-                <h1 class="display-4 fw-bold">Casas en Venta Ayampe Manabí, Ecuador | Tu Hogar Frente al Mar</h1>
-                <p class="lead">Vive en una de las zonas más hermosas de la costa ecuatoriana.</p>
-                <a href="#propiedades" class="btn btn-primary btn-lg rounded-pill px-4">Ver Propiedades</a>
+                <h1 class="display-4 fw-bold mb-4">Tu Hogar Frente al Mar en Ayampe</h1>
+                <p class="lead mb-4">Descubre propiedades exclusivas en una de las playas más hermosas de Ecuador</p>
+                <div class="d-flex justify-content-center gap-3">
+                    <a href="#propiedades" class="btn btn-primary btn-lg rounded-pill px-4">Ver Propiedades</a>
+                    <a href="#contacto" class="btn btn-outline-light btn-lg rounded-pill px-4">Contáctanos</a>
+                </div>
             </div>
         </section>
 
-        <!-- Propiedades Section -->
+        <!-- Propiedades Section con lazy loading -->
         <section id="propiedades" class="py-5">
             <div class="container">
-                <h2 class="text-center mb-5">Nuestras Propiedades</h2>
+                <h2 class="text-center mb-5 fade-in">Propiedades Destacadas</h2>
                 <div class="row g-4">
+                    <!-- Property Cards con mejor estructura -->
                     <div class="col-md-4">
-                        <div class="card h-100 shadow-sm">
-                            <img src="images/casa1.jpg" class="card-img-top" alt="Casa frente al mar en Ayampe" loading="lazy">
+                        <article class="card h-100 shadow-sm property-card fade-in">
+                            <img src="images/casa1.jpg" class="card-img-top" alt="Casa frente al mar en Ayampe" loading="lazy" width="100%" height="250">
                             <div class="card-body d-flex flex-column">
-                                <h5 class="card-title">Casa Frente al Mar</h5>
-                                <p class="card-text flex-grow-1">Hermosa casa con vista al océano, ideal para vacaciones o residencia permanente.</p>
-                                <a href="#" class="btn btn-primary mt-auto">Ver Detalles</a>
+                                <h3 class="h5 card-title">Villa Océano</h3>
+                                <p class="card-text flex-grow-1">Moderna villa de 3 dormitorios con vista panorámica al mar y acceso directo a la playa.</p>
+                                <div class="mt-3">
+                                    <span class="badge bg-primary me-2">3 Dormitorios</span>
+                                    <span class="badge bg-secondary">Vista al Mar</span>
+                                </div>
+                                <a href="#contacto" class="btn btn-primary mt-3">Solicitar Información</a>
                             </div>
+                        </article>
+                    </div>
+                    <!-- Repite estructura similar para otras propiedades -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Formulario de contacto mejorado -->
+        <section id="contacto" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5 fade-in">Contáctanos</h2>
+                <form action="https://formspree.io/f/xyz12345" method="POST" class="row g-3 needs-validation" novalidate>
+                    <div class="col-md-6">
+                        <label for="nombre" class="form-label">Nombre Completo</label>
+                        <input type="text" class="form-control" id="nombre" name="nombre" required 
+                               pattern="[A-Za-zÁáÉéÍíÓóÚúÑñ\s]+" minlength="3" maxlength="100">
+                        <div class="invalid-feedback">
+                            Por favor ingresa tu nombre completo (solo letras y espacios, entre 3 y 100 caracteres).
                         </div>
                     </div>
-                    <!-- Repeat for other properties -->
-                </div>
-            </div>
-        </section>
-
-        <!-- Nosotros Section -->
-        <section id="nosotros" class="py-5 bg-light">
-            <div class="container">
-                <h2 class="text-center mb-5">Sobre Nosotros</h2>
-                <div class="row">
                     <div class="col-md-6">
-                        <p>Somos una empresa con experiencia en el mercado inmobiliario internacional, especializada en conectar a nuestros clientes con las mejores propiedades frente al mar en Ayampe. Nuestra misión es ofrecer hogares que combinen comodidad, naturaleza y estilo de vida costero.</p>
+                        <label for="email" class="form-label">Correo Electrónico</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                        <div class="invalid-feedback">
+                            Por favor ingresa una dirección de correo válida.
+                        </div>
                     </div>
                     <div class="col-md-6">
-                        <p>Contamos con años de experiencia en el mercado inmobiliario y trabajamos con los mejores profesionales para garantizar que cada transacción sea segura y satisfactoria.</p>
+                        <label for="telefono" class="form-label">Teléfono</label>
+                        <input type="tel" class="form-control" id="telefono" name="telefono" pattern="[0-9]{10}" required title="Por favor, introduce un número de teléfono válido de 10 dígitos">
+                        <div class="invalid-feedback">
+                            Por favor ingresa un número de teléfono válido (10 dígitos).
+                        </div>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contacto Section -->
-        <section id="contacto" class="py-5">
-            <div class="container">
-                <h2 class="text-center mb-5">Contacto</h2>
-                <form action="https://formspree.io/f/xyz12345" method="POST" class="row g-3">
                     <div class="col-md-6">
-                        <label for="nombre" class="form-label">Nombre</label>
-                        <input type="text" class="form-control" id="nombre" name="nombre" required>
+                        <label for="tipo-propiedad" class="form-label">Tipo de Propiedad</label>
+                        <select class="form-select" id="tipo-propiedad" name="tipo-propiedad" required>
+                            <option value="">Selecciona una opción</option>
+                            <option value="casa">Casa</option>
+                            <option value="terreno">Terreno</option>
+                            <option value="departamento">Departamento</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Por favor selecciona un tipo de propiedad.
+                        </div>
                     </div>
-                    <!-- Repeat for other form fields -->
+                    <div class="col-12">
+                        <label for="mensaje" class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="mensaje" name="mensaje" rows="4" required minlength="10" maxlength="500"></textarea>
+                        <div class="invalid-feedback">
+                            Por favor escribe un mensaje con al menos 10 caracteres y máximo 500.
+                        </div>
+                    </div>
                     <div class="col-12 text-center">
-                        <button type="submit" class="btn btn-primary btn-lg rounded-pill px-5">Enviar</button>
+                        <button type="submit" class="btn btn-primary btn-lg rounded-pill px-5">
+                            Enviar Mensaje
+                        </button>
                     </div>
                 </form>
             </div>
         </section>
-
-        <!-- Mapa de Ubicación -->
-        <section id="ubicacion" class="py-5">
-            <div class="container">
-                <h2 class="text-center mb-5">Ubicación</h2>
-                <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.668944456789!2d-80.820145!3d-1.656126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d7b4c5a6b7c89%3A0xabcdef1234567890!2sTu%20Propiedad%2C%20Ayampe%2C%20Manab%C3%AD!5e0!3m2!1ses!2sec!4v1234567890123" 
-                    width="100%" 
-                    height="450" 
-                    style="border:0;" 
-                    allowfullscreen="" 
-                    loading="lazy">
-                </iframe>
-            </div>
-        </section>
     </main>
 
-    <!-- Footer -->
+    <!-- Footer mejorado -->
     <footer class="bg-dark text-white py-4">
-        <div class="container text-center">
-            <p class="mb-0">© 2023 Casas Ayampe. Todos los derechos reservados.</p>
-            <div class="social-icons mt-3">
-                <a href="https://instagram.com/apx.company" target="_blank" aria-label="Síguenos en Instagram" class="text-white me-3"><i class="fab fa-instagram"></i></a>
-                <a href="https://wa.me/13059885341" target="_blank" aria-label="Contáctanos por WhatsApp" class="text-white"><i class="fab fa-whatsapp"></i></a>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h3 class="h5 mb-3">Casas Ayampe</h3>
+                    <p class="mb-0">Tu conexión con el paraíso en la costa ecuatoriana.</p>
+                </div>
+                <div class="col-md-4">
+                    <h3 class="h5 mb-3">Contacto</h3>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-phone me-2"></i>+593 979834440</li>
+                        <li><i class="fas fa-envelope me-2"></i>apxpromotores@gmail.com</li>
+                        <li><i class="fas fa-map-marker-alt me-2"></i>Sandpiper, Ayampe, Manabí</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h3 class="h5 mb-3">Síguenos</h3>
+                    <div class="social-icons">
+                        <a href="https://instagram.com/apx.company" target="_blank" rel="noopener" class="text-white me-3" aria-label="Síguenos en Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://wa.me/13059885341" target="_blank" rel="noopener" class="text-white" aria-label="Contáctanos por WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div class="contact-info mt-3">
-                <p><strong>Teléfono:</strong> +593 979834440</p>
-                <p><strong>Email:</strong> apxpromotores@gmail.com</p>
-                <p><strong>Dirección:</strong> Sandpiper, Ayampe, Manabí, Ecuador</p>
-            </div>
+            <hr class="my-4">
+            <p class="text-center mb-0">© 2024 Casas Ayampe. Todos los derechos reservados.</p>
         </div>
     </footer>
 
-    <!-- Bootstrap JS -->
+    <!-- Scripts optimizados -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous" defer></script>
+    <script>
+        // Validación de formulario
+        (() => {
+            'use strict';
+            const forms = document.querySelectorAll('.needs-validation');
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                }, false);
+            });
+        })();
+
+        // Animaciones de scroll
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(element => {
+            observer.observe(element);
+        });
+    </script>
 </body>
 </html>
