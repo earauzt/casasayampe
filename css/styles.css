@@ -20,6 +20,7 @@ body {
     background-size: cover;
     background-position: center;
     min-height: 100vh; /* Asegura que ocupe toda la altura de la pantalla */
+    padding: 20px; /* Espaciado interno */
     color: white; /* Para que el texto sea legible sobre la imagen */
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); /* Sombra para mejorar la legibilidad */
 }
