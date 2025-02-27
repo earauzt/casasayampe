@@ -76,14 +76,51 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero-section d-flex align-items-center justify-content-center">
-        <div class="container">
-            <h1 class="display-4 fw-bold">Casas en Ayampe, Manabí – Tu Hogar Frente al Mar</h1>
-            <p class="lead">Vive en una de las zonas más hermosas de la costa ecuatoriana.</p>
-            <a href="#contacto" class="btn btn-primary btn-lg rounded-pill px-4">¡Solicita una Cotización Hoy!</a>
+<!-- Hero Section -->
+<section id="home" class="hero-section d-flex align-items-center justify-content-center">
+    <div class="container">
+        <div class="row">
+            <!-- Columna Izquierda: Título y CTA -->
+            <div class="col-md-6 text-center text-md-start">
+                <h1 class="display-4 fw-bold">Casas en Ayampe, Manabí – Tu Hogar Frente al Mar</h1>
+                <p class="lead">Vive en una de las zonas más hermosas de la costa ecuatoriana.</p>
+                <a href="#contacto" class="btn btn-primary btn-lg rounded-pill px-4">¡Solicita una Cotización Hoy!</a>
+            </div>
+            <!-- Columna Derecha: Formulario de Contacto -->
+            <div class="col-md-6">
+                <form action="https://formspree.io/f/xyz12345" method="POST" class="row g-3">
+                    <div class="col-12">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="col-12">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="col-12">
+                        <label for="telefono" class="form-label">Teléfono</label>
+                        <input type="tel" class="form-control" id="telefono" name="telefono" required>
+                    </div>
+                    <div class="col-12">
+                        <label for="tipo-propiedad" class="form-label">Tipo de Propiedad</label>
+                        <select class="form-select" id="tipo-propiedad" name="tipo-propiedad" required>
+                            <option value="casa">Casa</option>
+                            <option value="terreno">Terreno</option>
+                            <option value="departamento">Departamento</option>
+                        </select>
+                    </div>
+                    <div class="col-12">
+                        <label for="mensaje" class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="mensaje" name="mensaje" rows="3" required></textarea>
+                    </div>
+                    <div class="col-12 text-center">
+                        <button type="submit" class="btn btn-primary btn-lg rounded-pill px-5">Solicita tu Cotización Gratis</button>
+                    </div>
+                </form>
+            </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- Propiedades Section -->
     <section id="propiedades" class="py-5">
@@ -105,8 +142,8 @@
                     <div class="card h-100 shadow-sm">
                         <img src="images/casa1.jpg" class="card-img-top" alt="Casa frente al mar en Ayampe">
                         <div class="card-body d-flex flex-column">
-                            <h5 class="card-title">Casa Frente al Mar</h5>
-                            <p class="card-text flex-grow-1">Hermosa casa con vista al océano, ideal para vacaciones o residencia permanente.</p>
+                            <h5 class="card-title">Modelo Casa 1</h5>
+                            <p class="card-text flex-grow-1">Hermosa casa cerca al mar, ideal para vacaciones o residencia permanente.</p>
                             <a href="#" class="btn btn-primary mt-auto">Ver Detalles</a>
                         </div>
                     </div>
@@ -115,8 +152,8 @@
                     <div class="card h-100 shadow-sm">
                         <img src="images/casa2.jpg" class="card-img-top" alt="Casa familiar en Ayampe">
                         <div class="card-body d-flex flex-column">
-                            <h5 class="card-title">Casa Familiar</h5>
-                            <p class="card-text flex-grow-1">Espaciosa casa con 3 habitaciones, perfecta para familias grandes.</p>
+                            <h5 class="card-title">Modelo Casa 2</h5>
+                            <p class="card-text flex-grow-1">Espaciosa casa con 4 habitaciones, perfecta para familias grandes.</p>
                             <a href="#" class="btn btn-primary mt-auto">Ver Detalles</a>
                         </div>
                     </div>
@@ -134,6 +171,33 @@
             </div>
         </div>
     </section>
+
+        <!-- Sección Detallada: Modelo de Casa Uno -->
+<section id="modelo1" class="py-5">
+    <div class="container">
+        <h3>Detalles de las propiedades</h3>
+        <ul>
+            <li>4 dormitorios</li>
+            <li>2 parqueos</li>
+            <li>Piscina</li>
+            <li>331 m² de área construida</li>
+            <li>650 m² de terreno</li>
+            <li>Precio: $450,000</li>
+        </ul>
+        <p>
+            Descubre tu santuario privado en el corazón de Ayampe, Manabí. Ubicada en la prestigiosa ciudadela privada de Sandpiper, donde la seguridad 24/7 y la exclusividad son parte de tu día a día, esta impresionante villa redefine el concepto de lujo costero. Cada detalle ha sido meticulosamente diseñado para fusionar elegancia moderna con el confort supremo.
+        </p>
+        <p><strong>Dimensiones Aproximadas:</strong></p>
+        <ul>
+            <li>Cocina + Comedor + Sala: 9m x 5m</li>
+            <li>Terraza Cubierta: 9m x 4m</li>
+            <li>Dormitorios: 5m x 3.2m</li>
+            <li>Dormitorio Master: 5.3m x 3.2m</li>
+        </ul>
+        <img src="images/plano_casa1.jpg" alt="Plano de Modelo de Casa Uno" class="img-fluid">
+    </div>
+</section>
+
 
     <!-- Nosotros Section -->
     <section id="nosotros" class="py-5 bg-light">
@@ -186,21 +250,20 @@
         </div>
     </section>
 
-       <!-- Mapa de Ubicación -->
-    <section id="ubicacion" class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-5">Ubicación de Casas Ayampe</h2>
-            <iframe 
-                src="https://www.google.com/maps/embed?pb=[TU_CÓDIGO_REAL_AQUÍ]" 
-                width="100%" 
-                height="450" 
-                style="border:0;" 
-                allowfullscreen="" 
-                loading="lazy">
-            </iframe>
-            <p class="text-center mt-3">Casas Ayampe, Sandpiper, Ayampe, Manabí, Ecuador | <a href="tel:+593979834440">+593 979834440</a> | <a href="mailto:apxpromotores@gmail.com">apxpromotores@gmail.com</a></p>
-        </div>
-    </section>
+<!-- Mapa de Ubicación -->
+<section id="ubicacion" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Ubicación de Casas Ayampe</h2>
+        <img src="images/mapa_ayampe.jpg" alt="Mapa de Ayampe" class="img-fluid mb-3">
+        <p class="text-center">
+            Ayampe se ubica justo al final de la cordillera «Cinco Cerros» (Chongón-Colonche), cruzando el límite con Santa Elena. Está a 25 km al norte de Montañita y a 17 km al sur de Puerto López.
+        </p>
+        <p class="text-center">
+            <strong>Coordenadas:</strong> <a href="https://www.google.com/maps?q=-1.656944,-80.819722" target="_blank">1°39'24.8"S, 80°49'11.9"W</a>
+        </p>
+        <p class="text-center mt-3">Casas Ayampe, Sandpiper, Ayampe, Manabí, Ecuador | <a href="tel:+593979834440">+593 979834440</a> | <a href="mailto:apxpromotores@gmail.com">apxpromotores@gmail.com</a></p>
+    </div>
+</section>
 
     <!-- Footer -->
     <footer class="bg-dark text-white py-4">
