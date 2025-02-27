@@ -16,13 +16,17 @@ body {
 }
 
 .hero-section {
-    background: url('../images/hero.jpg') no-repeat center center/cover;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--primary-color);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    min-height: 100vh;
+    background: url('images/hero.jpg') no-repeat center center/cover;
+    padding: 20px;
+}
+@media (max-width: 767px) {
+    .hero-section .row {
+        flex-direction: column;
+    }
+    .hero-section .col-md-6 {
+        margin-bottom: 20px;
+    }
 }
 
 .hero-section h1 {
