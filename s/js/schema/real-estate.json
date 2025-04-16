@@ -1,0 +1,17 @@
+```json
+     {
+         "@context": "https://schema.org",
+         "@type": "RealEstateAgent",
+         "name": "Casas Ayampe",
+         "address": {
+             "@type": "PostalAddress",
+             "streetAddress": "Sandpiper",
+             "addressLocality": "Ayampe",
+             "addressRegion": "Manabí",
+             "addressCountry": "EC"
+         },
+         "telephone": "+593963256009",
+         "email": "apxpromotores@gmail.com",
+         "url": "https://casasayampe.com"
+     }
+     ```
