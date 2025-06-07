@@ -1,0 +1,43 @@
+# Dependencias
+node_modules/
+vendor/
+
+# Archivos de entorno
+.env
+.env.local
+.env.*.local
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de IDE
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Archivos de construcción
+dist/
+build/
+*.log
+
+# Archivos temporales
+*.tmp
+*.temp
+.cache/
+
+# Archivos de respaldo
+*.bak
+*.backup
+*~
+
+# Archivos de imágenes originales
+images/original/
+*.psd
+*.ai
+*.sketch
+
+# Archivos de configuración local
+config.local.js
+settings.local.json 
