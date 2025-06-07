@@ -1,4 +1,3 @@
-```javascript
      // Navbar scroll effect
      window.addEventListener('scroll', () => {
          const navbar = document.querySelector('.navbar');
@@ -18,4 +17,3 @@
              alert('Por favor, ingrese un correo electrónico y teléfono válidos.');
          }
      });
-     ```
