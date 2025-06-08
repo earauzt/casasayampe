@@ -1,4 +1,3 @@
-```json
      {
          "@context": "https://schema.org",
          "@type": "RealEstateAgent",
@@ -14,4 +13,3 @@
          "email": "apxpromotores@gmail.com",
          "url": "https://casasayampe.com"
      }
-     ```
