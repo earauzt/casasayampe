@@ -108,102 +108,82 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hero-slider w-full min-h-screen relative overflow-hidden">
-        <div class="slider-container w-full h-screen">
-            <div class="slide active relative w-full h-full">
-                <img src="images/IMG_3918.JPG" 
-                     alt="Atardecer en Ayampe, Ecuador" 
-                     class="w-full h-full object-cover"
-                     width="1920"
-                     height="1080"
-                     loading="eager">
-                <div class="absolute inset-0 bg-black bg-opacity-60"> <!-- Opacidad aumentada para mejor contraste -->
-                    <div class="container mx-auto px-4 h-full flex items-center">
-                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                            <div class="text-white drop-shadow-lg">
-                                <span class="inline-block bg-primary bg-opacity-20 text-primary px-4 py-2 rounded-full text-sm font-semibold mb-6">Lanzamiento exclusivo</span>
-                                <h1 class="text-4xl md:text-6xl font-extrabold mb-6 text-white drop-shadow-lg">Vive el sueño frente al mar en Ayampe</h1>
-                                <p class="text-xl mb-8 font-medium text-white drop-shadow">Descubre Sandpiper: una exclusiva comunidad residencial en Baja Manabí con vista al océano.</p>
-                                <div class="flex flex-wrap gap-4">
-                                    <a href="#contacto" class="bg-primary text-white px-8 py-4 rounded-button font-semibold hover:bg-opacity-90 transition-colors whitespace-nowrap flex items-center shadow-lg">
-                                        <i class="ri-calendar-line mr-2"></i>
-                                        Agenda una visita
-                                    </a>
-                                    <a href="#propiedades" class="bg-white text-primary px-8 py-4 rounded-button font-semibold hover:bg-opacity-90 transition-colors whitespace-nowrap flex items-center shadow-lg">
-                                        <i class="ri-home-4-line mr-2"></i>
-                                        Ver propiedades
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="bg-white p-8 rounded-lg shadow-xl">
-                                <div class="flex items-center justify-between mb-6">
-                                    <h2 class="text-2xl font-bold text-gray-900">Solicita información</h2>
-                                    <div class="flex items-center text-primary">
-                                        <i class="ri-shield-check-line mr-1"></i>
-                                        <span class="text-sm">100% seguro</span>
-                                    </div>
-                                </div>
-                                <!-- Formulario Formspree -->
-                                <form
-                                  action="https://formspree.io/f/xrbekwgj"
-                                  method="POST"
-                                  class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6"
-                                  onsubmit="event.preventDefault(); const form = this; fetch(form.action, { method: 'POST', body: new FormData(form), headers: { 'Accept': 'application/json' } }).then(res => res.ok ? form.innerHTML = '<p class=\'md:col-span-2 bg-green-100 text-green-800 text-center px-4 py-3 rounded-button font-medium\'>¡Gracias! Hemos recibido tu mensaje.</p>' : alert('Error al enviar. Intenta de nuevo.'));"
-                                >
-                                  <div>
-                                    <label class="block text-sm font-medium text-gray-700 mb-1">Nombre*</label>
-                                    <input type="text" name="nombre" maxlength="500" class="w-full px-4 py-2 border border-gray-300 rounded-button focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" required>
-                                  </div>
-                                  <div>
-                                    <label class="block text-sm font-medium text-gray-700 mb-1">Apellido*</label>
-                                    <input type="text" name="apellido" class="w-full px-4 py-2 border border-gray-300 rounded-button focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" required>
-                                  </div>
-                                  <div>
-                                    <label class="block text-sm font-medium text-gray-700 mb-1">Email*</label>
-                                    <input type="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded-button focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" required>
-                                  </div>
-                                  <div>
-                                    <label class="block text-sm font-medium text-gray-700 mb-1">Teléfono</label>
-                                    <input type="tel" name="telefono" class="w-full px-4 py-2 border border-gray-300 rounded-button focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
-                                  </div>
-                                  <div class="md:col-span-2">
-                                    <label class="block text-sm font-medium text-gray-700 mb-1">Mensaje</label>
-                                    <textarea name="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-button focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"></textarea>
-                                  </div>
-                                  <div class="md:col-span-2">
-                                    <label class="custom-checkbox">
-                                      <input type="checkbox" name="terminos" required>
-                                      <span class="checkmark mr-2"></span>
-                                      Acepto los términos y condiciones
-                                    </label>
-                                  </div>
-                                  <div class="md:col-span-2">
-                                    <label class="custom-checkbox">
-                                      <input type="checkbox" name="newsletter">
-                                      <span class="checkmark mr-2"></span>
-                                      Deseo recibir novedades y ofertas especiales
-                                    </label>
-                                  </div>
-                                  <button type="submit" class="md:col-span-2 w-full bg-primary text-white py-3 rounded-button font-medium hover:bg-opacity-90 transition-colors flex items-center justify-center whitespace-nowrap">
-                                    <div class="w-5 h-5 flex items-center justify-center mr-2">
-                                      <i class="ri-user-add-line"></i>
-                                    </div>
-                                    Registrarse
-                                  </button>
-                                </form>
-                            </div>
-                        </div>
+    <section class="hero-slider w-full bg-white py-16">
+        <div class="container mx-auto px-4 h-full flex items-center">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="text-gray-900">
+                    <span class="inline-block bg-gray-200 text-gray-700 px-4 py-2 rounded-full text-sm font-semibold mb-6">Lanzamiento exclusivo</span>
+                    <h1 class="text-4xl md:text-6xl font-extrabold mb-6 text-gray-900">Vive el sueño frente al mar en Ayampe</h1>
+                    <p class="text-xl mb-8 font-medium text-gray-900">Descubre Sandpiper: una exclusiva comunidad residencial en Baja Manabí con vista al océano.</p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#contacto" class="bg-primary text-white px-8 py-4 rounded-button font-semibold hover:bg-opacity-90 transition-colors whitespace-nowrap flex items-center shadow-lg">
+                            <i class="ri-calendar-line mr-2"></i>
+                            Agenda una visita
+                        </a>
+                        <a href="#propiedades" class="bg-white text-primary px-8 py-4 rounded-button font-semibold hover:bg-opacity-90 transition-colors whitespace-nowrap flex items-center shadow-lg">
+                            <i class="ri-home-4-line mr-2"></i>
+                            Ver propiedades
+                        </a>
                     </div>
                 </div>
+                <div class="bg-white p-8 rounded-lg shadow-xl">
+                    <div class="flex items-center justify-between mb-6">
+                        <h2 class="text-2xl font-bold text-gray-900">Solicita información</h2>
+                        <div class="flex items-center text-primary">
+                            <i class="ri-shield-check-line mr-1"></i>
+                            <span class="text-sm">100% seguro</span>
+                        </div>
+                    </div>
+                    <!-- Formulario Formspree -->
+                    <form
+                      action="https://formspree.io/f/xrbekwgj"
+                      method="POST"
+                      class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6"
+                      onsubmit="event.preventDefault(); const form = this; fetch(form.action, { method: 'POST', body: new FormData(form), headers: { 'Accept': 'application/json' } }).then(res => res.ok ? form.innerHTML = '<p class=\'md:col-span-2 bg-green-100 text-green-800 text-center px-4 py-3 rounded-button font-medium\'>¡Gracias! Hemos recibido tu mensaje.</p>' : alert('Error al enviar. Intenta de nuevo.'));"
+                    >
+                      <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Nombre*</label>
+                        <input type="text" name="nombre" maxlength="500" class="w-full px-4 py-2 border border-gray-300 rounded-button focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" required>
+                      </div>
+                      <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Apellido*</label>
+                        <input type="text" name="apellido" class="w-full px-4 py-2 border border-gray-300 rounded-button focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" required>
+                      </div>
+                      <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Email*</label>
+                        <input type="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded-button focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" required>
+                      </div>
+                      <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Teléfono</label>
+                        <input type="tel" name="telefono" class="w-full px-4 py-2 border border-gray-300 rounded-button focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                      </div>
+                      <div class="md:col-span-2">
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Mensaje</label>
+                        <textarea name="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-button focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"></textarea>
+                      </div>
+                      <div class="md:col-span-2">
+                        <label class="custom-checkbox">
+                          <input type="checkbox" name="terminos" required>
+                          <span class="checkmark mr-2"></span>
+                          Acepto los términos y condiciones
+                        </label>
+                      </div>
+                      <div class="md:col-span-2">
+                        <label class="custom-checkbox">
+                          <input type="checkbox" name="newsletter">
+                          <span class="checkmark mr-2"></span>
+                          Deseo recibir novedades y ofertas especiales
+                        </label>
+                      </div>
+                      <button type="submit" class="md:col-span-2 w-full bg-primary text-white py-3 rounded-button font-medium hover:bg-opacity-90 transition-colors flex items-center justify-center whitespace-nowrap">
+                        <div class="w-5 h-5 flex items-center justify-center mr-2">
+                          <i class="ri-user-add-line"></i>
+                        </div>
+                        Registrarse
+                      </button>
+                    </form>
+                </div>
             </div>
-        </div>
-        <div class="slider-controls absolute bottom-8 left-1/2 transform -translate-x-1/2 flex gap-4">
-            <button class="slider-prev w-12 h-12 bg-white bg-opacity-80 rounded-full flex items-center justify-center hover:bg-opacity-100 transition-colors" aria-label="Imagen anterior">
-                <i class="ri-arrow-left-s-line text-2xl"></i>
-            </button>
-            <button class="slider-next w-12 h-12 bg-white bg-opacity-80 rounded-full flex items-center justify-center hover:bg-opacity-100 transition-colors" aria-label="Imagen siguiente">
-                <i class="ri-arrow-right-s-line text-2xl"></i>
-            </button>
         </div>
     </section>
 
@@ -269,7 +249,7 @@
                         <div class="flex justify-between mb-6">
                             <div class="flex items-center">
                                 <i class="ri-home-4-line mr-1 text-gray-500"></i>
-                                <span class="text-gray-700">320 m²</span>
+                                <span class="text-gray-700">330 m²</span>
                             </div>
                             <div class="flex items-center">
                                 <i class="ri-hotel-bed-line mr-1 text-gray-500"></i>
@@ -321,7 +301,7 @@
                             </div>
                             <div class="flex items-center">
                                 <i class="ri-hotel-bed-line mr-1 text-gray-500"></i>
-                                <span class="text-gray-700">3 hab.</span>
+                                <span class="text-gray-700">4 hab.</span>
                             </div>
                             <div class="flex items-center">
                                 <i class="ri-shower-line mr-1 text-gray-500"></i>
@@ -354,7 +334,7 @@
                     <div class="p-6">
                         <div class="flex justify-between items-start mb-2">
                             <h3 class="text-xl font-bold text-gray-900">Villa Sunset </h3>
-                            <p class="text-primary text-xl font-bold">$450.000</p>
+                            <p class="text-primary text-xl font-bold">En planos</p>
                         </div>
                         <p class="text-gray-600 mb-4">
                             <span class="flex items-center">
