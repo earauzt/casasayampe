@@ -40,4 +40,12 @@ images/original/
 
 # Archivos de configuración local
 config.local.js
-settings.local.json 
+settings.local.json -e 
+# Environment and credential files
+.env
+.env.*
+*.env
+credentials.json
+*.pem
+*.key
+.credentials
