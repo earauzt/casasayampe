@@ -1,16 +1,17 @@
 /* =========================================================
-   Sandpiper Villas Ayampe — Premium Dark Theme
-   Palette: night #0f1020 · midnight #1a1a2e · gold #c9a84c
+   Sandpiper Ayampe — Editorial Warm Theme (CasitaMX-inspired)
+   Palette: sand #E8E2D5 · cream #F6F2EA · ink #1C1712 · cacao #4A2E20
    ========================================================= */
 
 :root {
-  --night: #0f1020;
-  --midnight: #1a1a2e;
-  --surface: #23233d;
-  --gold: #c9a84c;
-  --gold-soft: #e3c772;
-  --cream: #f5f0e1;
-  --mist: rgba(245, 240, 225, 0.72);
+  --sand: #E8E2D5;
+  --cream: #F6F2EA;
+  --paper: #FBF8F1;
+  --ink: #1C1712;
+  --clay: #6B5D4F;
+  --cacao: #4A2E20;
+  --terracotta: #B8755A;
+  --tan: #C9986A;
 }
 
 * { box-sizing: border-box; }
@@ -18,9 +19,9 @@
 html { scroll-behavior: smooth; }
 
 body {
-  font-family: "Outfit", system-ui, -apple-system, sans-serif;
-  background-color: var(--night);
-  color: var(--cream);
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
+  background-color: var(--sand);
+  color: var(--ink);
   margin: 0;
   padding: 0;
   line-height: 1.6;
@@ -28,17 +29,18 @@ body {
   overflow-x: hidden;
 }
 
-/* =========================================================
-   Grain overlay (adds subtle depth on dark backgrounds)
-   ========================================================= */
-.grain-overlay {
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  z-index: 1;
-  opacity: 0.05;
-  mix-blend-mode: overlay;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+/* Display font defaults */
+h1, h2, h3, h4 {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+
+h1.font-display {
+  font-weight: 400;
+}
+h2.font-display {
+  font-weight: 300;
 }
 
 /* =========================================================
@@ -48,96 +50,68 @@ header {
   transition: background-color 0.3s ease, backdrop-filter 0.3s ease, box-shadow 0.3s ease;
 }
 header.header-scrolled {
-  background-color: rgba(15, 16, 32, 0.92) !important;
-  box-shadow: 0 1px 0 rgba(201, 168, 76, 0.15);
+  background-color: rgba(246, 242, 234, 0.95);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 1px 0 rgba(28, 23, 18, 0.08);
 }
-
-/* =========================================================
-   Hero
-   ========================================================= */
-.hero { background-color: var(--night); }
-.hero img { will-change: transform; }
 
 /* =========================================================
    Reveal animations
    ========================================================= */
 .reveal,
-.property-card,
-.amenity-card,
+.property-feature,
+.amenity,
 .faq-item {
   opacity: 0;
   transform: translateY(24px);
   transition: opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1), transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
 }
 .reveal.is-visible,
-.property-card.is-visible,
-.amenity-card.is-visible,
+.property-feature.is-visible,
+.amenity.is-visible,
 .faq-item.is-visible {
   opacity: 1;
   transform: translateY(0);
-}
-/* Fallback: ensure content is visible after 1s even if IO hasn't fired */
-.no-js .reveal,
-.no-js .property-card,
-.no-js .amenity-card,
-.no-js .faq-item {
-  opacity: 1 !important;
-  transform: none !important;
-}
-@media (prefers-reduced-motion: reduce) {
-  .reveal, .property-card, .amenity-card, .faq-item {
-    opacity: 1 !important;
-    transform: none !important;
-    transition: none !important;
-  }
 }
 .reveal:nth-child(2) { transition-delay: 0.08s; }
 .reveal:nth-child(3) { transition-delay: 0.16s; }
 .reveal:nth-child(4) { transition-delay: 0.24s; }
 
-/* =========================================================
-   Amenity cards
-   ========================================================= */
-.amenity-card {
-  background: linear-gradient(180deg, rgba(35, 35, 61, 0.6), rgba(26, 26, 46, 0.4));
-  border: 1px solid rgba(201, 168, 76, 0.15);
-  padding: 2rem;
-  border-radius: 2px;
-  transition: border-color 0.35s ease, transform 0.35s ease, background 0.35s ease;
-}
-.amenity-card:hover {
-  border-color: rgba(201, 168, 76, 0.55);
-  transform: translateY(-4px);
-  background: linear-gradient(180deg, rgba(35, 35, 61, 0.9), rgba(26, 26, 46, 0.6));
-}
-.amenity-icon {
-  width: 56px;
-  height: 56px;
-  border-radius: 50%;
-  border: 1px solid rgba(201, 168, 76, 0.4);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--gold);
-  font-size: 1.5rem;
-  margin-bottom: 1.25rem;
-  transition: all 0.35s ease;
-}
-.amenity-card:hover .amenity-icon {
-  background: var(--gold);
-  color: var(--night);
-  border-color: var(--gold);
+@media (prefers-reduced-motion: reduce) {
+  .reveal, .property-feature, .amenity, .faq-item {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
 }
 
 /* =========================================================
-   Property cards
+   Images
    ========================================================= */
-.property-card {
-  transition: opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1), transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+img { display: block; }
+
+/* =========================================================
+   Amenity cards
+   ========================================================= */
+.amenity {
+  transition: background-color 0.4s ease, transform 0.4s ease;
 }
-.property-card .rounded-sm {
-  border: 1px solid rgba(201, 168, 76, 0.2);
+.amenity:hover {
+  background-color: var(--paper);
 }
+
+/* =========================================================
+   Forms
+   ========================================================= */
+input, textarea, select {
+  font-family: inherit;
+  font-size: 0.95rem;
+  caret-color: var(--cacao);
+  border-radius: 0;
+}
+input:focus, textarea:focus, select:focus { outline: none; }
+select option { background-color: var(--cream); color: var(--ink); }
+input[type="checkbox"] { accent-color: var(--cacao); }
 
 /* =========================================================
    FAQ
@@ -147,55 +121,38 @@ header.header-scrolled {
   transition: color 0.3s ease;
 }
 .faq-item summary::-webkit-details-marker { display: none; }
-.faq-item[open] summary span:first-child { color: var(--gold); }
+.faq-item[open] summary span:first-child { color: var(--cacao); font-style: italic; }
 
 /* =========================================================
-   Form styling
+   Typography refinements
    ========================================================= */
-input, textarea, select {
-  font-family: inherit;
-  font-size: 0.95rem;
-  color: var(--cream) !important;
-  background-color: transparent !important;
-  caret-color: var(--gold);
+.font-script {
+  line-height: 1;
 }
-input::placeholder, textarea::placeholder { color: rgba(245, 240, 225, 0.35); }
-select option { background-color: var(--night); color: var(--cream); }
-input:focus, textarea:focus, select:focus { outline: none; }
 
-input[type="checkbox"] { accent-color: var(--gold); }
-
-/* =========================================================
-   Buttons / links
-   ========================================================= */
-a { transition: color 0.25s ease; }
-
-/* =========================================================
-   Map filter (dark theme)
-   ========================================================= */
-#ubicacion iframe {
-  background: var(--night);
+h1.font-display, h2.font-display, h3.font-display {
+  -webkit-font-smoothing: subpixel-antialiased;
 }
 
 /* =========================================================
-   Hide old elements that might still be referenced
+   Hide legacy slider elements
    ========================================================= */
 .slider-next, .slider-prev, .hero-slider .slide { display: none !important; }
+
+/* =========================================================
+   Scrollbar
+   ========================================================= */
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: var(--sand); }
+::-webkit-scrollbar-thumb {
+  background: rgba(74, 46, 32, 0.3);
+  border-radius: 0;
+}
+::-webkit-scrollbar-thumb:hover { background: var(--cacao); }
 
 /* =========================================================
    Responsive
    ========================================================= */
 @media (max-width: 768px) {
-  .amenity-card { padding: 1.5rem; }
+  .amenity { padding: 2rem; }
 }
-
-/* =========================================================
-   Scrollbar (subtle, premium)
-   ========================================================= */
-::-webkit-scrollbar { width: 8px; height: 8px; }
-::-webkit-scrollbar-track { background: var(--night); }
-::-webkit-scrollbar-thumb {
-  background: rgba(201, 168, 76, 0.35);
-  border-radius: 4px;
-}
-::-webkit-scrollbar-thumb:hover { background: var(--gold); }
