@@ -3,488 +3,650 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Descubre Sandpiper: Una exclusiva comunidad residencial en Ayampe, Ecuador. Propiedades frente al mar con vista al océano, piscina infinity y acabados de lujo. Precios especiales de preventa.">
-    <meta name="keywords" content="propiedades Ayampe, casas frente al mar, Sandpiper, inversión inmobiliaria Ecuador, propiedades de lujo">
-    <meta name="author" content="APX Company">
-    <meta name="robots" content="index, follow">
-    <meta property="og:title" content="Casas Ayampe - Propiedades Exclusivas en Ayampe, Ecuador">
-    <meta property="og:description" content="Descubre Sandpiper: Una exclusiva comunidad residencial en Ayampe, Ecuador. Propiedades frente al mar con vista al océano.">
-    <meta property="og:image" content="https://casasayampe.com/images/og-image.jpg">
-    <meta property="og:url" content="https://casasayampe.com">
-    <meta name="twitter:card" content="summary_large_image">
-    <title>Casas Ayampe - Propiedades Exclusivas en Ayampe, Ecuador</title>
 
-    <!-- Preconnect a recursos externos -->
+    <!-- SEO Primary -->
+    <title>Sandpiper Villas Ayampe | Lotes y Villas de Lujo Frente al Mar en Ecuador</title>
+    <meta name="description" content="Sandpiper Villas: ciudadela privada frente al mar en Ayampe, Ecuador. Lotes desde $98,037 y villas con piscina desde $272,674. Inversión segura en la Ruta del Spondylus. Escríbenos por WhatsApp.">
+    <meta name="keywords" content="terrenos en Ayampe, villas frente al mar Ecuador, Sandpiper Ayampe, comprar casa Ayampe, inversión inmobiliaria Manabí, propiedades Ruta del Spondylus, lotes de playa Ecuador">
+    <meta name="author" content="Sandpiper Villas Ayampe">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <link rel="canonical" href="https://casasayampe.com/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_EC">
+    <meta property="og:title" content="Sandpiper Villas Ayampe — Lujo sustentable frente al mar">
+    <meta property="og:description" content="Ciudadela privada en Ayampe, Ecuador. Lotes desde $98,037 y villas con piscina desde $272,674. Acceso directo a playa, laguna ornamental y beach tennis.">
+    <meta property="og:image" content="https://casasayampe.com/images/hero.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:url" content="https://casasayampe.com/">
+    <meta property="og:site_name" content="Sandpiper Villas Ayampe">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Sandpiper Villas Ayampe — Lujo sustentable frente al mar">
+    <meta name="twitter:description" content="Lotes y villas de lujo en la costa de Manabí, Ecuador. Ciudadela privada 24/7 con acceso directo a playa.">
+    <meta name="twitter:image" content="https://casasayampe.com/images/hero.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="apple-touch-icon" href="images/logo.png">
+
+    <!-- Preconnect -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
-    <link rel="preconnect" href="https://www.googletagmanager.com">
-    <link rel="preconnect" href="https://www.google-analytics.com">
-    <link rel="preconnect" href="https://connect.facebook.net">
-    <link rel="preconnect" href="https://analytics.tiktok.com">
 
-    <!-- Estilos críticos -->
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto+Condensed:wght@300;400;500;600;700&family=Roboto+Slab:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Typography: Fraunces (elegant serif with optical sizing) + Outfit (clean modern sans) -->
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
 
-    <!-- Scripts críticos -->
+    <!-- Tailwind CDN -->
     <script src="https://cdn.tailwindcss.com/3.4.16"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
-                    colors: { 
-                        primary: "#1a3c6d", 
-                        secondary: "#f4a261" 
+                    colors: {
+                        night: "#0f1020",
+                        midnight: "#1a1a2e",
+                        surface: "#23233d",
+                        gold: "#c9a84c",
+                        goldsoft: "#e3c772",
+                        cream: "#f5f0e1",
+                        mist: "rgba(245,240,225,0.72)"
                     },
-                    borderRadius: {
-                        button: "8px"
+                    fontFamily: {
+                        display: ['"Fraunces"', 'Georgia', 'serif'],
+                        sans: ['"Outfit"', 'system-ui', 'sans-serif']
+                    },
+                    letterSpacing: {
+                        'wider-2': '0.18em'
                     }
                 }
             }
         };
     </script>
 
-    <!-- Scripts no críticos cargados de forma asíncrona -->
+    <link href="css/styles.css" rel="stylesheet">
+
+    <!-- Schema.org JSON-LD: RealEstateAgent + Residence listings -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "RealEstateAgent",
+      "name": "Sandpiper Villas Ayampe",
+      "url": "https://casasayampe.com/",
+      "logo": "https://casasayampe.com/images/logo.png",
+      "image": "https://casasayampe.com/images/hero.jpg",
+      "description": "Ciudadela privada de lujo sustentable en Ayampe, Manabí, Ecuador. Lotes y villas frente al mar con acceso directo a playa.",
+      "telephone": "+1-305-988-5341",
+      "priceRange": "$98,000 - $300,000",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Ayampe",
+        "addressRegion": "Manabí",
+        "addressCountry": "EC"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "-1.6681",
+        "longitude": "-80.8197"
+      },
+      "sameAs": [
+        "https://casasayampe.com/"
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "Product",
+            "name": "Lote 13 Sandpiper Ayampe",
+            "description": "Lote residencial de 653.58 m² en ciudadela privada frente al mar en Ayampe, Ecuador.",
+            "image": "https://casasayampe.com/images/terreno.jpg",
+            "offers": {
+              "@type": "Offer",
+              "price": "98037",
+              "priceCurrency": "USD",
+              "availability": "https://schema.org/InStock"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "Product",
+            "name": "Villa Lote 4 Sandpiper Ayampe",
+            "description": "Villa de 640 m² con 4 dormitorios, 4 baños y piscina en ciudadela privada en Ayampe, Ecuador.",
+            "image": "https://casasayampe.com/images/casa1.webp",
+            "offers": {
+              "@type": "Offer",
+              "price": "272674",
+              "priceCurrency": "USD",
+              "availability": "https://schema.org/InStock"
+            }
+          }
+        }
+      ]
+    }
+    </script>
+
+    <!-- Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-8B688HM6RF"></script>
-    <script async src="https://analytics.ahrefs.com/analytics.js" data-key="hDqcehGEXx/eeIwr/stawg"></script>
-    <script async src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.5.0/echarts.min.js"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8B688HM6RF');
+    </script>
 </head>
-<body class="bg-gray-50">
-    <!-- WhatsApp Button -->
-    <a href="https://wa.me/593963256009?text=Hola, me interesa obtener más información sobre las propiedades en Ayampe" 
-       target="_blank" 
-       class="fixed bottom-6 right-6 bg-[#25D366] text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:bg-opacity-90 transition-colors z-50">
-        <i class="ri-whatsapp-line text-2xl"></i>
+<body class="bg-night text-cream font-sans antialiased selection:bg-gold selection:text-night">
+
+    <!-- Grain texture overlay -->
+    <div class="grain-overlay" aria-hidden="true"></div>
+
+    <!-- Floating WhatsApp CTA -->
+    <a href="https://wa.me/13059885341?text=Hola%2C%20me%20interesa%20conocer%20m%C3%A1s%20sobre%20Sandpiper%20Villas%20en%20Ayampe"
+       target="_blank"
+       rel="noopener"
+       data-testid="whatsapp-floating-cta"
+       aria-label="Contactar por WhatsApp"
+       class="fixed bottom-6 right-6 z-50 group flex items-center gap-3 bg-[#25D366] hover:bg-[#20bd5a] text-white pl-4 pr-5 py-3 rounded-full shadow-2xl shadow-black/40 transition-all duration-300 hover:scale-[1.03]">
+        <span class="relative flex h-10 w-10 items-center justify-center">
+            <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#25D366] opacity-60"></span>
+            <i class="ri-whatsapp-line text-3xl relative"></i>
+        </span>
+        <span class="hidden sm:inline text-sm font-medium tracking-wide">Escríbenos ahora</span>
     </a>
 
     <!-- Header -->
-    <header class="bg-white shadow-sm sticky top-0 z-40">
-        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
-            <a href="#" class="flex items-center">
-                <img src="images/logo.png" 
-                     alt="APX Company" 
-                     class="h-8"
-                     width="120"
-                     height="32">
+    <header class="fixed top-0 left-0 right-0 z-40 backdrop-blur-md bg-night/70 border-b border-gold/10" data-testid="site-header">
+        <div class="container mx-auto px-6 lg:px-10 py-4 flex justify-between items-center">
+            <a href="#" class="flex items-center gap-3 group" data-testid="site-logo">
+                <div class="w-10 h-10 rounded-full border border-gold/50 flex items-center justify-center">
+                    <span class="font-display text-gold text-xl italic">S</span>
+                </div>
+                <div class="flex flex-col leading-none">
+                    <span class="font-display text-cream text-lg tracking-wide">Sandpiper</span>
+                    <span class="text-[10px] uppercase tracking-wider-2 text-gold/80">Villas · Ayampe</span>
+                </div>
             </a>
-            <nav class="hidden md:flex items-center space-x-8">
-                <a href="index.html" class="text-gray-800 font-medium hover:text-primary transition-colors">Inicio</a>
-                <a href="#propiedades" class="text-gray-800 font-medium hover:text-primary transition-colors">Propiedades</a>
-                <a href="#sobre-ayampe" class="text-gray-800 font-medium hover:text-primary transition-colors">Sobre Ayampe</a>
-                <a href="blog.html" class="text-gray-800 font-medium hover:text-primary transition-colors">Blog</a>
-                  <a href="#contacto" class="text-gray-800 font-medium hover:text-primary transition-colors hidden">Contacto</a>
+
+            <nav class="hidden lg:flex items-center gap-10" aria-label="Navegación principal">
+                <a href="#propiedades" class="text-sm uppercase tracking-wider-2 text-cream/70 hover:text-gold transition-colors" data-testid="nav-propiedades">Propiedades</a>
+                <a href="#amenidades" class="text-sm uppercase tracking-wider-2 text-cream/70 hover:text-gold transition-colors" data-testid="nav-amenidades">Amenidades</a>
+                <a href="#ubicacion" class="text-sm uppercase tracking-wider-2 text-cream/70 hover:text-gold transition-colors" data-testid="nav-ubicacion">Ubicación</a>
+                <a href="#contacto" class="text-sm uppercase tracking-wider-2 text-cream/70 hover:text-gold transition-colors" data-testid="nav-contacto">Contacto</a>
             </nav>
-            <div class="flex items-center space-x-4">
-                <button class="flex items-center text-sm font-medium text-gray-700 hover:text-primary transition-colors" aria-label="Cambiar idioma">
-                    <span>ES</span>
-                    <i class="ri-arrow-down-s-line ml-1"></i>
-                </button>
-                <a href="https://wa.me/593963256009?text=Hola, me interesa obtener más información sobre la propiedad en Ayampe" 
-                   target="_blank" 
-                   class="hidden md:flex bg-[#25D366] text-white px-4 py-2 rounded-button font-medium hover:bg-opacity-90 transition-colors whitespace-nowrap items-center">
-                    <i class="ri-whatsapp-line mr-2"></i>
-                    Contactar
+
+            <div class="flex items-center gap-3">
+                <a href="https://wa.me/13059885341?text=Hola%2C%20me%20interesa%20Sandpiper%20Ayampe"
+                   target="_blank"
+                   rel="noopener"
+                   data-testid="header-whatsapp"
+                   class="hidden md:inline-flex items-center gap-2 border border-gold/60 text-gold hover:bg-gold hover:text-night px-5 py-2.5 rounded-full text-sm font-medium transition-all">
+                    <i class="ri-whatsapp-line text-lg"></i>
+                    <span>+1 305 988 5341</span>
                 </a>
-                <button class="md:hidden w-10 h-10 flex items-center justify-center text-gray-700" 
-                        id="mobile-menu-button"
-                        aria-label="Menú móvil">
-                    <i class="ri-menu-line ri-lg"></i>
+                <button id="mobile-menu-button"
+                        data-testid="mobile-menu-button"
+                        aria-label="Menú móvil"
+                        class="lg:hidden w-11 h-11 flex items-center justify-center text-cream border border-gold/30 rounded-full">
+                    <i class="ri-menu-line text-xl"></i>
                 </button>
             </div>
         </div>
         <!-- Mobile Menu -->
-        <div class="md:hidden hidden bg-white absolute w-full left-0 shadow-md" id="mobile-menu">
-            <div class="container mx-auto px-4 py-3 flex flex-col space-y-3">
-                <a href="index.html" class="text-gray-800 font-medium py-2 hover:text-primary transition-colors">Inicio</a>
-                <a href="#propiedades" class="text-gray-800 font-medium py-2 hover:text-primary transition-colors">Propiedades</a>
-                <a href="#sobre-ayampe" class="text-gray-800 font-medium py-2 hover:text-primary transition-colors">Sobre Ayampe</a>
-                <a href="blog.html" class="text-gray-800 font-medium py-2 hover:text-primary transition-colors">Blog</a>
-                <a href="#contacto" class="text-gray-800 font-medium py-2 hover:text-primary transition-colors hidden">Contacto</a>
-                <a href="#contacto" class="bg-primary text-white px-4 py-2 rounded-button font-medium hover:bg-opacity-90 transition-colors text-center whitespace-nowrap">
-                    Contactar
+        <div id="mobile-menu" class="lg:hidden hidden border-t border-gold/10 bg-night/95 backdrop-blur-lg">
+            <div class="container mx-auto px-6 py-5 flex flex-col gap-4">
+                <a href="#propiedades" class="text-cream/80 hover:text-gold py-2 text-sm uppercase tracking-wider-2">Propiedades</a>
+                <a href="#amenidades" class="text-cream/80 hover:text-gold py-2 text-sm uppercase tracking-wider-2">Amenidades</a>
+                <a href="#ubicacion" class="text-cream/80 hover:text-gold py-2 text-sm uppercase tracking-wider-2">Ubicación</a>
+                <a href="#contacto" class="text-cream/80 hover:text-gold py-2 text-sm uppercase tracking-wider-2">Contacto</a>
+                <a href="https://wa.me/13059885341" target="_blank" rel="noopener" class="bg-gold text-night text-center py-3 rounded-full font-medium mt-2">
+                    <i class="ri-whatsapp-line mr-1"></i> Escríbenos
                 </a>
             </div>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero-slider w-full bg-white py-16">
-        <div class="container mx-auto px-4 h-full flex items-center">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                <div class="text-gray-900">
-                    <span class="inline-block bg-gray-200 text-gray-700 px-4 py-2 rounded-full text-sm font-semibold mb-6">Lanzamiento exclusivo</span>
-                    <h1 class="text-4xl md:text-6xl font-extrabold mb-6 text-gray-900">Vive el sueño frente al mar en Ayampe</h1>
-                    <p class="text-xl mb-8 font-medium text-gray-900">Descubre Sandpiper: una exclusiva comunidad residencial en Baja Manabí con vista al océano.</p>
-                    <div class="flex flex-wrap gap-4">
-                        <a href="#contacto" class="bg-primary text-white px-8 py-4 rounded-button font-semibold hover:bg-opacity-90 transition-colors whitespace-nowrap flex items-center shadow-lg">
-                            <i class="ri-calendar-line mr-2"></i>
-                            Agenda una visita
-                        </a>
-                        <a href="#propiedades" class="bg-white text-primary px-8 py-4 rounded-button font-semibold hover:bg-opacity-90 transition-colors whitespace-nowrap flex items-center shadow-lg">
-                            <i class="ri-home-4-line mr-2"></i>
-                            Ver propiedades
-                        </a>
-                    </div>
+    <!-- HERO -->
+    <section class="hero relative min-h-screen flex items-center overflow-hidden pt-28" data-testid="hero-section">
+        <!-- Background image + gradient -->
+        <div class="absolute inset-0 z-0">
+            <img src="images/hero.jpg" alt="Costa de Ayampe, Ecuador al atardecer con vista al océano Pacífico" class="w-full h-full object-cover opacity-50" fetchpriority="high">
+            <div class="absolute inset-0 bg-gradient-to-b from-night/60 via-night/70 to-night"></div>
+            <div class="absolute inset-0 bg-gradient-to-r from-night/90 via-night/40 to-transparent"></div>
+        </div>
+
+        <!-- Decorative gold frame lines -->
+        <div class="absolute inset-6 lg:inset-10 border border-gold/15 pointer-events-none hidden md:block z-10"></div>
+
+        <div class="relative z-20 container mx-auto px-6 lg:px-14 py-20 lg:py-28 grid lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-8">
+                <div class="flex items-center gap-4 mb-8 reveal">
+                    <span class="h-px w-12 bg-gold"></span>
+                    <span class="text-gold uppercase tracking-wider-2 text-xs font-medium">Ciudadela privada · Manabí, Ecuador</span>
                 </div>
-                <div class="bg-white p-8 rounded-lg shadow-xl">
-                    <div class="flex items-center justify-between mb-6">
-                        <h2 class="text-2xl font-bold text-gray-900">Solicita información</h2>
-                        <div class="flex items-center text-primary">
-                            <i class="ri-shield-check-line mr-1"></i>
-                            <span class="text-sm">100% seguro</span>
-                        </div>
+                <h1 class="font-display text-5xl md:text-7xl lg:text-[88px] leading-[1.02] text-cream font-light mb-8 reveal" data-testid="hero-headline">
+                    Lujo sustentable
+                    <span class="block italic text-gold font-normal">en Ayampe</span>
+                </h1>
+                <p class="text-cream/80 text-lg md:text-xl max-w-2xl mb-10 leading-relaxed reveal" data-testid="hero-subhead">
+                    Una ciudadela cerrada frente al mar en la Ruta del Spondylus.
+                    Lotes desde <span class="text-gold font-medium">$98,037</span> y villas con piscina desde <span class="text-gold font-medium">$272,674</span>.
+                </p>
+                <div class="flex flex-wrap gap-4 reveal">
+                    <a href="https://wa.me/13059885341?text=Hola%2C%20quiero%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Sandpiper%20Villas%20en%20Ayampe"
+                       target="_blank"
+                       rel="noopener"
+                       data-testid="hero-whatsapp-cta"
+                       class="group inline-flex items-center gap-3 bg-gold text-night px-8 py-4 rounded-full font-medium hover:bg-goldsoft transition-all shadow-xl shadow-gold/10">
+                        <i class="ri-whatsapp-line text-xl"></i>
+                        <span>Escríbenos por WhatsApp</span>
+                        <i class="ri-arrow-right-up-line group-hover:translate-x-1 group-hover:-translate-y-0.5 transition-transform"></i>
+                    </a>
+                    <a href="#propiedades"
+                       data-testid="hero-view-properties"
+                       class="inline-flex items-center gap-3 border border-cream/30 hover:border-gold text-cream hover:text-gold px-8 py-4 rounded-full font-medium transition-all">
+                        <span>Ver propiedades</span>
+                        <i class="ri-arrow-down-line"></i>
+                    </a>
+                </div>
+
+                <!-- Trust badges -->
+                <div class="mt-16 grid grid-cols-3 gap-4 max-w-2xl reveal" data-testid="hero-trust-badges">
+                    <div class="border-l border-gold/40 pl-4">
+                        <p class="font-display text-2xl md:text-3xl text-gold">24/7</p>
+                        <p class="text-xs uppercase tracking-wider text-cream/60 mt-1">Seguridad ciudadela</p>
                     </div>
-                    <!-- Formulario Formspree -->
-                    <form
-                      action="https://formspree.io/f/xrbekwgj"
-                      method="POST"
-                      class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6"
-                      onsubmit="event.preventDefault(); const form = this; fetch(form.action, { method: 'POST', body: new FormData(form), headers: { 'Accept': 'application/json' } }).then(res => res.ok ? form.innerHTML = '<p class=\'md:col-span-2 bg-green-100 text-green-800 text-center px-4 py-3 rounded-button font-medium\'>¡Gracias! Hemos recibido tu mensaje.</p>' : alert('Error al enviar. Intenta de nuevo.'));"
-                    >
-                      <div>
-                        <label class="block text-sm font-medium text-gray-700 mb-1">Nombre*</label>
-                        <input type="text" name="nombre" maxlength="500" class="w-full px-4 py-2 border border-gray-300 rounded-button focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" required>
-                      </div>
-                      <div>
-                        <label class="block text-sm font-medium text-gray-700 mb-1">Apellido*</label>
-                        <input type="text" name="apellido" class="w-full px-4 py-2 border border-gray-300 rounded-button focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" required>
-                      </div>
-                      <div>
-                        <label class="block text-sm font-medium text-gray-700 mb-1">Email*</label>
-                        <input type="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded-button focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" required>
-                      </div>
-                      <div>
-                        <label class="block text-sm font-medium text-gray-700 mb-1">Teléfono</label>
-                        <input type="tel" name="telefono" class="w-full px-4 py-2 border border-gray-300 rounded-button focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
-                      </div>
-                      <div class="md:col-span-2">
-                        <label class="block text-sm font-medium text-gray-700 mb-1">Mensaje</label>
-                        <textarea name="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-button focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"></textarea>
-                      </div>
-                      <div class="md:col-span-2">
-                        <label class="custom-checkbox">
-                          <input type="checkbox" name="terminos" required>
-                          <span class="checkmark mr-2"></span>
-                          Acepto los términos y condiciones
-                        </label>
-                      </div>
-                      <div class="md:col-span-2">
-                        <label class="custom-checkbox">
-                          <input type="checkbox" name="newsletter">
-                          <span class="checkmark mr-2"></span>
-                          Deseo recibir novedades y ofertas especiales
-                        </label>
-                      </div>
-                      <button type="submit" class="md:col-span-2 w-full bg-primary text-white py-3 rounded-button font-medium hover:bg-opacity-90 transition-colors flex items-center justify-center whitespace-nowrap">
-                        <div class="w-5 h-5 flex items-center justify-center mr-2">
-                          <i class="ri-user-add-line"></i>
-                        </div>
-                        Registrarse
-                      </button>
-                    </form>
+                    <div class="border-l border-gold/40 pl-4">
+                        <p class="font-display text-2xl md:text-3xl text-gold">17 km</p>
+                        <p class="text-xs uppercase tracking-wider text-cream/60 mt-1">Puerto López</p>
+                    </div>
+                    <div class="border-l border-gold/40 pl-4">
+                        <p class="font-display text-2xl md:text-3xl text-gold">0 km</p>
+                        <p class="text-xs uppercase tracking-wider text-cream/60 mt-1">De la playa</p>
+                    </div>
                 </div>
             </div>
+
+            <!-- Price quick card -->
+            <aside class="lg:col-span-4 reveal">
+                <div class="relative bg-midnight/80 backdrop-blur-md border border-gold/30 rounded-sm p-8 shadow-2xl shadow-black/40">
+                    <div class="absolute -top-3 left-8 bg-gold text-night px-4 py-1 text-xs uppercase tracking-wider-2 font-semibold">Disponibilidad limitada</div>
+                    <p class="text-cream/60 text-xs uppercase tracking-wider-2 mb-2">Propiedad destacada</p>
+                    <h3 class="font-display text-2xl text-cream mb-1">Villa Lote 4</h3>
+                    <p class="text-cream/70 text-sm mb-6">640 m² · 4 dorm · 4 baños · Piscina</p>
+                    <div class="flex items-end justify-between mb-6">
+                        <div>
+                            <p class="text-cream/50 text-xs">Desde</p>
+                            <p class="font-display text-4xl text-gold">$272,674</p>
+                        </div>
+                        <span class="text-gold/70 text-xs">USD</span>
+                    </div>
+                    <a href="https://wa.me/13059885341?text=Hola%2C%20me%20interesa%20la%20Villa%20Lote%204%20de%20Sandpiper%20Ayampe"
+                       target="_blank"
+                       rel="noopener"
+                       data-testid="hero-villa-cta"
+                       class="flex items-center justify-between w-full bg-night border border-gold/40 hover:border-gold text-cream hover:text-gold px-5 py-3 rounded-full text-sm transition-all">
+                        <span>Agendar visita privada</span>
+                        <i class="ri-arrow-right-line"></i>
+                    </a>
+                </div>
+            </aside>
+        </div>
+
+        <!-- Scroll indicator -->
+        <div class="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 hidden md:flex flex-col items-center gap-2 text-cream/50">
+            <span class="text-[10px] uppercase tracking-wider-2">Descubre</span>
+            <div class="w-px h-12 bg-gradient-to-b from-gold to-transparent"></div>
         </div>
     </section>
 
-    <!-- Propiedades Destacadas -->
-    <section id="propiedades" class="py-16 bg-white">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-12">
-                <span class="inline-block bg-primary bg-opacity-10 text-primary px-4 py-2 rounded-full text-sm font-medium mb-4">Propiedades Exclusivas</span>
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Una Inversión Inteligente en el Paraiso</h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Sandpiper ofrece una oportunidad única de inversion en una de las zonas con mayor potencial de plusvalia en la costa ecuatoriana.</p>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-                <div class="bg-primary bg-opacity-5 p-6 rounded-lg">
-                    <div class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-4">
-                        <i class="ri-line-chart-line text-primary text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-2">Alta Rentabilidad</h3>
-                    <p class="text-gray-600">Plusvalia proyectada del 15% en los próximos años.</p>
+    <!-- STATS / PITCH -->
+    <section class="py-24 bg-night relative" data-testid="pitch-section">
+        <div class="container mx-auto px-6 lg:px-14">
+            <div class="grid lg:grid-cols-12 gap-12 items-start">
+                <div class="lg:col-span-5">
+                    <p class="text-gold uppercase tracking-wider-2 text-xs mb-4">Por qué Sandpiper</p>
+                    <h2 class="font-display text-4xl md:text-5xl text-cream font-light leading-tight">
+                        Una inversión que <span class="italic text-gold">sí</span> tiene sentido en la costa ecuatoriana.
+                    </h2>
                 </div>
-                <div class="bg-primary bg-opacity-5 p-6 rounded-lg">
-                    <div class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-4">
-                        <i class="ri-bank-card-line text-primary text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-2">Financiamiento</h3>
-                    <p class="text-gray-600">Planes de financiamiento directo y con bancos locales</p>
-                </div>
-                <div class="bg-primary bg-opacity-5 p-6 rounded-lg">
-                    <div class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-4">
-                        <i class="ri-shield-star-line text-primary text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-2">Garantia Legal</h3>
-                    <p class="text-gray-600">Escrituras inmediatas y documentacion 100% en regla.</p>
-                </div>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Propiedad 1 -->
-                <div class="property-card bg-white rounded-lg overflow-hidden shadow-md transition-all duration-300">
-                    <div class="relative">
-                        <img src="images/casa1.webp" 
-                             alt="Villa de lujo en Ayampe" 
-                             class="w-full h-64 object-cover object-bottom"
-                             width="640"
-                             height="360"
-                             loading="lazy">
-                        <div class="absolute top-4 left-4">
-                            <span class="bg-primary text-white text-sm font-medium px-3 py-1 rounded-full">PreVenta</span>
+                <div class="lg:col-span-7 space-y-6">
+                    <p class="text-cream/75 text-lg leading-relaxed">
+                        Sandpiper Villas no es un condominio más. Es una ciudadela cerrada, con infraestructura completa, acceso directo a una de las playas mejor conservadas de Manabí y un enfoque real en sostenibilidad: laguna ornamental, áreas verdes y una comunidad pensada para vivir bien sin renunciar al Pacífico.
+                    </p>
+                    <div class="grid sm:grid-cols-3 gap-6 pt-4">
+                        <div>
+                            <p class="font-display text-4xl text-gold">15%</p>
+                            <p class="text-xs uppercase tracking-wider text-cream/60 mt-2">Plusvalía proyectada anual</p>
                         </div>
-                        <button class="absolute bottom-4 right-4 w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-md hover:bg-gray-100 transition-colors" aria-label="Guardar en favoritos">
-                            <i class="ri-heart-line text-gray-700"></i>
-                        </button>
-                    </div>
-                    <div class="p-6">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="text-xl font-bold text-gray-900">Villa Ayampe Bay</h3>
-                            <p class="text-primary text-xl font-bold">450.000</p>
+                        <div>
+                            <p class="font-display text-4xl text-gold">100%</p>
+                            <p class="text-xs uppercase tracking-wider text-cream/60 mt-2">Escrituras en regla</p>
                         </div>
-                        <p class="text-gray-600 mb-4">
-                            <span class="flex items-center">
-                                <i class="ri-map-pin-line mr-1"></i>
-                                Baja Manabi, Ecuador
-                            </span>
-                        </p>
-                        <div class="flex justify-between mb-6">
-                            <div class="flex items-center">
-                                <i class="ri-home-4-line mr-1 text-gray-500"></i>
-                                <span class="text-gray-700">330 m²</span>
-                            </div>
-                            <div class="flex items-center">
-                                <i class="ri-hotel-bed-line mr-1 text-gray-500"></i>
-                                <span class="text-gray-700">4 hab.</span>
-                            </div>
-                            <div class="flex items-center">
-                                <i class="ri-shower-line mr-1 text-gray-500"></i>
-                                <span class="text-gray-700">3 baños</span>
-                            </div>
+                        <div>
+                            <p class="font-display text-4xl text-gold">2025</p>
+                            <p class="text-xs uppercase tracking-wider text-cream/60 mt-2">Entrega inmediata</p>
                         </div>
-                        <a href="https://wa.me/593963256009?text=Hola, me interesa obtener más información sobre la Villa Ayampe Bay" 
-                           target="_blank" 
-                           class="block w-full bg-white border border-primary text-primary text-center py-2 rounded-button font-medium hover:bg-primary hover:text-white transition-colors whitespace-nowrap">
-                            Pide informacion
-                        </a>
-                    </div>
-                </div>
-                <!-- Propiedad 2 -->
-                <div class="property-card bg-white rounded-lg overflow-hidden shadow-md transition-all duration-300">
-                    <div class="relative">
-                        <img src="images/casa2.webp" 
-                             alt="Villa de lujo en Ayampe" 
-                             class="w-full h-64 object-cover object-bottom"
-                             width="640"
-                             height="360"
-                             loading="lazy">
-                        <div class="absolute top-4 left-4">
-                            <span class="bg-primary text-white text-sm font-medium px-3 py-1 rounded-full">Preventa</span>
-                        </div>
-                        <button class="absolute bottom-4 right-4 w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-md hover:bg-gray-100 transition-colors" aria-label="Guardar en favoritos">
-                            <i class="ri-heart-line text-gray-700"></i>
-                        </button>
-                    </div>
-                    <div class="p-6">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="text-xl font-bold text-gray-900">Villa Sandpiper</h3>
-                            <p class="text-primary text-xl font-bold">450.000</p>
-                        </div>
-                        <p class="text-gray-600 mb-4">
-                            <span class="flex items-center">
-                                <i class="ri-map-pin-line mr-1"></i>
-                                Baja Manabi, Ecuador
-                            </span>
-                        </p>
-                        <div class="flex justify-between mb-6">
-                            <div class="flex items-center">
-                                <i class="ri-home-4-line mr-1 text-gray-500"></i>
-                                <span class="text-gray-700">330 m²</span>
-                            </div>
-                            <div class="flex items-center">
-                                <i class="ri-hotel-bed-line mr-1 text-gray-500"></i>
-                                <span class="text-gray-700">4 hab.</span>
-                            </div>
-                            <div class="flex items-center">
-                                <i class="ri-shower-line mr-1 text-gray-500"></i>
-                                <span class="text-gray-700">3 baños</span>
-                            </div>
-                        </div>
-                        <a href="https://wa.me/593963256009?text=Hola, me interesa obtener más información sobre la Villa Sandpiper" 
-                           target="_blank" 
-                           class="block w-full bg-white border border-primary text-primary text-center py-2 rounded-button font-medium hover:bg-primary hover:text-white transition-colors whitespace-nowrap">
-                            Pide informacion
-                        </a>
-                    </div>
-                </div>
-                <!-- Propiedad 3 -->
-                <div class="property-card bg-white rounded-lg overflow-hidden shadow-md transition-all duration-300">
-                    <div class="relative">
-                        <img src="images/Condominio Sunset.png" 
-                             alt="Edificio de lujo en Ayampe" 
-                             class="w-full h-64 object-cover object-center"
-                             width="640"
-                             height="360"
-                             loading="lazy">
-                        <div class="absolute top-4 left-4">
-                            <span class="bg-primary text-white text-sm font-medium px-3 py-1 rounded-full">Venta en Planos</span>
-                        </div>
-                        <button class="absolute bottom-4 right-4 w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-md hover:bg-gray-100 transition-colors" aria-label="Guardar en favoritos">
-                            <i class="ri-heart-line text-gray-700"></i>
-                        </button>
-                    </div>
-                    <div class="p-6">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="text-xl font-bold text-gray-900">Departamento Sunset - Compra en planos</h3>
-                            <p class="text-primary text-xl font-bold">Reserva ya el tuyo</p>
-                        </div>
-                        <p class="text-gray-600 mb-4">
-                            <span class="flex items-center">
-                                <i class="ri-map-pin-line mr-1"></i>
-                                Baja Manabi, Ecuador
-                            </span>
-                        </p>
-                        <div class="flex justify-between mb-6">
-                            <div class="flex items-center">
-                                <i class="ri-home-4-line mr-1 text-gray-500"></i>
-                                <span class="text-gray-700">DEsde 120 m²</span>
-                            </div>
-                            <div class="flex items-center">
-                                <i class="ri-hotel-bed-line mr-1 text-gray-500"></i>
-                                <span class="text-gray-700">4 hab.</span>
-                            </div>
-                            <div class="flex items-center">
-                                <i class="ri-shower-line mr-1 text-gray-500"></i>
-                                <span class="text-gray-700">3 baños</span>
-                            </div>
-                        </div>
-                        <a href="https://wa.me/593963256009?text=Hola, me interesa obtener más información sobre la Villa Infinity" 
-                           target="_blank" 
-                           class="block w-full bg-white border border-primary text-primary text-center py-2 rounded-button font-medium hover:bg-primary hover:text-white transition-colors whitespace-nowrap">
-                            Reserva el tuyo
-                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Sobre Ayampe -->
-    <section id="sobre-ayampe" class="py-16 bg-gray-50">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-12">
-                <span class="inline-block bg-primary bg-opacity-10 text-primary px-4 py-2 rounded-full text-sm font-medium mb-4">Descubre Ayampe</span>
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Un paraíso escondido en la costa ecuatoriana</h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Ayampe es un pequeño y encantador pueblo costero en la provincia de Manabí, Ecuador, conocido por sus playas vírgenes, olas perfectas para el surf y una exuberante naturaleza.</p>
-            </div>
-
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
-                <div class="space-y-6">
-                    <h3 class="text-2xl font-bold text-gray-900">Ubicación privilegiada y crecimiento</h3>
-                    <p class="text-gray-700 leading-relaxed">Ayampe se encuentra estratégicamente ubicada en la Ruta del Spondylus, a poca distancia de destinos turísticos populares como Montañita (20 minutos) y Puerto López (30 minutos), conocido por el avistamiento de ballenas.</p>
-                    <p class="text-gray-700 leading-relaxed">La zona está experimentando un crecimiento constante en infraestructura y servicios, lo que la convierte en un destino atractivo para la inversión inmobiliaria y el turismo sostenible. Su aeropuerto más cercano es el de Manta, a aproximadamente 1.5 horas en auto, facilitando el acceso nacional e internacional.</p>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <div class="flex items-start">
-                            <i class="ri-map-pin-line text-primary text-3xl mr-4"></i>
-                            <div>
-                                <h4 class="font-semibold text-gray-900">Accesibilidad</h4>
-                                <p class="text-gray-600">Fácil acceso por carretera desde las principales ciudades.</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start">
-                            <i class="ri-plane-line text-primary text-3xl mr-4"></i>
-                            <div>
-                                <h4 class="font-semibold text-gray-900">Cercanía al Aeropuerto</h4>
-                                <p class="text-gray-600">A 1.5 horas del Aeropuerto de Manta.</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start">
-                            <i class="ri-line-chart-line text-primary text-3xl mr-4"></i>
-                            <div>
-                                <h4 class="font-semibold text-gray-900">Crecimiento Sostenible</h4>
-                                <p class="text-gray-600">Desarrollo turístico y residencial en auge.</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start">
-                            <i class="ri-sun-line text-primary text-3xl mr-4"></i>
-                            <div>
-                                <h4 class="font-semibold text-gray-900">Clima Agradable</h4>
-                                <p class="text-gray-600">Disfruta del sol y la playa durante todo el año.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <!-- PROPIEDADES -->
+    <section id="propiedades" class="py-24 lg:py-32 bg-midnight relative" data-testid="properties-section">
+        <div class="container mx-auto px-6 lg:px-14">
+            <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8 mb-16">
                 <div>
-                    <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7777777777777!2d-80.819972!3d-1.656889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d6c8c8c8c8c8c%3A0x0!2zMcKwMzknMjQuOCJTIDgwwrA0OScxMS45Ilc!5e0!3m2!1ses!2sec!4v1234567890!5m2!1ses!2sec"
-                        class="rounded-lg shadow-lg w-full h-[600px]"
-                        style="border:0;" 
-                        allowfullscreen="" 
-                        loading="lazy" 
-                        referrerpolicy="no-referrer-when-downgrade"
-                        title="Ubicación de Sandpiper en Ayampe"
-                        aria-label="Mapa interactivo mostrando la ubicación de Sandpiper en Ayampe">
-                    </iframe>
+                    <div class="flex items-center gap-4 mb-5">
+                        <span class="h-px w-12 bg-gold"></span>
+                        <span class="text-gold uppercase tracking-wider-2 text-xs">Propiedades disponibles</span>
+                    </div>
+                    <h2 class="font-display text-4xl md:text-6xl text-cream font-light leading-tight max-w-3xl">
+                        Dos formas de vivir el <span class="italic text-gold">Pacífico</span>.
+                    </h2>
+                </div>
+                <p class="text-cream/70 max-w-md">
+                    Elige entre un lote listo para construir a tu medida o una villa totalmente terminada con piscina y acabados premium.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 lg:gap-12">
+                <!-- LOTE 13 -->
+                <article class="property-card group" data-testid="property-lote-13">
+                    <div class="relative overflow-hidden rounded-sm">
+                        <img src="images/terreno.jpg"
+                             alt="Lote 13 Sandpiper Ayampe, terreno de 653 m² en ciudadela privada frente al mar"
+                             class="w-full h-[420px] object-cover transition-transform duration-[1200ms] group-hover:scale-105"
+                             loading="lazy">
+                        <div class="absolute inset-0 bg-gradient-to-t from-night via-night/20 to-transparent"></div>
+                        <div class="absolute top-6 left-6 flex gap-2">
+                            <span class="bg-gold text-night text-[11px] uppercase tracking-wider-2 px-3 py-1.5 font-semibold">Disponible</span>
+                            <span class="bg-night/80 backdrop-blur text-cream text-[11px] uppercase tracking-wider-2 px-3 py-1.5 border border-gold/30">Lote</span>
+                        </div>
+                        <div class="absolute bottom-6 left-6 right-6">
+                            <p class="text-gold/80 text-xs uppercase tracking-wider-2 mb-1">Sandpiper · Ayampe</p>
+                            <h3 class="font-display text-3xl md:text-4xl text-cream font-light">Lote 13</h3>
+                        </div>
+                    </div>
+                    <div class="pt-6 px-1">
+                        <div class="flex items-end justify-between mb-6">
+                            <div>
+                                <p class="text-cream/50 text-xs uppercase tracking-wider">Precio</p>
+                                <p class="font-display text-4xl text-gold">$98,037</p>
+                            </div>
+                            <div class="text-right">
+                                <p class="text-cream/50 text-xs uppercase tracking-wider">Superficie</p>
+                                <p class="font-display text-2xl text-cream">653.58 m²</p>
+                            </div>
+                        </div>
+                        <ul class="grid grid-cols-3 gap-3 mb-8 border-t border-gold/10 pt-6">
+                            <li class="flex flex-col items-center text-center">
+                                <i class="ri-landscape-line text-gold text-xl mb-2"></i>
+                                <span class="text-xs text-cream/70">Vista al mar</span>
+                            </li>
+                            <li class="flex flex-col items-center text-center">
+                                <i class="ri-shield-check-line text-gold text-xl mb-2"></i>
+                                <span class="text-xs text-cream/70">Ciudadela 24/7</span>
+                            </li>
+                            <li class="flex flex-col items-center text-center">
+                                <i class="ri-tools-line text-gold text-xl mb-2"></i>
+                                <span class="text-xs text-cream/70">Listo p/ construir</span>
+                            </li>
+                        </ul>
+                        <a href="https://wa.me/13059885341?text=Hola%2C%20me%20interesa%20el%20Lote%2013%20de%20Sandpiper%20Ayampe%20%28653.58%20m%C2%B2%20-%20%2498%2C037%29"
+                           target="_blank"
+                           rel="noopener"
+                           data-testid="lote-13-whatsapp"
+                           class="group/btn flex items-center justify-between w-full bg-gold text-night px-6 py-4 rounded-full font-medium hover:bg-goldsoft transition-all">
+                            <span class="flex items-center gap-2">
+                                <i class="ri-whatsapp-line text-lg"></i>
+                                Pedir información del Lote 13
+                            </span>
+                            <i class="ri-arrow-right-line group-hover/btn:translate-x-1 transition-transform"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- VILLA LOTE 4 -->
+                <article class="property-card group" data-testid="property-villa-lote-4">
+                    <div class="relative overflow-hidden rounded-sm">
+                        <img src="images/casa1.webp"
+                             alt="Villa Lote 4 Sandpiper Ayampe, casa de lujo con 4 dormitorios, 4 baños y piscina frente al mar"
+                             class="w-full h-[420px] object-cover transition-transform duration-[1200ms] group-hover:scale-105"
+                             loading="lazy">
+                        <div class="absolute inset-0 bg-gradient-to-t from-night via-night/20 to-transparent"></div>
+                        <div class="absolute top-6 left-6 flex gap-2">
+                            <span class="bg-gold text-night text-[11px] uppercase tracking-wider-2 px-3 py-1.5 font-semibold">Llave en mano</span>
+                            <span class="bg-night/80 backdrop-blur text-cream text-[11px] uppercase tracking-wider-2 px-3 py-1.5 border border-gold/30">Villa</span>
+                        </div>
+                        <div class="absolute bottom-6 left-6 right-6">
+                            <p class="text-gold/80 text-xs uppercase tracking-wider-2 mb-1">Sandpiper · Ayampe</p>
+                            <h3 class="font-display text-3xl md:text-4xl text-cream font-light">Villa Lote 4</h3>
+                        </div>
+                    </div>
+                    <div class="pt-6 px-1">
+                        <div class="flex items-end justify-between mb-6">
+                            <div>
+                                <p class="text-cream/50 text-xs uppercase tracking-wider">Precio</p>
+                                <p class="font-display text-4xl text-gold">$272,674</p>
+                            </div>
+                            <div class="text-right">
+                                <p class="text-cream/50 text-xs uppercase tracking-wider">Superficie</p>
+                                <p class="font-display text-2xl text-cream">640 m²</p>
+                            </div>
+                        </div>
+                        <ul class="grid grid-cols-4 gap-3 mb-8 border-t border-gold/10 pt-6">
+                            <li class="flex flex-col items-center text-center">
+                                <i class="ri-hotel-bed-line text-gold text-xl mb-2"></i>
+                                <span class="text-xs text-cream/70">4 dorm</span>
+                            </li>
+                            <li class="flex flex-col items-center text-center">
+                                <i class="ri-shower-line text-gold text-xl mb-2"></i>
+                                <span class="text-xs text-cream/70">4 baños</span>
+                            </li>
+                            <li class="flex flex-col items-center text-center">
+                                <i class="ri-contrast-drop-2-line text-gold text-xl mb-2"></i>
+                                <span class="text-xs text-cream/70">Piscina</span>
+                            </li>
+                            <li class="flex flex-col items-center text-center">
+                                <i class="ri-landscape-line text-gold text-xl mb-2"></i>
+                                <span class="text-xs text-cream/70">Vista mar</span>
+                            </li>
+                        </ul>
+                        <a href="https://wa.me/13059885341?text=Hola%2C%20me%20interesa%20la%20Villa%20Lote%204%20de%20Sandpiper%20Ayampe%20%28640%20m%C2%B2%20-%20%24272%2C674%29"
+                           target="_blank"
+                           rel="noopener"
+                           data-testid="villa-lote-4-whatsapp"
+                           class="group/btn flex items-center justify-between w-full bg-gold text-night px-6 py-4 rounded-full font-medium hover:bg-goldsoft transition-all">
+                            <span class="flex items-center gap-2">
+                                <i class="ri-whatsapp-line text-lg"></i>
+                                Agendar visita a Villa Lote 4
+                            </span>
+                            <i class="ri-arrow-right-line group-hover/btn:translate-x-1 transition-transform"></i>
+                        </a>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Inline secondary CTA -->
+            <div class="mt-16 flex flex-col md:flex-row items-center justify-between gap-6 border-t border-gold/10 pt-10">
+                <p class="text-cream/70 text-center md:text-left">
+                    ¿Buscas algo distinto? Consulta por otros lotes y villas disponibles en la ciudadela.
+                </p>
+                <a href="https://wa.me/13059885341?text=Hola%2C%20me%20gustar%C3%ADa%20conocer%20otras%20opciones%20disponibles%20en%20Sandpiper%20Ayampe"
+                   target="_blank"
+                   rel="noopener"
+                   data-testid="other-options-whatsapp"
+                   class="inline-flex items-center gap-2 border border-gold text-gold hover:bg-gold hover:text-night px-6 py-3 rounded-full text-sm transition-all">
+                    Ver más opciones por WhatsApp
+                    <i class="ri-arrow-right-up-line"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- AMENIDADES -->
+    <section id="amenidades" class="py-24 lg:py-32 bg-night relative overflow-hidden" data-testid="amenities-section">
+        <div class="container mx-auto px-6 lg:px-14">
+            <div class="max-w-3xl mb-16">
+                <div class="flex items-center gap-4 mb-5">
+                    <span class="h-px w-12 bg-gold"></span>
+                    <span class="text-gold uppercase tracking-wider-2 text-xs">Amenidades de la ciudadela</span>
+                </div>
+                <h2 class="font-display text-4xl md:text-6xl text-cream font-light leading-tight">
+                    Todo lo que necesitas, <span class="italic text-gold">a pasos del mar</span>.
+                </h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="amenity-card" data-testid="amenity-laguna">
+                    <div class="amenity-icon">
+                        <i class="ri-drop-line"></i>
+                    </div>
+                    <h3 class="font-display text-xl text-cream mb-2">Laguna ornamental</h3>
+                    <p class="text-cream/60 text-sm leading-relaxed">Un espejo de agua central que da identidad a la ciudadela y regula el microclima.</p>
+                </div>
+                <div class="amenity-card" data-testid="amenity-beach-tennis">
+                    <div class="amenity-icon">
+                        <i class="ri-ping-pong-line"></i>
+                    </div>
+                    <h3 class="font-display text-xl text-cream mb-2">Cancha de Beach Tennis</h3>
+                    <p class="text-cream/60 text-sm leading-relaxed">Para jugar el deporte de moda en la costa, sin salir de casa.</p>
+                </div>
+                <div class="amenity-card" data-testid="amenity-security">
+                    <div class="amenity-icon">
+                        <i class="ri-shield-check-line"></i>
+                    </div>
+                    <h3 class="font-display text-xl text-cream mb-2">Ciudadela cerrada 24/7</h3>
+                    <p class="text-cream/60 text-sm leading-relaxed">Seguridad permanente, cámaras y acceso controlado para residentes e invitados.</p>
+                </div>
+                <div class="amenity-card" data-testid="amenity-beach-access">
+                    <div class="amenity-icon">
+                        <i class="ri-footprint-line"></i>
+                    </div>
+                    <h3 class="font-display text-xl text-cream mb-2">Acceso directo a playa</h3>
+                    <p class="text-cream/60 text-sm leading-relaxed">Sendero privado que te lleva caminando a la arena en menos de 3 minutos.</p>
                 </div>
             </div>
 
-            <!-- Atracciones cercanas -->
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mt-16">
-                <div>
-                    <img src="images/IMG_3918.JPG"
-                         alt="Atardecer en Ayampe, Ecuador con rocas en el mar"
-                         class="rounded-lg shadow-lg w-full h-[600px] object-cover object-center"
-                         width="800"
-                         height="600"
-                         loading="lazy">
-                </div>
-                <div>
-                    <div class="text-center mb-12">
-                        <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4">Atracciones y actividades cercanas</h3>
-                        <p class="text-xl text-gray-600 max-w-3xl mx-auto">Ayampe y sus alrededores ofrecen una amplia variedad de actividades para todos los gustos. Descubre las maravillas naturales y la cultura local que hacen de este lugar un destino único en la costa ecuatoriana.</p>
+            <!-- Feature strip -->
+            <div class="mt-20 grid md:grid-cols-2 gap-8 items-center">
+                <div class="relative rounded-sm overflow-hidden h-[420px]">
+                    <img src="images/mapa aereo sandpiper.webp" alt="Vista aérea del masterplan de Sandpiper Villas Ayampe" class="w-full h-full object-cover" loading="lazy">
+                    <div class="absolute inset-0 bg-gradient-to-t from-night/80 to-transparent"></div>
+                    <div class="absolute bottom-6 left-6 right-6">
+                        <p class="text-gold text-xs uppercase tracking-wider-2 mb-2">Masterplan</p>
+                        <p class="font-display text-cream text-xl">Diseño integral de la ciudadela</p>
                     </div>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                        <div class="bg-white rounded-lg shadow-md p-6 flex items-start space-x-4">
-                            <i class="ri-surround-sound-line text-primary text-4xl"></i>
-                            <div>
-                                <h4 class="font-semibold text-gray-900 mb-1">Surf de clase mundial</h4>
-                                <p class="text-gray-600">Disfruta de las olas perfectas de Ayampe, ideales para surfistas de todos los niveles.</p>
+                </div>
+                <div class="space-y-5">
+                    <h3 class="font-display text-3xl text-cream font-light">Construido para durar, pensado para disfrutar.</h3>
+                    <p class="text-cream/70 leading-relaxed">Cada detalle de Sandpiper fue diseñado con criterio arquitectónico y respeto por el entorno natural de Manabí. Materiales nobles, uso eficiente del agua y áreas verdes que conectan con la Ruta del Spondylus.</p>
+                    <ul class="space-y-3 pt-2">
+                        <li class="flex items-start gap-3"><i class="ri-check-line text-gold text-xl"></i><span class="text-cream/80">Vías internas y alumbrado LED soterrado</span></li>
+                        <li class="flex items-start gap-3"><i class="ri-check-line text-gold text-xl"></i><span class="text-cream/80">Áreas comunes con paisajismo nativo</span></li>
+                        <li class="flex items-start gap-3"><i class="ri-check-line text-gold text-xl"></i><span class="text-cream/80">Infraestructura de agua, luz y fibra óptica</span></li>
+                        <li class="flex items-start gap-3"><i class="ri-check-line text-gold text-xl"></i><span class="text-cream/80">Reglamento de convivencia y administración profesional</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- UBICACION -->
+    <section id="ubicacion" class="py-24 lg:py-32 bg-midnight relative" data-testid="location-section">
+        <div class="container mx-auto px-6 lg:px-14">
+            <div class="grid lg:grid-cols-12 gap-12 items-start">
+                <div class="lg:col-span-5">
+                    <div class="flex items-center gap-4 mb-5">
+                        <span class="h-px w-12 bg-gold"></span>
+                        <span class="text-gold uppercase tracking-wider-2 text-xs">Ubicación privilegiada</span>
+                    </div>
+                    <h2 class="font-display text-4xl md:text-5xl text-cream font-light leading-tight mb-6">
+                        En el corazón de la <span class="italic text-gold">Ruta del Spondylus</span>.
+                    </h2>
+                    <p class="text-cream/70 leading-relaxed mb-8">
+                        Sandpiper está estratégicamente ubicado en Ayampe, Manabí: lejos del ruido, cerca de todo. A minutos de los destinos más codiciados de la costa ecuatoriana.
+                    </p>
+
+                    <div class="space-y-5">
+                        <div class="flex items-start gap-4 border-l border-gold/40 pl-5">
+                            <div class="flex-1">
+                                <p class="text-gold text-sm uppercase tracking-wider-2">Al norte</p>
+                                <p class="font-display text-2xl text-cream">17 km a Puerto López</p>
+                                <p class="text-cream/60 text-sm mt-1">Avistamiento de ballenas · Isla de la Plata</p>
                             </div>
                         </div>
-                        <div class="bg-white rounded-lg shadow-md p-6 flex items-start space-x-4">
-                            <i class="ri-whale-line text-primary text-4xl"></i>
-                            <div>
-                                <h4 class="font-semibold text-gray-900 mb-1">Avistamiento de Ballenas</h4>
-                                <p class="text-gray-600">Observa a las ballenas jorobadas de junio a septiembre en Puerto López, una experiencia inolvidable.</p>
+                        <div class="flex items-start gap-4 border-l border-gold/40 pl-5">
+                            <div class="flex-1">
+                                <p class="text-gold text-sm uppercase tracking-wider-2">Al sur</p>
+                                <p class="font-display text-2xl text-cream">25 km a Montañita</p>
+                                <p class="text-cream/60 text-sm mt-1">Vida nocturna · Surf internacional</p>
                             </div>
                         </div>
-                        <div class="bg-white rounded-lg shadow-md p-6 flex items-start space-x-4">
-                            <i class="ri-plant-line text-primary text-4xl"></i>
-                            <div>
-                                <h4 class="font-semibold text-gray-900 mb-1">Parque Nacional Machalilla</h4>
-                                <p class="text-gray-600">Explora la rica biodiversidad del parque y sus senderos, incluyendo la famosa Playa de los Frailes.</p>
+                        <div class="flex items-start gap-4 border-l border-gold/40 pl-5">
+                            <div class="flex-1">
+                                <p class="text-gold text-sm uppercase tracking-wider-2">Aeropuerto</p>
+                                <p class="font-display text-2xl text-cream">1.5 h desde Manta</p>
+                                <p class="text-cream/60 text-sm mt-1">Conexiones nacionales e internacionales</p>
                             </div>
                         </div>
-                        <div class="bg-white rounded-lg shadow-md p-6 flex items-start space-x-4">
-                            <i class="ri-restaurant-line text-primary text-4xl"></i>
-                            <div>
-                                <h4 class="font-semibold text-gray-900 mb-1">Gastronomía local</h4>
-                                <p class="text-gray-600">Saborea los deliciosos platillos de mariscos frescos y la auténtica cocina manabita.</p>
-                            </div>
+                    </div>
+
+                    <a href="https://www.google.com/maps/search/?api=1&query=Ayampe+Ecuador"
+                       target="_blank"
+                       rel="noopener"
+                       data-testid="open-maps"
+                       class="inline-flex items-center gap-2 mt-10 text-gold border-b border-gold/40 hover:border-gold pb-1 text-sm">
+                        Abrir en Google Maps
+                        <i class="ri-arrow-right-up-line"></i>
+                    </a>
+                </div>
+
+                <div class="lg:col-span-7">
+                    <div class="relative rounded-sm overflow-hidden border border-gold/20">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.0!2d-80.8197!3d-1.6681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMcKwNDAnMDUuMiJTIDgwwrA0OScxMC45Ilc!5e0!3m2!1ses!2sec!4v1700000000000!5m2!1ses!2sec"
+                            class="w-full h-[560px] grayscale-[40%] contrast-[1.1]"
+                            style="border:0; filter: invert(0.9) hue-rotate(180deg);"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Ubicación de Sandpiper Villas en Ayampe, Manabí, Ecuador">
+                        </iframe>
+                    </div>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
+                        <div class="border border-gold/15 p-4 rounded-sm">
+                            <i class="ri-surfboard-line text-gold text-xl"></i>
+                            <p class="text-cream/80 text-sm mt-2">Surf</p>
                         </div>
-                        <div class="bg-white rounded-lg shadow-md p-6 flex items-start space-x-4">
-                            <i class="ri-leaf-line text-primary text-4xl"></i>
-                            <div>
-                                <h4 class="font-semibold text-gray-900 mb-1">Rutas Ecológicas</h4>
-                                <p class="text-gray-600">Descubre cascadas ocultas, senderos en la selva y la exuberante flora y fauna local.</p>
-                            </div>
+                        <div class="border border-gold/15 p-4 rounded-sm">
+                            <i class="ri-plant-line text-gold text-xl"></i>
+                            <p class="text-cream/80 text-sm mt-2">Machalilla</p>
                         </div>
-                        <div class="bg-white rounded-lg shadow-md p-6 flex items-start space-x-4">
-                            <i class="ri-hand-heart-line text-primary text-4xl"></i>
-                            <div>
-                                <h4 class="font-semibold text-gray-900 mb-1">Comunidad Amigable</h4>
-                                <p class="text-gray-600">Disfruta de la calidez y hospitalidad de su gente, un ambiente relajado y seguro.</p>
-                            </div>
+                        <div class="border border-gold/15 p-4 rounded-sm">
+                            <i class="ri-restaurant-line text-gold text-xl"></i>
+                            <p class="text-cream/80 text-sm mt-2">Gastronomía</p>
+                        </div>
+                        <div class="border border-gold/15 p-4 rounded-sm">
+                            <i class="ri-ship-line text-gold text-xl"></i>
+                            <p class="text-cream/80 text-sm mt-2">Ballenas</p>
                         </div>
                     </div>
                 </div>
@@ -492,250 +654,327 @@
         </div>
     </section>
 
-    <!-- Testimonios (Temporalmente oculto)
-    <section id="testimonios" class="py-16 bg-white">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-12">
-                <span class="inline-block bg-primary bg-opacity-10 text-primary px-4 py-2 rounded-full text-sm font-medium mb-4">Lo que dicen nuestros clientes</span>
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Experiencias en Ayampe</h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Conoce las historias de quienes ya han invertido en el paraíso de Ayampe.</p>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-gray-50 p-6 rounded-lg shadow-md flex flex-col items-center text-center">
-                    <img src="https://static.readdy.ai/image/b4e34a3a8aa80f230832853a091179bb/12c193132e4d07d17482f6f5822f7637.jpeg" 
-                         alt="Testimonio 1" 
-                         class="w-24 h-24 rounded-full object-cover mb-4"
-                         width="96"
-                         height="96"
-                         loading="lazy">
-                    <p class="text-gray-700 italic mb-4">"Invertir en Ayampe fue la mejor decisión. La belleza natural es increíble y la comunidad es muy acogedora."</p>
-                    <p class="font-semibold text-gray-900">Ana María G.</p>
-                    <p class="text-sm text-gray-500">Inversionista</p>
-                </div>
-                <div class="bg-gray-50 p-6 rounded-lg shadow-md flex flex-col items-center text-center">
-                    <img src="https://static.readdy.ai/image/b4e34a3a8aa80f230832853a091179bb/ae7e0237c523297a7e8b637508491c78.jpeg" 
-                         alt="Testimonio 2" 
-                         class="w-24 h-24 rounded-full object-cover mb-4"
-                         width="96"
-                         height="96"
-                         loading="lazy">
-                    <p class="text-gray-700 italic mb-4">"Las propiedades de Casas Ayampe superaron mis expectativas. La calidad y el diseño son excepcionales."</p>
-                    <p class="font-semibold text-gray-900">Roberto C.</p>
-                    <p class="text-sm text-gray-500">Propietario</p>
-                </div>
-                <div class="bg-gray-50 p-6 rounded-lg shadow-md flex flex-col items-center text-center">
-                    <img src="https://static.readdy.ai/image/b4e34a3a8aa80f230832853a091179bb/6a0ef2c8addeff73af92278299d8b04d.webp" 
-                         alt="Testimonio 3" 
-                         class="w-24 h-24 rounded-full object-cover mb-4"
-                         width="96"
-                         height="96"
-                         loading="lazy">
-                    <p class="text-gray-700 italic mb-4">"El equipo de Casas Ayampe me brindó un excelente soporte durante todo el proceso. ¡Totalmente recomendable!"</p>
-                    <p class="font-semibold text-gray-900">Sofía M.</p>
-                    <p class="text-sm text-gray-500">Compradora</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    -->
-
-    <!-- FAQs -->
-    <section id="faqs" class="py-16 bg-gray-100">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-12">
-                <span class="inline-block bg-primary bg-opacity-10 text-primary px-4 py-2 rounded-full text-sm font-medium mb-4">Preguntas Frecuentes</span>
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Respuestas a tus dudas</h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Encuentra aquí la información que necesitas sobre tu inversión en Ayampe.</p>
-            </div>
-            <div class="max-w-3xl mx-auto space-y-4">
-                <div class="bg-white rounded-lg shadow-md">
-                    <button class="w-full flex justify-between items-center p-5 text-lg font-semibold text-gray-800 focus:outline-none" onclick="toggleAccordion(this)">
-                        <span>¿Qué tipo de propiedades ofrecen en Sandpiper?</span>
-                        <i class="ri-add-line accordion-icon transition-transform duration-300"></i>
-                    </button>
-                    <div class="accordion-content px-5 pb-5 text-gray-600 hidden">
-                        <p>Ofrecemos villas de lujo a pocos metros del mar con diseños modernos y acabados de alta calidad, ideales para residencia o inversión.</p>
-                    </div>
-                </div>
-                <div class="bg-white rounded-lg shadow-md">
-                    <button class="w-full flex justify-between items-center p-5 text-lg font-semibold text-gray-800 focus:outline-none" onclick="toggleAccordion(this)">
-                        <span>¿Cuáles son las opciones de financiamiento?</span>
-                        <i class="ri-add-line accordion-icon transition-transform duration-300"></i>
-                    </button>
-                    <div class="accordion-content px-5 pb-5 text-gray-600 hidden">
-                        <p>Contamos con planes de financiamiento directo y opciones a través de bancos locales para facilitar tu compra.</p>
-                    </div>
-                </div>
-                <div class="bg-white rounded-lg shadow-md">
-                    <button class="w-full flex justify-between items-center p-5 text-lg font-semibold text-gray-800 focus:outline-none" onclick="toggleAccordion(this)">
-                        <span>¿Es una buena inversión comprar en Ayampe?</span>
-                        <i class="ri-add-line accordion-icon transition-transform duration-300"></i>
-                    </button>
-                    <div class="accordion-content px-5 pb-5 text-gray-600 hidden">
-                        <p>Sí, Ayampe es una zona en crecimiento con alta plusvalía proyectada y un creciente interés turístico, lo que la convierte en una excelente inversión.</p>
-                    </div>
-                </div>
-                <div class="bg-white rounded-lg shadow-md">
-                    <button class="w-full flex justify-between items-center p-5 text-lg font-semibold text-gray-800 focus:outline-none" onclick="toggleAccordion(this)">
-                        <span>¿Cómo puedo agendar una visita a las propiedades?</span>
-                        <i class="ri-add-line accordion-icon transition-transform duration-300"></i>
-                    </button>
-                    <div class="accordion-content px-5 pb-5 text-gray-600 hidden">
-                        <p>Puedes agendar una visita contactándonos a través del formulario en nuestra web o por WhatsApp, o llamando directamente a nuestros agentes.</p>
-                    </div>
+    <!-- TESTIMONIO / SOCIAL PROOF -->
+    <section class="py-24 bg-night" data-testid="testimonial-section">
+        <div class="container mx-auto px-6 lg:px-14">
+            <div class="max-w-4xl mx-auto text-center">
+                <i class="ri-double-quotes-l text-gold text-5xl opacity-60"></i>
+                <p class="font-display text-2xl md:text-4xl text-cream font-light leading-tight italic mt-6 mb-10">
+                    "Buscamos durante años la costa ecuatoriana. Sandpiper fue la única ciudadela que combinó diseño, seguridad real y un precio que todavía tiene mucho espacio para crecer."
+                </p>
+                <div class="flex items-center justify-center gap-3 text-cream/70">
+                    <span class="h-px w-8 bg-gold"></span>
+                    <span class="text-sm uppercase tracking-wider-2">Propietario — Sandpiper Ayampe</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contacto -->
-    <section id="contacto" class="py-16 bg-primary text-white">
-        <div class="container mx-auto px-4 text-center">
-            <span class="inline-block bg-white bg-opacity-20 text-white px-4 py-2 rounded-full text-sm font-medium mb-4">Contáctanos</span>
-            <h2 class="text-3xl md:text-4xl font-bold mb-4">¿Listo para vivir el sueño de Ayampe?</h2>
-            <p class="text-xl mb-8 max-w-3xl mx-auto">Déjanos tus datos y un asesor se pondrá en contacto contigo para brindarte toda la información que necesitas.</p>
-            <a href="https://wa.me/593963256009?text=Hola, me interesa obtener más información sobre las propiedades en Ayampe" 
-               target="_blank" 
-               class="bg-white text-primary px-8 py-4 rounded-button font-semibold hover:bg-opacity-90 transition-colors inline-flex items-center shadow-lg">
-                <i class="ri-whatsapp-line mr-2"></i>
-                Chatear por WhatsApp
+    <!-- CONTACTO -->
+    <section id="contacto" class="py-24 lg:py-32 bg-midnight relative overflow-hidden" data-testid="contact-section">
+        <div class="container mx-auto px-6 lg:px-14">
+            <div class="grid lg:grid-cols-12 gap-12">
+                <div class="lg:col-span-6">
+                    <div class="flex items-center gap-4 mb-5">
+                        <span class="h-px w-12 bg-gold"></span>
+                        <span class="text-gold uppercase tracking-wider-2 text-xs">Contacto directo</span>
+                    </div>
+                    <h2 class="font-display text-4xl md:text-6xl text-cream font-light leading-[1.05] mb-6">
+                        Hablemos por <span class="italic text-gold">WhatsApp</span>.
+                    </h2>
+                    <p class="text-cream/70 text-lg leading-relaxed mb-10">
+                        La forma más rápida de reservar tu visita o resolver tus dudas. Respondemos personalmente, sin call centers.
+                    </p>
+
+                    <a href="https://wa.me/13059885341?text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Sandpiper%20Ayampe"
+                       target="_blank"
+                       rel="noopener"
+                       data-testid="contact-whatsapp-primary"
+                       class="group block mb-6">
+                        <div class="flex items-center justify-between bg-[#25D366] hover:bg-[#20bd5a] text-white px-8 py-6 rounded-sm transition-all">
+                            <div class="flex items-center gap-4">
+                                <i class="ri-whatsapp-line text-4xl"></i>
+                                <div>
+                                    <p class="text-xs uppercase tracking-wider-2 opacity-80">WhatsApp directo</p>
+                                    <p class="font-display text-2xl">+1 305 988 5341</p>
+                                </div>
+                            </div>
+                            <i class="ri-arrow-right-up-line text-2xl group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform"></i>
+                        </div>
+                    </a>
+
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="border border-gold/15 p-5 rounded-sm">
+                            <i class="ri-time-line text-gold text-xl mb-2"></i>
+                            <p class="text-cream/60 text-xs uppercase tracking-wider">Respuesta</p>
+                            <p class="text-cream">En menos de 1 hora</p>
+                        </div>
+                        <div class="border border-gold/15 p-5 rounded-sm">
+                            <i class="ri-global-line text-gold text-xl mb-2"></i>
+                            <p class="text-cream/60 text-xs uppercase tracking-wider">Idiomas</p>
+                            <p class="text-cream">Español · English</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SECONDARY LEAD FORM -->
+                <aside class="lg:col-span-6">
+                    <div class="bg-night/60 backdrop-blur border border-gold/20 rounded-sm p-8 lg:p-10">
+                        <p class="text-gold uppercase tracking-wider-2 text-xs mb-2">O déjanos un mensaje</p>
+                        <h3 class="font-display text-2xl text-cream font-light mb-6">Te llamamos nosotros</h3>
+
+                        <form id="lead-form"
+                              action="https://formspree.io/f/xrbekwgj"
+                              method="POST"
+                              data-testid="lead-form"
+                              class="space-y-4">
+                            <div class="grid md:grid-cols-2 gap-4">
+                                <div>
+                                    <label for="nombre" class="block text-xs uppercase tracking-wider text-cream/60 mb-2">Nombre*</label>
+                                    <input type="text" id="nombre" name="nombre" required data-testid="form-nombre"
+                                           class="w-full bg-transparent border border-gold/20 focus:border-gold text-cream px-4 py-3 outline-none transition-colors">
+                                </div>
+                                <div>
+                                    <label for="apellido" class="block text-xs uppercase tracking-wider text-cream/60 mb-2">Apellido*</label>
+                                    <input type="text" id="apellido" name="apellido" required data-testid="form-apellido"
+                                           class="w-full bg-transparent border border-gold/20 focus:border-gold text-cream px-4 py-3 outline-none transition-colors">
+                                </div>
+                            </div>
+                            <div>
+                                <label for="email" class="block text-xs uppercase tracking-wider text-cream/60 mb-2">Email*</label>
+                                <input type="email" id="email" name="email" required data-testid="form-email"
+                                       class="w-full bg-transparent border border-gold/20 focus:border-gold text-cream px-4 py-3 outline-none transition-colors">
+                            </div>
+                            <div>
+                                <label for="telefono" class="block text-xs uppercase tracking-wider text-cream/60 mb-2">WhatsApp / Teléfono</label>
+                                <input type="tel" id="telefono" name="telefono" data-testid="form-telefono"
+                                       placeholder="+593..." 
+                                       class="w-full bg-transparent border border-gold/20 focus:border-gold text-cream px-4 py-3 outline-none transition-colors placeholder:text-cream/30">
+                            </div>
+                            <div>
+                                <label for="interes" class="block text-xs uppercase tracking-wider text-cream/60 mb-2">Me interesa</label>
+                                <select id="interes" name="interes" data-testid="form-interes"
+                                        class="w-full bg-night border border-gold/20 focus:border-gold text-cream px-4 py-3 outline-none transition-colors">
+                                    <option value="Lote 13">Lote 13 — $98,037</option>
+                                    <option value="Villa Lote 4">Villa Lote 4 — $272,674</option>
+                                    <option value="Otra propiedad">Otra propiedad disponible</option>
+                                    <option value="Visita guiada">Visita guiada al proyecto</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="mensaje" class="block text-xs uppercase tracking-wider text-cream/60 mb-2">Mensaje</label>
+                                <textarea id="mensaje" name="message" rows="3" data-testid="form-mensaje"
+                                          class="w-full bg-transparent border border-gold/20 focus:border-gold text-cream px-4 py-3 outline-none transition-colors resize-none"></textarea>
+                            </div>
+                            <label class="flex items-start gap-3 text-cream/60 text-xs leading-relaxed cursor-pointer">
+                                <input type="checkbox" name="terminos" required class="mt-0.5 accent-gold">
+                                <span>Acepto ser contactado por Sandpiper Villas y acepto los términos de privacidad.</span>
+                            </label>
+                            <button type="submit" data-testid="form-submit"
+                                    class="w-full bg-gold text-night py-4 rounded-full font-medium hover:bg-goldsoft transition-all flex items-center justify-center gap-2 mt-2">
+                                <span>Enviar solicitud</span>
+                                <i class="ri-arrow-right-line"></i>
+                            </button>
+                            <p class="text-center text-cream/40 text-xs">O escríbenos directamente al <a href="https://wa.me/13059885341" class="text-gold hover:underline">+1 305 988 5341</a></p>
+                        </form>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faqs" class="py-24 bg-night" data-testid="faq-section">
+        <div class="container mx-auto px-6 lg:px-14">
+            <div class="max-w-3xl mx-auto">
+                <div class="text-center mb-14">
+                    <p class="text-gold uppercase tracking-wider-2 text-xs mb-4">Preguntas frecuentes</p>
+                    <h2 class="font-display text-4xl md:text-5xl text-cream font-light">Lo que más nos preguntan.</h2>
+                </div>
+                <div class="space-y-3">
+                    <details class="faq-item group" data-testid="faq-1">
+                        <summary class="flex items-center justify-between cursor-pointer py-5 border-b border-gold/15">
+                            <span class="font-display text-lg text-cream pr-8">¿Puedo financiar mi compra?</span>
+                            <i class="ri-add-line text-gold text-2xl transition-transform group-open:rotate-45"></i>
+                        </summary>
+                        <p class="text-cream/70 py-4 leading-relaxed">Sí. Ofrecemos financiamiento directo y trabajamos con bancos locales en Ecuador. Coordinamos planes de pago a la medida según tu caso.</p>
+                    </details>
+                    <details class="faq-item group" data-testid="faq-2">
+                        <summary class="flex items-center justify-between cursor-pointer py-5 border-b border-gold/15">
+                            <span class="font-display text-lg text-cream pr-8">¿Las escrituras están en regla?</span>
+                            <i class="ri-add-line text-gold text-2xl transition-transform group-open:rotate-45"></i>
+                        </summary>
+                        <p class="text-cream/70 py-4 leading-relaxed">Todas las propiedades cuentan con documentación 100% en regla y escrituración inmediata al cierre del acuerdo.</p>
+                    </details>
+                    <details class="faq-item group" data-testid="faq-3">
+                        <summary class="flex items-center justify-between cursor-pointer py-5 border-b border-gold/15">
+                            <span class="font-display text-lg text-cream pr-8">¿Puedo construir mi propio diseño en el lote?</span>
+                            <i class="ri-add-line text-gold text-2xl transition-transform group-open:rotate-45"></i>
+                        </summary>
+                        <p class="text-cream/70 py-4 leading-relaxed">Sí, respetando el reglamento arquitectónico de la ciudadela. Tenemos arquitectos aliados si prefieres un diseño llave en mano.</p>
+                    </details>
+                    <details class="faq-item group" data-testid="faq-4">
+                        <summary class="flex items-center justify-between cursor-pointer py-5 border-b border-gold/15">
+                            <span class="font-display text-lg text-cream pr-8">¿Cómo agendo una visita al proyecto?</span>
+                            <i class="ri-add-line text-gold text-2xl transition-transform group-open:rotate-45"></i>
+                        </summary>
+                        <p class="text-cream/70 py-4 leading-relaxed">La forma más rápida es escribirnos por WhatsApp al <a href="https://wa.me/13059885341" class="text-gold hover:underline">+1 305 988 5341</a>. Coordinamos visita en Ayampe o videollamada si estás fuera del país.</p>
+                    </details>
+                    <details class="faq-item group" data-testid="faq-5">
+                        <summary class="flex items-center justify-between cursor-pointer py-5 border-b border-gold/15">
+                            <span class="font-display text-lg text-cream pr-8">¿Los extranjeros pueden comprar?</span>
+                            <i class="ri-add-line text-gold text-2xl transition-transform group-open:rotate-45"></i>
+                        </summary>
+                        <p class="text-cream/70 py-4 leading-relaxed">Por supuesto. Los extranjeros tienen los mismos derechos que los ecuatorianos para adquirir propiedades en la costa. Te asesoramos en todo el proceso legal.</p>
+                    </details>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="relative py-28 overflow-hidden" data-testid="final-cta">
+        <div class="absolute inset-0 z-0">
+            <img src="images/atardecerahorcado.JPG" alt="Atardecer en la playa de Ayampe, Ecuador" class="w-full h-full object-cover opacity-30" loading="lazy">
+            <div class="absolute inset-0 bg-gradient-to-b from-night via-night/90 to-night"></div>
+        </div>
+        <div class="relative z-10 container mx-auto px-6 lg:px-14 text-center max-w-4xl">
+            <p class="text-gold uppercase tracking-wider-2 text-xs mb-6">Una última cosa</p>
+            <h2 class="font-display text-4xl md:text-6xl text-cream font-light leading-[1.05] mb-8">
+                Las mejores propiedades en Ayampe <span class="italic text-gold">no duran mucho</span>.
+            </h2>
+            <p class="text-cream/70 text-lg mb-10 max-w-2xl mx-auto">
+                Reserva una conversación de 15 minutos con nuestro asesor. Sin compromiso, sin presión.
+            </p>
+            <a href="https://wa.me/13059885341?text=Hola%2C%20quiero%20agendar%20una%20llamada%20de%2015%20minutos%20sobre%20Sandpiper%20Ayampe"
+               target="_blank"
+               rel="noopener"
+               data-testid="final-cta-whatsapp"
+               class="inline-flex items-center gap-3 bg-gold hover:bg-goldsoft text-night px-10 py-5 rounded-full font-medium text-lg transition-all shadow-xl shadow-gold/20">
+                <i class="ri-whatsapp-line text-2xl"></i>
+                Hablar con un asesor ahora
             </a>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-8">
-        <div class="container mx-auto px-4 text-center text-sm">
-            <p>&copy; 2024 Casas Ayampe. Todos los derechos reservados.</p>
-            <div class="flex justify-center space-x-4 mt-4">
-                <a href="#" class="hover:text-primary transition-colors">Política de Privacidad</a>
-                <a href="#" class="hover:text-primary transition-colors">Términos y Condiciones</a>
+    <footer class="bg-night border-t border-gold/15 pt-16 pb-8" data-testid="site-footer">
+        <div class="container mx-auto px-6 lg:px-14">
+            <div class="grid md:grid-cols-4 gap-10 mb-12">
+                <div class="md:col-span-2">
+                    <div class="flex items-center gap-3 mb-5">
+                        <div class="w-10 h-10 rounded-full border border-gold/50 flex items-center justify-center">
+                            <span class="font-display text-gold text-xl italic">S</span>
+                        </div>
+                        <div>
+                            <p class="font-display text-cream text-lg">Sandpiper Villas</p>
+                            <p class="text-[10px] uppercase tracking-wider-2 text-gold/80">Ayampe · Manabí · Ecuador</p>
+                        </div>
+                    </div>
+                    <p class="text-cream/60 text-sm leading-relaxed max-w-md">
+                        Lujo sustentable frente al mar en la Ruta del Spondylus. Lotes y villas en ciudadela privada con acceso directo a una de las playas mejor conservadas de Ecuador.
+                    </p>
+                </div>
+                <div>
+                    <p class="text-gold uppercase tracking-wider-2 text-xs mb-4">Explorar</p>
+                    <ul class="space-y-2 text-cream/70 text-sm">
+                        <li><a href="#propiedades" class="hover:text-gold">Propiedades</a></li>
+                        <li><a href="#amenidades" class="hover:text-gold">Amenidades</a></li>
+                        <li><a href="#ubicacion" class="hover:text-gold">Ubicación</a></li>
+                        <li><a href="blog.html" class="hover:text-gold">Blog Ayampe</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="text-gold uppercase tracking-wider-2 text-xs mb-4">Contacto</p>
+                    <ul class="space-y-3 text-cream/70 text-sm">
+                        <li><a href="https://wa.me/13059885341" class="flex items-center gap-2 hover:text-gold"><i class="ri-whatsapp-line"></i>+1 305 988 5341</a></li>
+                        <li class="flex items-center gap-2"><i class="ri-map-pin-line text-gold"></i>Ayampe, Manabí, Ecuador</li>
+                        <li class="flex items-center gap-2"><i class="ri-road-map-line text-gold"></i>Ruta del Spondylus</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-gold/10 flex flex-col md:flex-row items-center justify-between gap-4">
+                <p class="text-cream/50 text-xs">© 2026 Sandpiper Villas Ayampe. Todos los derechos reservados.</p>
+                <div class="flex gap-6 text-cream/50 text-xs">
+                    <a href="#" class="hover:text-gold">Privacidad</a>
+                    <a href="#" class="hover:text-gold">Términos</a>
+                </div>
             </div>
         </div>
     </footer>
 
     <script>
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+        // Mobile menu
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        if (mobileMenuButton && mobileMenu) {
+            mobileMenuButton.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+        }
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    e.preventDefault();
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    if (mobileMenu && !mobileMenu.classList.contains('hidden')) mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+
+        // Header scroll state
+        const header = document.querySelector('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 40) header.classList.add('header-scrolled');
+            else header.classList.remove('header-scrolled');
+        });
+
+        // Reveal animations
+        const revealEls = document.querySelectorAll('.reveal, .property-card, .amenity-card, .faq-item');
+        const io = new IntersectionObserver((entries) => {
+            entries.forEach(e => {
+                if (e.isIntersecting) {
+                    e.target.classList.add('is-visible');
+                    io.unobserve(e.target);
+                }
+            });
+        }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+        revealEls.forEach(el => io.observe(el));
+        // Safety fallback: after 2.5s force-reveal any element still hidden
+        setTimeout(() => {
+            revealEls.forEach(el => {
+                if (!el.classList.contains('is-visible')) el.classList.add('is-visible');
+            });
+        }, 2500);
+
+        // Lead form via Formspree (AJAX)
+        const leadForm = document.getElementById('lead-form');
+        if (leadForm) {
+            leadForm.addEventListener('submit', async (e) => {
                 e.preventDefault();
-
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-
-                // Close mobile menu if open
-                const mobileMenu = document.getElementById('mobile-menu');
-                if (!mobileMenu.classList.contains('hidden')) {
-                    mobileMenu.classList.add('hidden');
-                }
-            });
-        });
-
-        // Mobile menu toggle
-        document.getElementById('mobile-menu-button').addEventListener('click', function () {
-            document.getElementById('mobile-menu').classList.toggle('hidden');
-        });
-
-        // Accordion functionality for FAQs
-        function toggleAccordion(button) {
-            const content = button.nextElementSibling;
-            const icon = button.querySelector('.accordion-icon');
-            
-            content.classList.toggle('hidden');
-            if (content.classList.contains('hidden')) {
-                icon.classList.remove('ri-subtract-line');
-                icon.classList.add('ri-add-line');
-            } else {
-                icon.classList.remove('ri-add-line');
-                icon.classList.add('ri-subtract-line');
-            }
-        }
-
-        // Hero Slider functionality
-        let currentSlide = 0;
-        const slides = document.querySelectorAll('.hero-slider .slide');
-        const totalSlides = slides.length;
-
-        function showSlide(index) {
-            slides.forEach((slide, i) => {
-                slide.classList.remove('active');
-                if (i === index) {
-                    slide.classList.add('active');
-                }
-            });
-        }
-
-        function nextSlide() {
-            currentSlide = (currentSlide + 1) % totalSlides;
-            showSlide(currentSlide);
-        }
-
-        function prevSlide() {
-            currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
-            showSlide(currentSlide);
-        }
-
-        document.querySelector('.slider-next').addEventListener('click', nextSlide);
-        document.querySelector('.slider-prev').addEventListener('click', prevSlide);
-
-        // Auto-advance slider every 5 seconds
-        // setInterval(nextSlide, 5000);
-
-        // Intersection Observer for animations (optional, for future enhancements)
-        const observerOptions = {
-            root: null,
-            rootMargin: '0px',
-            threshold: 0.1
-        };
-
-        const observer = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('animate-fade-in-up'); // Example animation class
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, observerOptions);
-
-        document.querySelectorAll('.animate-on-scroll').forEach(element => {
-            observer.observe(element);
-        });
-
-        // Form submission handling
-        document.addEventListener('DOMContentLoaded', () => {
-            const contactForm = document.querySelector('form[action="https://formspree.io/f/xrbekwgj"]');
-            if (contactForm) {
-                contactForm.addEventListener('submit', async (event) => {
-                    event.preventDefault();
-                    const form = event.target;
-                    const formData = new FormData(form);
-
-                    try {
-                        const response = await fetch(form.action, {
-                            method: form.method,
-                            body: formData,
-                            headers: {
-                                'Accept': 'application/json'
-                            }
-                        });
-
-                        if (response.ok) {
-                            form.innerHTML = '<p class="md:col-span-2 bg-green-100 text-green-800 text-center px-4 py-3 rounded-button font-medium">¡Gracias! Hemos recibido tu mensaje.</p>';
-                        } else {
-                            const data = await response.json();
-                            if (data.errors) {
-                                alert(data.errors.map(error => error.message).join(", "));
-                            } else {
-                                alert('Error al enviar. Intenta de nuevo.');
-                            }
-                        }
-                    } catch (error) {
-                        alert('Error de conexión. Intenta de nuevo más tarde.');
+                const btn = leadForm.querySelector('button[type="submit"]');
+                const original = btn.innerHTML;
+                btn.disabled = true;
+                btn.innerHTML = '<i class="ri-loader-4-line animate-spin"></i> Enviando...';
+                try {
+                    const res = await fetch(leadForm.action, {
+                        method: 'POST',
+                        body: new FormData(leadForm),
+                        headers: { 'Accept': 'application/json' }
+                    });
+                    if (res.ok) {
+                        leadForm.innerHTML = '<div class="text-center py-8"><i class="ri-checkbox-circle-line text-gold text-5xl mb-4"></i><p class="font-display text-2xl text-cream mb-2">¡Gracias!</p><p class="text-cream/70">Te contactaremos en menos de 1 hora.</p></div>';
+                    } else {
+                        throw new Error('Error en el envío');
                     }
-                });
-            }
-        });
+                } catch (err) {
+                    btn.disabled = false;
+                    btn.innerHTML = original;
+                    alert('Hubo un error. Por favor escríbenos por WhatsApp al +1 305 988 5341');
+                }
+            });
+        }
     </script>
 </body>
-</html> 
+</html>
