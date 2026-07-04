@@ -117,6 +117,13 @@ Rediseñar casasayampe.com con enfoque editorial (estilo CasitaMX) — ciudadela
 - **Nuevos:** `sitemap.xml` (8 URLs) y `robots.txt` (no existían).
 - Los artículos usan las imágenes existentes de `images/blog/`. El artículo de surf conserva su URL con "2025" (historial SEO) pero título/contenido actualizados a 2026.
 
+## Versión EN (04-jul-2026)
+- **`/en/` completo para mercado internacional**: `en/index.html` (home villas traducida, keywords: "Ayampe vacation rental", "beach house rental Ecuador", "where to stay in Ayampe"), `en/guides.html` + 5 guías con slugs en inglés (things-to-do-in-ayampe, ayampe-surf-guide, whale-watching-ayampe-ecuador, los-frailes-beach-ecuador, invest-ayampe-ecuador-real-estate).
+- **hreflang cruzado** es/en/x-default en las 7 parejas (x-default → EN, audiencia internacional). Selector de idioma ES/EN en el header de todas las páginas.
+- Form EN: mismo Formspree con `origen=preapertura-villas-en` y `_subject` en inglés; evento GA4 `generate_lead` con categoría `preapertura_villas_en`.
+- `inversion-sandpiper-ayampe.html` sigue solo en ES — los links EN lo indican "(in Spanish — WhatsApp for English)". Pendiente si el promotor quiere venderla también en EN.
+- sitemap.xml ampliado con las 7 URLs EN. Generador de guías EN: gen_blog_en.py (scratchpad de la sesión).
+
 ## Next Tasks
 - Push a GitHub para deploy a casasayampe.com
 - Subir fotos reales del proyecto
