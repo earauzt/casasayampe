@@ -3,262 +3,243 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Descubre las últimas noticias y guías sobre casas de venta en Ayampe, surf, avistamiento de ballenas y más en el blog de Casas Ayampe.">
-    <meta name="keywords" content="blog, Ayampe, casas de venta, surf, avistamiento de ballenas, playas, Ecuador, turismo, inversión inmobiliaria">
-    <meta name="author" content="APX Company">
-    <meta name="robots" content="index, follow">
-    <meta property="og:title" content="Blog - Casas Ayampe: Noticias y Guías sobre Ayampe, Ecuador">
-    <meta property="og:description" content="Descubre las últimas noticias y guías sobre casas de venta en Ayampe, surf, avistamiento de ballenas y más en el blog de Casas Ayampe.">
-    <meta property="og:image" content="https://casasayampe.com/images/og-image.jpg">
-    <meta property="og:url" content="https://casasayampe.com/blog.html">
-    <meta name="twitter:card" content="summary_large_image">
-    <title>Blog - Casas Ayampe: Noticias y Guías sobre Ayampe, Ecuador</title>
 
-    <!-- Preconnect a recursos externos -->
+    <title>Guías de Ayampe, Ecuador: Surf, Ballenas, Playas y Consejos de Viaje | Sandpiper</title>
+    <meta name="description" content="Guías locales de Ayampe, Ecuador: qué hacer, surf, avistamiento de ballenas, la playa Los Frailes y consejos para invertir en la costa. Escritas por el equipo de Sandpiper Villas.">
+    <meta name="keywords" content="Ayampe Ecuador guía, qué hacer en Ayampe, surf Ayampe, ballenas Puerto López, Los Frailes, blog Ayampe, viajar a la costa de Ecuador">
+    <meta name="author" content="Sandpiper Ayampe">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <link rel="canonical" href="https://casasayampe.com/blog.html">
+
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_EC">
+    <meta property="og:title" content="Guías de Ayampe, Ecuador: Surf, Ballenas, Playas y Consejos de Viaje | Sandpiper">
+    <meta property="og:description" content="Guías locales de Ayampe, Ecuador: qué hacer, surf, avistamiento de ballenas, la playa Los Frailes y consejos para invertir en la costa. Escritas por el equipo de Sandpiper Villas.">
+    <meta property="og:image" content="https://casasayampe.com/images/blog/ayampe-paraiso.jpg">
+    <meta property="og:url" content="https://casasayampe.com/blog.html">
+    <meta property="og:site_name" content="Sandpiper Ayampe">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Guías de Ayampe, Ecuador: Surf, Ballenas, Playas y Consejos de Viaje | Sandpiper">
+    <meta name="twitter:description" content="Guías locales de Ayampe, Ecuador: qué hacer, surf, avistamiento de ballenas, la playa Los Frailes y consejos para invertir en la costa. Escritas por el equipo de Sandpiper Villas.">
+    <meta name="twitter:image" content="https://casasayampe.com/images/blog/ayampe-paraiso.jpg">
+
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="apple-touch-icon" href="images/logo.png">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
-    <link rel="preconnect" href="https://www.googletagmanager.com">
-    <link rel="preconnect" href="https://www.google-analytics.com">
-    <link rel="preconnect" href="https://connect.facebook.net">
-    <link rel="preconnect" href="https://analytics.tiktok.com">
-
-    <!-- Estilos críticos -->
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto+Condensed:wght@300;400;500;600;700&family=Roboto+Slab:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Inter:wght@300;400;500;600&family=Caveat:wght@400;500&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
 
-    <!-- Scripts críticos -->
     <script src="https://cdn.tailwindcss.com/3.4.16"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
-                    colors: { 
-                        primary: "#1a3c6d", 
-                        secondary: "#f4a261" 
+                    colors: {
+                        sand: "#E8E2D5", cream: "#F6F2EA", paper: "#FBF8F1", ink: "#1C1712",
+                        clay: "#6B5D4F", cacao: "#4A2E20", terracotta: "#B8755A", tan: "#C9986A",
+                        linen: "rgba(28,23,18,0.08)"
                     },
-                    borderRadius: {
-                        button: "8px"
-                    }
+                    fontFamily: {
+                        display: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+                        sans: ['"Inter"', 'system-ui', 'sans-serif'],
+                        script: ['"Caveat"', 'cursive']
+                    },
+                    letterSpacing: { 'wide-2': '0.14em' }
                 }
             }
         };
     </script>
+    <link href="css/styles.css" rel="stylesheet">
 
-    <!-- Scripts no críticos cargados de forma asíncrona -->
+    <script type="application/ld+json">
+    {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Guías de Ayampe — Sandpiper Villas",
+  "url": "https://casasayampe.com/blog.html",
+  "description": "Guías locales de Ayampe, Ecuador: qué hacer, surf, avistamiento de ballenas, la playa Los Frailes y consejos para invertir en la costa. Escritas por el equipo de Sandpiper Villas.",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Sandpiper Ayampe",
+    "url": "https://casasayampe.com/"
+  }
+}
+    </script>
+
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-8B688HM6RF"></script>
-    <script async src="https://analytics.ahrefs.com/analytics.js" data-key="hDqcehGEXx/eeIwr/stawg"></script>
-    <script async src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.5.0/echarts.min.js"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8B688HM6RF');
+    </script>
 </head>
-<body class="bg-gray-50">
-    <!-- WhatsApp Button -->
-    <a href="https://wa.me/593963256009?text=Hola, me interesa obtener más información sobre las propiedades en Ayampe" 
-       target="_blank" 
-       class="fixed bottom-6 right-6 bg-[#25D366] text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:bg-opacity-90 transition-colors z-50">
-        <i class="ri-whatsapp-line text-2xl"></i>
+<body class="bg-cream text-ink font-sans antialiased selection:bg-cacao selection:text-cream">
+
+    <a href="https://wa.me/13059885341?text=Hola%2C%20quiero%20unirme%20a%20la%20lista%20de%20preapertura%20de%20Sandpiper%20Villas"
+       target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp"
+       class="fixed bottom-6 right-5 z-50 flex h-14 w-14 items-center justify-center bg-[#25D366] hover:bg-[#1fb457] text-white rounded-full shadow-xl shadow-ink/20 transition-all duration-300 hover:scale-[1.05]">
+        <i class="ri-whatsapp-line text-3xl"></i>
     </a>
 
-    <!-- Header -->
-    <header class="bg-white shadow-sm sticky top-0 z-40">
-        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
-            <a href="index.html" class="flex items-center">
-                <img src="images/logo.png" 
-                     alt="APX Company" 
-                     class="h-8"
-                     width="120"
-                     height="32">
+    <header class="sticky top-0 z-40 bg-cream/95 backdrop-blur border-b border-ink/10" data-testid="site-header">
+        <div class="container mx-auto px-6 lg:px-12 py-4 flex justify-between items-center">
+            <a href="/" class="flex items-center gap-3" data-testid="site-logo">
+                <span class="font-script text-ink text-3xl leading-none">Sandpiper</span>
+                <span class="hidden sm:inline-block h-6 w-px bg-ink/30"></span>
+                <span class="hidden sm:inline text-[11px] uppercase tracking-wide-2 text-ink/70">Villas · Ayampe</span>
             </a>
-            <nav class="hidden md:flex items-center space-x-8">
-                <a href="index.html" class="text-gray-800 font-medium hover:text-primary transition-colors">Inicio</a>
-                <a href="index.html#propiedades" class="text-gray-800 font-medium hover:text-primary transition-colors">Propiedades</a>
-                <a href="index.html#sobre-ayampe" class="text-gray-800 font-medium hover:text-primary transition-colors">Sobre Ayampe</a>
-                <a href="blog.html" class="text-gray-800 font-medium hover:text-primary transition-colors">Blog</a>
-                <a href="index.html#contacto" class="text-gray-800 font-medium hover:text-primary transition-colors hidden">Contacto</a>
+            <nav class="hidden lg:flex items-center gap-10" aria-label="Navegación principal">
+                <a href="/" class="text-sm text-ink/80 hover:text-cacao transition-colors">Las Villas</a>
+                <a href="blog.html" class="text-sm text-ink/80 hover:text-cacao transition-colors">Guías de Ayampe</a>
+                <a href="inversion-sandpiper-ayampe.html" class="text-sm text-ink/60 hover:text-cacao transition-colors">¿Buscas comprar? →</a>
             </nav>
-            <div class="flex items-center space-x-4">
-                <button class="flex items-center text-sm font-medium text-gray-700 hover:text-primary transition-colors" aria-label="Cambiar idioma">
-                    <span>ES</span>
-                    <i class="ri-arrow-down-s-line ml-1"></i>
-                </button>
-                <a href="https://wa.me/593963256009?text=Hola, me interesa obtener más información sobre la propiedad en Ayampe" 
-                   target="_blank" 
-                   class="hidden md:flex bg-[#25D366] text-white px-4 py-2 rounded-button font-medium hover:bg-opacity-90 transition-colors whitespace-nowrap items-center">
-                    <i class="ri-whatsapp-line mr-2"></i>
-                    Contactar
+            <div class="flex items-center gap-3">
+                <a href="/#lista" class="hidden md:inline-flex items-center gap-2 bg-cacao hover:bg-ink text-cream px-5 py-2.5 rounded-xl text-sm font-medium transition-all">
+                    Unirme a la lista
                 </a>
-                <button class="md:hidden w-10 h-10 flex items-center justify-center text-gray-700" 
-                        id="mobile-menu-button"
-                        aria-label="Menú móvil">
-                    <i class="ri-menu-line ri-lg"></i>
+                <button id="mobile-menu-button" aria-label="Menú móvil" class="lg:hidden w-11 h-11 flex items-center justify-center text-ink">
+                    <i class="ri-menu-line text-xl"></i>
                 </button>
             </div>
         </div>
-        <!-- Mobile Menu -->
-        <div class="md:hidden hidden bg-white absolute w-full left-0 shadow-md" id="mobile-menu">
-            <div class="container mx-auto px-4 py-3 flex flex-col space-y-3">
-                <a href="index.html" class="text-gray-800 font-medium py-2 hover:text-primary transition-colors">Inicio</a>
-                <a href="index.html#propiedades" class="text-gray-800 font-medium py-2 hover:text-primary transition-colors">Propiedades</a>
-                <a href="index.html#sobre-ayampe" class="text-gray-800 font-medium py-2 hover:text-primary transition-colors">Sobre Ayampe</a>
-                <a href="blog.html" class="text-gray-800 font-medium py-2 hover:text-primary transition-colors">Blog</a>
-                <a href="index.html#contacto" class="text-gray-800 font-medium py-2 hover:text-primary transition-colors hidden">Contacto</a>
-                <a href="index.html#contacto" class="bg-primary text-white px-4 py-2 rounded-button font-medium hover:bg-opacity-90 transition-colors text-center whitespace-nowrap">
-                    Contactar
-                </a>
+        <div id="mobile-menu" class="lg:hidden hidden border-t border-ink/10 bg-cream">
+            <div class="container mx-auto px-6 py-5 flex flex-col gap-3">
+                <a href="/" class="text-ink py-2 text-sm">Las Villas</a>
+                <a href="blog.html" class="text-ink py-2 text-sm">Guías de Ayampe</a>
+                <a href="inversion-sandpiper-ayampe.html" class="text-ink/60 py-2 text-sm">¿Buscas comprar? →</a>
+                <a href="/#lista" class="bg-cacao text-cream text-center py-3 rounded-xl font-medium mt-2">Unirme a la lista</a>
             </div>
         </div>
     </header>
 
-    <!-- Sección de Blog -->
-    <section id="blog" class="py-16 bg-white">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-12">
-                <span class="inline-block bg-primary bg-opacity-10 text-primary px-4 py-2 rounded-full text-sm font-medium mb-4">Nuestro Blog</span>
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Noticias y guías sobre Ayampe y la vida en la costa</h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Explora artículos sobre inversión inmobiliaria, actividades en la playa, turismo sostenible y mucho más en Ayampe, Ecuador.</p>
+    <main class="py-14 lg:py-20">
+        <div class="container mx-auto px-6 lg:px-12">
+            <div class="max-w-3xl mb-14">
+                <p class="font-script text-cacao text-2xl mb-4">Escritas desde el pueblo</p>
+                <h1 class="font-display text-5xl md:text-7xl text-ink font-normal leading-[1.02] tracking-tight mb-6">Guías de <span class="italic font-light">Ayampe</span></h1>
+                <p class="text-ink/75 text-lg leading-relaxed">Todo lo que necesitas para planear tu viaje a la costa de Ecuador: surf, ballenas, playas vírgenes y los secretos del pueblo más tranquilo de la Ruta del Spondylus.</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-7">
+                <a href="descubre-ayampe-paraiso-natural.html" class="group block bg-paper border border-ink/10 rounded-2xl overflow-hidden hover:shadow-lg hover:shadow-ink/5 transition-all" data-testid="blog-card">
+                    <div class="aspect-[16/10] overflow-hidden">
+                        <img src="images/blog/ayampe-paraiso.jpg" alt="Qué hacer en Ayampe: la guía completa" class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-700" loading="lazy">
+                    </div>
+                    <div class="p-7">
+                        <span class="inline-block text-[11px] uppercase tracking-wide-2 text-terracotta mb-3">El pueblo</span>
+                        <h2 class="font-display text-2xl text-ink group-hover:text-cacao transition-colors leading-snug mb-3">Qué hacer en Ayampe: la guía completa</h2>
+                        <p class="text-ink/65 text-sm leading-relaxed mb-4">Dónde queda, qué hacer, cuándo ir y dónde alojarse en el pueblo más tranquilo de la Ruta del Spondylus.</p>
+                        <span class="text-cacao text-sm inline-flex items-center gap-1">Leer la guía <i class="ri-arrow-right-line"></i></span>
+                    </div>
+                </a>
+                <a href="guia-para-surfistas-ayampe-2025.html" class="group block bg-paper border border-ink/10 rounded-2xl overflow-hidden hover:shadow-lg hover:shadow-ink/5 transition-all" data-testid="blog-card">
+                    <div class="aspect-[16/10] overflow-hidden">
+                        <img src="images/blog/surf-ayampe.jpg" alt="Surf en Ayampe: olas, temporada y escuelas" class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-700" loading="lazy">
+                    </div>
+                    <div class="p-7">
+                        <span class="inline-block text-[11px] uppercase tracking-wide-2 text-terracotta mb-3">Surf</span>
+                        <h2 class="font-display text-2xl text-ink group-hover:text-cacao transition-colors leading-snug mb-3">Surf en Ayampe: olas, temporada y escuelas</h2>
+                        <p class="text-ink/65 text-sm leading-relaxed mb-4">Beach break constante todo el año, sin multitudes. Temporadas, spots cercanos y consejos locales.</p>
+                        <span class="text-cacao text-sm inline-flex items-center gap-1">Leer la guía <i class="ri-arrow-right-line"></i></span>
+                    </div>
+                </a>
+                <a href="avistamiento-ballenas-ayampe-tours.html" class="group block bg-paper border border-ink/10 rounded-2xl overflow-hidden hover:shadow-lg hover:shadow-ink/5 transition-all" data-testid="blog-card">
+                    <div class="aspect-[16/10] overflow-hidden">
+                        <img src="images/blog/ballenas-ayampe.jpg" alt="Avistamiento de ballenas: temporada y tours" class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-700" loading="lazy">
+                    </div>
+                    <div class="p-7">
+                        <span class="inline-block text-[11px] uppercase tracking-wide-2 text-terracotta mb-3">Naturaleza</span>
+                        <h2 class="font-display text-2xl text-ink group-hover:text-cacao transition-colors leading-snug mb-3">Avistamiento de ballenas: temporada y tours</h2>
+                        <p class="text-ink/65 text-sm leading-relaxed mb-4">De junio a septiembre las jorobadas llegan a Manabí. Tours desde Puerto López y la Isla de la Plata.</p>
+                        <span class="text-cacao text-sm inline-flex items-center gap-1">Leer la guía <i class="ri-arrow-right-line"></i></span>
+                    </div>
+                </a>
+                <a href="los-frailes-playa-mas-hermosa-manabi.html" class="group block bg-paper border border-ink/10 rounded-2xl overflow-hidden hover:shadow-lg hover:shadow-ink/5 transition-all" data-testid="blog-card">
+                    <div class="aspect-[16/10] overflow-hidden">
+                        <img src="images/blog/los-frailes.jpg" alt="Los Frailes: la playa más hermosa de Manabí" class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-700" loading="lazy">
+                    </div>
+                    <div class="p-7">
+                        <span class="inline-block text-[11px] uppercase tracking-wide-2 text-terracotta mb-3">Playas</span>
+                        <h2 class="font-display text-2xl text-ink group-hover:text-cacao transition-colors leading-snug mb-3">Los Frailes: la playa más hermosa de Manabí</h2>
+                        <p class="text-ink/65 text-sm leading-relaxed mb-4">Cómo llegar desde Ayampe, el sendero al mirador y qué llevar a la playa virgen del Parque Machalilla.</p>
+                        <span class="text-cacao text-sm inline-flex items-center gap-1">Leer la guía <i class="ri-arrow-right-line"></i></span>
+                    </div>
+                </a>
+                <a href="5-razones-para-invertir-en-casas-frente-al-mar-en-ayampe-ecuador.html" class="group block bg-paper border border-ink/10 rounded-2xl overflow-hidden hover:shadow-lg hover:shadow-ink/5 transition-all" data-testid="blog-card">
+                    <div class="aspect-[16/10] overflow-hidden">
+                        <img src="images/blog/ayampe-beach-house.jpg" alt="5 razones para invertir frente al mar en Ayampe" class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-700" loading="lazy">
+                    </div>
+                    <div class="p-7">
+                        <span class="inline-block text-[11px] uppercase tracking-wide-2 text-terracotta mb-3">Inversión</span>
+                        <h2 class="font-display text-2xl text-ink group-hover:text-cacao transition-colors leading-snug mb-3">5 razones para invertir frente al mar en Ayampe</h2>
+                        <p class="text-ink/65 text-sm leading-relaxed mb-4">Escasez real, renta vacacional creciente y una comunidad que protege el valor del destino.</p>
+                        <span class="text-cacao text-sm inline-flex items-center gap-1">Leer la guía <i class="ri-arrow-right-line"></i></span>
+                    </div>
+                </a>
             </div>
 
-            <!-- Contenedor de entradas del blog -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Entrada de Blog 1 -->
-                <article class="bg-gray-50 rounded-lg overflow-hidden shadow-md transition-all duration-300">
-                    <img src="images/blog/ayampe-beach-house.jpg" 
-                         alt="Casas de venta en Ayampe Ecuador frente al mar" 
-                         title="5 razones para invertir en casas de venta en Ayampe Ecuador"
-                         class="w-full h-48 object-cover rounded-t-lg"
-                         width="800"
-                         height="400"
-                         loading="lazy">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-900 mb-3">5 razones para invertir en casas frente al mar en Ayampe Ecuador</h3>
-                        <p class="text-gray-700 mb-4 leading-relaxed text-sm">Descubre por qué la compra de casas de venta en Ayampe Ecuador es una excelente decisión. Te mostramos las ventajas de invertir en real estate en Ayampe Ecuador, con una creciente plusvalía y un  estilo de vida unico relajado de este paraíso costero.</p>
-                        <a href="5-razones-para-invertir-en-casas-frente-al-mar-en-ayampe-ecuador.html" class="inline-block bg-primary text-white px-6 py-3 rounded-button font-medium hover:bg-opacity-90 transition-colors text-sm">
-                            Leer más <i class="ri-arrow-right-line ml-1"></i>
-                        </a>
-                    </div>
-                </article>
+        <!-- CTA: lista de fundadores -->
+        <aside class="my-14 bg-cacao text-cream rounded-2xl p-8 md:p-12" data-testid="article-cta">
+            <p class="font-script text-tan text-2xl mb-3">¿Planeas venir a Ayampe?</p>
+            <h2 class="font-display text-3xl md:text-4xl font-light leading-tight mb-4">Estamos abriendo dos casas vacacionales <span class="italic">a pasos de la playa.</span></h2>
+            <p class="text-cream/80 leading-relaxed mb-7 max-w-2xl">Sandpiper Villas abre en noviembre 2026: dos villas de 4 dormitorios para hasta 8 huéspedes, dentro de una ciudadela privada en Ayampe. Los primeros en la lista reservan antes que nadie, con tarifa de preapertura.</p>
+            <a href="/#lista" class="inline-flex items-center gap-2 bg-cream hover:bg-tan text-ink px-7 py-3.5 rounded-xl font-medium transition-all">
+                Unirme a la lista de fundadores <i class="ri-arrow-right-line"></i>
+            </a>
+        </aside>
 
-                <!-- Entrada de Blog 2 -->
-                <article class="bg-gray-50 rounded-lg overflow-hidden shadow-md transition-all duration-300">
-                    <img src="images/blog/surf-ayampe.jpg" 
-                         alt="Mejores playas para surf en Ayampe Ecuador" 
-                         title="Guía para surfistas en Ayampe Ecuador"
-                         class="w-full h-48 object-cover rounded-t-lg"
-                         width="800"
-                         height="400"
-                         loading="lazy">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-900 mb-3">Guía para surfistas: mejores playas en Ayampe 2025</h3>
-                        <p class="text-gray-700 mb-4 leading-relaxed text-sm">Si eres amante del surf, Ayampe Ecuador es tu destino ideal. Conoce las mejores playas para surf en Ayampe** y sus alrededores, desde olas para principiantes hasta spots avanzados. ¡Prepárate para la aventura en **Ayampe surf**!</p>
-                        <a href="guia-para-surfistas-ayampe-2025.html" class="inline-block bg-primary text-white px-6 py-3 rounded-button font-medium hover:bg-opacity-90 transition-colors text-sm">
-                            Leer más <i class="ri-arrow-right-line ml-1"></i>
-                        </a>
-                    </div>
-                </article>
+        </div>
+    </main>
 
-                <!-- Entrada de Blog 3 -->
-                <article class="bg-gray-50 rounded-lg overflow-hidden shadow-md transition-all duration-300">
-                    <img src="images/blog/ballenas-ayampe.jpg" 
-                         alt="Avistamiento de ballenas en Ayampe Ecuador" 
-                         title="Avistamiento de ballenas cerca de Ayampe"
-                         class="w-full h-48 object-cover rounded-t-lg"
-                         width="800"
-                         height="400"
-                         loading="lazy">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-900 mb-3">Cómo ver ballenas cerca de Ayampe – temporada y tours</h3>
-                        <p class="text-gray-700 mb-4 leading-relaxed text-sm">El avistamiento de ballenas en Ayampe Ecuador es una experiencia imperdible. Descubre la mejor temporada para ver a las ballenas jorobadas y los tours disponibles desde Puerto López, muy cerca de Ayampe.</p>
-                        <a href="avistamiento-ballenas-ayampe-tours.html" class="inline-block bg-primary text-white px-6 py-3 rounded-button font-medium hover:bg-opacity-90 transition-colors text-sm">
-                            Leer más <i class="ri-arrow-right-line ml-1"></i>
-                        </a>
-                    </div>
-                </article>
+    <footer class="bg-cacao text-cream/70 py-14" data-testid="site-footer">
+        <div class="container mx-auto px-6 lg:px-12">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+                <div class="flex items-center gap-3">
+                    <span class="font-script text-cream text-3xl leading-none">Sandpiper</span>
+                    <span class="inline-block h-6 w-px bg-cream/30"></span>
+                    <span class="text-[11px] uppercase tracking-wide-2">Villas · Ayampe · Ecuador</span>
+                </div>
+                <nav class="flex flex-wrap justify-center gap-x-8 gap-y-3 text-sm" aria-label="Enlaces del pie">
+                    <a href="/" class="hover:text-cream transition-colors">Las Villas</a>
+                    <a href="blog.html" class="hover:text-cream transition-colors">Guías de Ayampe</a>
+                    <a href="inversion-sandpiper-ayampe.html" class="hover:text-cream transition-colors">Comprar en Sandpiper</a>
+                </nav>
+                <a href="https://wa.me/13059885341" target="_blank" rel="noopener" class="inline-flex items-center gap-2 hover:text-cream transition-colors text-sm">
+                    <i class="ri-whatsapp-line text-lg"></i> +1 305 988 5341
+                </a>
+            </div>
+            <p class="text-center text-cream/40 text-xs mt-10">© 2026 Sandpiper Ayampe. Casas vacacionales y propiedades en la Ruta del Spondylus, Manabí, Ecuador.</p>
+        </div>
+    </footer>
 
-                <!-- Entrada de Blog 4 -->
-                <article class="bg-gray-50 rounded-lg overflow-hidden shadow-md transition-all duration-300">
-                    <img src="images/blog/los-frailes.jpg" 
-                         alt="Playa Los Frailes Manabí Ecuador" 
-                         title="Los Frailes la playa más hermosa de Manabí"
-                         class="w-full h-48 object-cover rounded-t-lg"
-                         width="800"
-                         height="400"
-                         loading="lazy">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-900 mb-3">Los Frailes: la playa más hermosa de Manabí</h3>
-                        <p class="text-gray-700 mb-4 leading-relaxed text-sm">Conoce Playa Los Frailes, considerada una de las playas más hermosas de Manabí y de todo Ecuador, ubicada cerca de Ayampe, es un tesoro natural dentro del Parque Nacional Machalilla, ideal para relajarse.</p>
-                        <a href="los-frailes-playa-mas-hermosa-manabi.html" class="inline-block bg-primary text-white px-6 py-3 rounded-button font-medium hover:bg-opacity-90 transition-colors text-sm">
-                            Leer más <i class="ri-arrow-right-line ml-1"></i>
-                        </a>
-                    </div>
-                </article>
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            const icon = mobileMenuButton.querySelector('i');
+            icon.className = mobileMenu.classList.contains('hidden') ? 'ri-menu-line text-xl' : 'ri-close-line text-xl';
+        });
 
-                <!-- Entrada de Blog 5 -->
-                <article class="bg-gray-50 rounded-lg overflow-hidden shadow-md transition-all duration-300">
-                    <img src="images/blog/ayampe-paraiso.jpg" 
-                         alt="Ayampe Ecuador playas y turismo" 
-                         title="Descubre Ayampe Ecuador, un paraíso natural"
-                         class="w-full h-48 object-cover rounded-t-lg"
-                         width="800"
-                         height="400"
-                         loading="lazy">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-900 mb-3">Descubre Ayampe: Un paraíso entre la playa y la selva</h3>
-                         <p class="text-gray-700 mb-4 leading-relaxed text-sm">Explora todo lo que Ayampe Ecuador tiene para ofrecer. Un pueblo mágico donde la tranquilidad de la playa se une con la exuberancia de la selva. Ideal para el turismo ecológico y el descanso. Uno de los mejores lugares turísticos de la costa.</p>
-                         <a href="descubre-ayampe-paraiso-natural.html" class="inline-block bg-primary text-white px-6 py-3 rounded-button font-medium hover:bg-opacity-90 transition-colors text-sm">
-                             Leer más <i class="ri-arrow-right-line ml-1"></i>
-                         </a>
-                    </div>
-                 </article>
-             </div>
-
-             <!-- Comentario para futura integración de CSS -->
-             <!-- Puedes añadir estilos CSS personalizados aquí si no usas Tailwind para algo específico, o integrarlos en tu archivo `css/styles.css` -->
-             <!-- Para integrar un CMS, cada `article` podría ser un componente dinámico que se renderice con datos del CMS. -->
-
-         </div>
-     </section>
-
-     <!-- Footer -->
-     <footer class="bg-gray-900 text-white py-8">
-         <div class="container mx-auto px-4 text-center text-sm">
-             <p>&copy; 2024 Casas Ayampe. Todos los derechos reservados.</p>
-             <div class="flex justify-center space-x-4 mt-4">
-                 <a href="#" class="hover:text-primary transition-colors"> Política de Privacidad</a>
-                 <a href="#" class="hover:text-primary transition-colors"> Términos y Condiciones</a>
-             </div>
-         </div>
-     </footer>
-
-     <!-- Scripts (se omiten para acortar el output) -->
-     <script>
-         // Smooth scrolling para enlaces de navegación (si se usa en blog.html)
-         document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
-             anchor.addEventListener("click", function (e) {
-                 e.preventDefault();
-                 document.querySelector(this.getAttribute("href")).scrollIntoView({ behavior:"smooth" });
-                 // Cierra el menú móvil si está abierto (si se usa en blog.html)
-                 const mobileMenu = document.getElementById("mobile-menu");
-                 if (mobileMenu && ! mobileMenu.classList.contains("hidden")) { mobileMenu.classList.add("hidden"); }
-             });
-         });
-
-         // Toggle del menú móvil (si se usa en blog.html)
-         const mobileMenuButton = document.getElementById("mobile-menu-button");
-         if (mobileMenuButton) { mobileMenuButton.addEventListener("click", () => { document.getElementById("mobile-menu").classList.toggle("hidden"); }); }
-
-         // (Opcional) Intersection Observer para animaciones (si se desea en blog.html)
-         const observerOptions = { root: null, rootMargin:"0px", threshold: 0.1 };
-         const observer = new IntersectionObserver(entries => {
-             entries.forEach(entry => {
-                 if (entry.isIntersecting) {
-                     entry.target.classList.add("animate-fade-in-up");
-                     observer.unobserve(entry.target);
-                 }
-             });
-         }, observerOptions);
-         document.querySelectorAll(".animate-on-scroll").forEach(element => {
-             observer.observe(element);
-         });
-     </script>
+        // Reveal on scroll (styles.css hides .reveal/.faq-item/.amenity until .is-visible)
+        const revealEls = document.querySelectorAll('.reveal, .amenity, .faq-item');
+        const io = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    io.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+        revealEls.forEach(el => io.observe(el));
+        setTimeout(() => {
+            revealEls.forEach(el => {
+                if (!el.classList.contains('is-visible')) el.classList.add('is-visible');
+            });
+        }, 2500);
+    </script>
 </body>
-</html> 
+</html>
