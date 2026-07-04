@@ -111,6 +111,12 @@ Rediseñar casasayampe.com con enfoque editorial (estilo CasitaMX) — ciudadela
 - **Nota:** `images/atardecerahorcado.JPG` está corrupto (2 bytes) — se usa `ahorcado.webp` en su lugar.
 - **Iteración 2 (mismo día):** el promotor compartió screenshots de casitahomes.com como formato de referencia. La página se reestructuró al formato "property page" de Casita: hero foto full-bleed con nombre encima + "Ver todas las fotos", fila de stats con íconos (8 huéspedes · 4 habitaciones · 4 baños · 331 m²), pill de respuesta en 24h, callout de WhatsApp para grupos, secciones Habitaciones (cards con ícono de cama; distribución de camas por confirmar), Amenidades (lista de íconos), Temporadas de precios (tabla con tarifas bloqueadas "se anuncia a la lista"), mapa embebido de Google Maps, tarjetas "Lo que necesitas saber" (sin compromiso / reglas de la casa / eventos), "Más en Sandpiper" (Casa Marea + Lote 13), y barra fija inferior estilo booking con CTA "Unirme a la lista".
 
+## Reestructura del sitio (04-jul-2026)
+- **`index.html` (home) = la página de preapertura de villas** (formato Casita). La antigua home de venta se guardó en `/inversion-sandpiper-ayampe.html` (sigue indexable, enlazada discretamente vía "¿Buscas comprar?", FAQ y "Más en Sandpiper"). `/casas-vacacionales-ayampe.html` quedó como stub de redirección (noindex + meta refresh a `/`).
+- **Blog renovado al design system editorial** (mismo header/footer que la home nueva, WhatsApp +1 305 988 5341): `blog.html` (listado "Guías de Ayampe") + 5 artículos reescritos con copy SEO ampliado, schema Article + BreadcrumbList + FAQPage, FAQ visible, CTA a la lista de fundadores y artículos relacionados. Generador: se usó plantilla común (los artículos comparten estructura).
+- **Nuevos:** `sitemap.xml` (8 URLs) y `robots.txt` (no existían).
+- Los artículos usan las imágenes existentes de `images/blog/`. El artículo de surf conserva su URL con "2025" (historial SEO) pero título/contenido actualizados a 2026.
+
 ## Next Tasks
 - Push a GitHub para deploy a casasayampe.com
 - Subir fotos reales del proyecto
