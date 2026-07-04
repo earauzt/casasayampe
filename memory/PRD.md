@@ -109,6 +109,7 @@ Rediseñar casasayampe.com con enfoque editorial (estilo CasitaMX) — ciudadela
 - **Index:** pill en hero + link "Villas · Preapertura" en nav desktop y móvil.
 - **Pendiente:** fotos reales de la obra (las de `images/` son placeholder), % de descuento fundador a confirmar por el promotor, tarifa por noche.
 - **Nota:** `images/atardecerahorcado.JPG` está corrupto (2 bytes) — se usa `ahorcado.webp` en su lugar.
+- **Iteración 2 (mismo día):** el promotor compartió screenshots de casitahomes.com como formato de referencia. La página se reestructuró al formato "property page" de Casita: hero foto full-bleed con nombre encima + "Ver todas las fotos", fila de stats con íconos (8 huéspedes · 4 habitaciones · 4 baños · 331 m²), pill de respuesta en 24h, callout de WhatsApp para grupos, secciones Habitaciones (cards con ícono de cama; distribución de camas por confirmar), Amenidades (lista de íconos), Temporadas de precios (tabla con tarifas bloqueadas "se anuncia a la lista"), mapa embebido de Google Maps, tarjetas "Lo que necesitas saber" (sin compromiso / reglas de la casa / eventos), "Más en Sandpiper" (Casa Marea + Lote 13), y barra fija inferior estilo booking con CTA "Unirme a la lista".
 
 ## Next Tasks
 - Push a GitHub para deploy a casasayampe.com
