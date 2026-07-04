@@ -100,6 +100,16 @@ Rediseñar casasayampe.com con enfoque editorial (estilo CasitaMX) — ciudadela
 - [ ] Calculadora de acabados estimados para Casa Marea
 - [ ] Calendly para agendar visitas
 
+## Preapertura Sandpiper Villas (Jul 2026)
+**Página:** `/casas-vacacionales-ayampe.html` — landing de captación de leads para la preapertura de las 2 villas de renta vacacional (apertura estimada nov-2026).
+- **Estrategia elegida:** lead con intención de reserva ("lista de huéspedes fundadores"), NO pre-booking con pago. Razones: fecha de obra no confirmada, sin motor de pagos, sin tarifas definidas. Se convierte a reserva real cuando se confirme fecha (oct-2026 según timeline).
+- **Datos usados (del brochure APX en Drive):** 2 villas gemelas, 4 dorm / 4 baños, 331 m² construcción, terreno 650 m², parqueo techado, bodega, lavandería, hasta 8 huéspedes.
+- **Form:** mismo Formspree (xrbekwgj) con hidden `_subject` + `origen=preapertura-villas`; campos: nombre, whatsapp, email, fechas tentativas, nº viajeros, motivo del viaje. Evento GA4 `generate_lead` al enviar.
+- **SEO:** title/meta/OG propios, canonical, Schema VacationRental + FAQPage. Keywords: "casa vacacional Ayampe", "hospedaje en Ayampe", "dónde alojarse en Ayampe", "alquiler casa de playa Ecuador", "airbnb Ayampe", "alojamiento Ruta del Spondylus". Enlaces internos a los 4 posts del blog.
+- **Index:** pill en hero + link "Villas · Preapertura" en nav desktop y móvil.
+- **Pendiente:** fotos reales de la obra (las de `images/` son placeholder), % de descuento fundador a confirmar por el promotor, tarifa por noche.
+- **Nota:** `images/atardecerahorcado.JPG` está corrupto (2 bytes) — se usa `ahorcado.webp` en su lugar.
+
 ## Next Tasks
 - Push a GitHub para deploy a casasayampe.com
 - Subir fotos reales del proyecto
