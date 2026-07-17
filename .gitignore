@@ -49,3 +49,4 @@ credentials.json
 *.pem
 *.key
 .credentials
+images/renders_src/
