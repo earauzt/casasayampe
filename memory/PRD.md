@@ -128,3 +128,15 @@ Rediseñar casasayampe.com con enfoque editorial (estilo CasitaMX) — ciudadela
 - Push a GitHub para deploy a casasayampe.com
 - Subir fotos reales del proyecto
 - Validar copy del promotor (especialmente la "carta")
+
+## Renders profesionales + 12 artículos nuevos (17-jul-2026)
+- **Imágenes**: se bajaron de Drive 15 renders arquitectónicos (carpeta "SANDPIPER RENDERS", 1920×1080) y se optimizaron a WebP/JPG como `images/villa-*.{webp,jpg}` (hero=piscina al atardecer, terrace, pool, exterior, lagoon, twin, garden, entrance, drive). Reemplazan la foto de celular de la entrada (hero.jpg) que se usaba de hero. Aplicado a index.html, en/index.html e inversion-sandpiper-ayampe.html. Captions de galería corregidos a "renders del proyecto" (honestidad). Fuentes en Drive: renders_src NO se versiona (.gitignore).
+- **SEO / nuevos artículos (ES+EN, 12 páginas)** con hreflang, schema Article+Breadcrumb+FAQ, CTA a lista, relacionados:
+  1. Ecuador vs Costa Rica (dónde vacacionar / beach vacation) — alto volumen EE.UU.
+  2. Cómo llegar a Ayampe desde Guayaquil / how-to-get — alta intención logística
+  3. Mejor época para visitar la costa / best-time — estacional
+  4. Montañita vs Ayampe — captura volumen de Montañita
+  5. Guía de Puerto López / puerto-lopez-travel-guide — captura hub de ballenas
+  6. Comprar propiedad en Ecuador siendo extranjero / buying-property-foreigners — funnel inversor
+- Añadidos a blog.html y en/guides.html (nuevos arriba) y a sitemap.xml (12 URLs). Generador: gen_new.py (scratchpad).
+- **Status/tráfico**: sitio con ~2 semanas en vivo; SEO tarda meses. WhatsApp/leads bajos es esperable sin pauta y con preapertura a nov-2026. Palanca inmediata = tráfico pagado + estos artículos como canal orgánico. Enviar sitemap en Search Console.
