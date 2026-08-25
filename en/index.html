@@ -949,7 +949,7 @@
                         if (typeof gtag === 'function') {
                             gtag('event', 'generate_lead', { event_category: 'preapertura_villas_en' });
                         }
-                        leadForm.innerHTML = '<div class="text-center py-10"><i class="ri-checkbox-circle-line text-tan text-5xl mb-4"></i><p class="font-display text-3xl text-cream mb-2">You\'re on the list!</p><p class="text-cream/70">We\'ll tell you before anyone else. Check your inbox — a confirmation is on its way.</p></div>';
+                        leadForm.innerHTML = '<div class="text-center py-10"><i class="ri-checkbox-circle-line text-tan text-5xl mb-4"></i><p class="font-display text-3xl text-cream mb-2">You\'re on the list!</p><p class="text-cream/70">Emilio already has your details. Confirm on WhatsApp to join the founders drip.</p></div>';
                     } else {
                         throw new Error('Submission error');
                     }
@@ -961,5 +961,6 @@
             });
         }
     </script>
+    <script src="../js/sandpiper-bots.js" defer></script>
 </body>
 </html>

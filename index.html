@@ -949,7 +949,7 @@
                         if (typeof gtag === 'function') {
                             gtag('event', 'generate_lead', { event_category: 'preapertura_villas' });
                         }
-                        leadForm.innerHTML = '<div class="text-center py-10"><i class="ri-checkbox-circle-line text-tan text-5xl mb-4"></i><p class="font-display text-3xl text-cream mb-2">¡Estás en la lista!</p><p class="text-cream/70">Te avisaremos antes que a nadie. Revisa tu correo — te llega una confirmación.</p></div>';
+                        leadForm.innerHTML = '<div class="text-center py-10"><i class="ri-checkbox-circle-line text-tan text-5xl mb-4"></i><p class="font-display text-3xl text-cream mb-2">¡Estás en la lista!</p><p class="text-cream/70">Emilio ya recibió tus datos. Confirma por WhatsApp para entrar al drip de fundadores.</p></div>';
                     } else {
                         throw new Error('Error en el envío');
                     }
@@ -961,5 +961,6 @@
             });
         }
     </script>
+    <script src="js/sandpiper-bots.js" defer></script>
 </body>
 </html>

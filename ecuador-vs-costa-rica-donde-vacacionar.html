@@ -262,5 +262,6 @@
         b.addEventListener('click',()=>{m.classList.toggle('hidden');b.querySelector('i').className=m.classList.contains('hidden')?'ri-menu-line text-xl':'ri-close-line text-xl';});
         const els=document.querySelectorAll('.reveal,.faq-item');const io=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('is-visible');io.unobserve(x.target);}});},{threshold:0.08,rootMargin:'0px 0px -40px 0px'});els.forEach(x=>io.observe(x));setTimeout(()=>els.forEach(x=>x.classList.add('is-visible')),2500);
     </script>
+<script src="js/sandpiper-bots.js" defer></script>
 </body>
 </html>

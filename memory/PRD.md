@@ -13,7 +13,13 @@
 - **Posicionamiento:** entire home + ciudadela 24/7 + ops profesional. Amenities tipo listing premium (piscina, cocina, terraza, WiFi, parqueo techado, lavandería, jardín, sin fiestas).
 - **Home:** `index.html` / `en/index.html` = ficha Casita de **una** villa. Nav “El proyecto” → `inversion-sandpiper-ayampe.html` (ya no “¿Buscas comprar?”).
 - **Página de proyecto:** `inversion-sandpiper-ayampe.html` describe el modelo y la colección; no vende Lote 13 ni Casa Marea.
-- **Fuera de alcance inmediato:** fotos WhatsApp de obra en el hero, Pixel Meta, páginas SEO nuevas (`/villa-4-habitaciones-ayampe`), Google Business Profile (acción del usuario).
+## Bots (ago 2026)
+- **WhatsApp:** app Business en +1 305 988 5341 (click-to-chat `wa.me`). No hay Cloud API. El calificador está en `js/sandpiper-bots.js` (intercepta wa.me, 3 preguntas, mensaje estructurado).
+- **Formspree:** `xrbekwgj` → `earauzt@gmail.com`. Formulario interno aún se llama “APX”. Plan Free (50/mes, sin autorespuesta ni webhook). El thank-you ya no miente con “te llega un correo”; pide confirmar por WhatsApp + ICS octubre 2026.
+- **Ops:** `/ops/emilio.html` (noindex) con saludo y respuestas rápidas para pegar en WhatsApp Business.
+- **Gmail:** etiquetas `Sandpiper/Fundadores` y `Sandpiper/Drip`; borradores de bienvenida para Melissa, Michael, Matteo + plantillas mensual/octubre.
+- **Calendario:** primer lunes de mes (drip obra) y 1 oct 2026 (tarifas).
+
 
 ## Original Problem Statement
 Rediseñar casasayampe.com con enfoque editorial (estilo CasitaMX). El funnel original de venta (Lote 13 + Casa Marea a precio de costo) quedó **cerrado** al venderse esas unidades. Ver “Modelo actual” arriba.
