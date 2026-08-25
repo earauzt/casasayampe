@@ -1,0 +1,13 @@
+{
+  "name": "casa-menu-web",
+  "private": true,
+  "version": "2.0.0",
+  "type": "module",
+  "description": "Minuta de casa Arauz: comidas, loncheras, cocina, lista 14 dias y Tipti sin checkout.",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node tests/validate-ciclo.test.mjs",
+    "validate": "node scripts/validate-ciclo.mjs data/ciclo.json",
+    "start": "node scripts/build.mjs && npx --yes serve public -p 4173"
+  }
+}

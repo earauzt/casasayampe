@@ -1,0 +1,793 @@
+{
+  "meta": {
+    "title": "Menú familiar",
+    "family": "Casa Arauz",
+    "generated": "2026-08-17",
+    "published": "2026-08-22",
+    "range": "1 al 14 de septiembre",
+    "start": "2026-09-01",
+    "end": "2026-09-14",
+    "cycleId": "2026-09-01",
+    "year": 2026,
+    "cooks": {
+      "ramona": "almuerzos y cenas",
+      "angelica": "desayunos y loncheras"
+    }
+  },
+  "days": [
+    {
+      "date": "2026-09-01",
+      "school": true,
+      "label": "Mar 1-sep",
+      "note": "",
+      "meals": {
+        "desayuno": "Familia: sánduche de queso con huevo · Emilio: batido proteína (240ml leche + 1 scoop Isopure + 30g avena)",
+        "snack1": "Toni chocolatada (Carlitos y Karlita) + Pan de yuca (Carlitos) + Tequeños (Karlita)",
+        "snack2": "Empanadita de queso (ambos)",
+        "almuerzo": "Res a la plancha + arroz + encurtidos (Emilio) — Emilio, Carlitos, Karla · Karlita: misma proteína, misma ración reducida sin guarnición extra",
+        "snackTarde": "Carlitos: batido de guineo + 1 scoop proteína de huevo · Karlita: quesadilla",
+        "cena": "Pollo seco + arroz + encurtidos (Emilio) — Emilio, Carlitos, Karlita · Karla aparte: pollo a la plancha + arroz (seco ≠ plancha, come aparte)"
+      }
+    },
+    {
+      "date": "2026-09-02",
+      "school": true,
+      "label": "Mié 2-sep",
+      "note": "mercado; niños fuera al mediodía",
+      "meals": {
+        "desayuno": "Familia: pancakes de banano con proteína (vehículo de Karlita) · Emilio: overnight oats + 2 huevos",
+        "snack1": "Toni chocolatada (Carlitos y Karlita) + Pan de yuca (Carlitos) + Tequeños (Karlita)",
+        "snack2": "Manzana roja sin pelar (ambos)",
+        "almuerzo": "**FIDEO COLE** (Carlitos y Karlita) · En casa: Emilio + Karla → salmón al horno + arroz + encurtidos (puente válido Karla)",
+        "snackTarde": "Carlitos: tequeños (NO batido de guineo — ya hubo banano en desayuno) · Karlita: tortolines con queso crema",
+        "cena": "**Cena fuerte:** res frita + arroz + encurtidos (Emilio) — todos · Karla: res a la plancha (porción aparte, plancha = puente válido)"
+      }
+    },
+    {
+      "date": "2026-09-03",
+      "school": true,
+      "label": "Jue 3-sep",
+      "note": "",
+      "meals": {
+        "desayuno": "Familia: tostadas francesas · Emilio: pancakes de proteína + 2 huevos",
+        "snack1": "Toni chocolatada (Carlitos y Karlita) + Pan de yuca (Carlitos) + Empanadita de queso (Karlita)",
+        "snack2": "Quesadilla (ambos)",
+        "almuerzo": "Pollo apanado + arroz + encurtidos (Emilio) — Emilio, Carlitos, Karlita · Karla: pollo a la plancha + arroz (plancha = su versión válida)",
+        "snackTarde": "Carlitos: batido de guineo + 1 scoop proteína de huevo · Karlita: tequeños",
+        "cena": "Pescado a la plancha (dorado) + arroz + encurtidos (Emilio) — todos"
+      }
+    },
+    {
+      "date": "2026-09-04",
+      "school": true,
+      "label": "Vie 4-sep",
+      "note": "",
+      "meals": {
+        "desayuno": "Familia: huevo revuelto en tortilla de taco · Emilio: batido proteína",
+        "snack1": "Toni chocolatada (Carlitos y Karlita) + Pan de yuca (Carlitos) + Empanadita de queso (Karlita)",
+        "snack2": "Tequeños (ambos)",
+        "almuerzo": "Arroz con pollo (sin vainitas para niños) + encurtidos (Emilio) — todos · Karla: pollo a la plancha + arroz",
+        "snackTarde": "Carlitos: empanadita de queso · Karlita: tortolines con queso crema",
+        "cena": "Res apanada + arroz + encurtidos (Emilio) — todos · Karla aparte: res a la plancha (su porción separada, plancha = válido)"
+      }
+    },
+    {
+      "date": "2026-09-05",
+      "school": false,
+      "label": "Sáb 5-sep",
+      "note": "",
+      "meals": {
+        "desayuno": "Familia: waffles con huevo + miel · Emilio: overnight oats + 2 huevos",
+        "snack1": "Manzana roja sin pelar (ambos)",
+        "snack2": "Empanadita de queso (ambos)",
+        "almuerzo": "Liviana/sobras: res apanada + arroz (batch del viernes) — Emilio, Carlitos, Karlita · Karla aparte: res a la plancha + arroz (apanada ≠ plancha, come aparte)",
+        "snackTarde": "Carlitos: batido de guineo + 1 scoop proteína de huevo · Karlita: quesadilla",
+        "cena": "**PIZZA casera** — Carlitos, Karlita · Emilio: porción sin vegetales (solo queso + proteína encima) · Karla aparte: plato ligero propio"
+      }
+    },
+    {
+      "date": "2026-09-06",
+      "school": false,
+      "label": "Dom 6-sep",
+      "note": "",
+      "meals": {
+        "desayuno": "Familia: tigrillo (SOLO Carlitos) + pancakes con whey y miel (Karlita, Karla) · Emilio: batido proteína",
+        "snack1": "Hot dog cortado (ambos)",
+        "snack2": "—",
+        "almuerzo": "**PARRILLADA** (res + pollo a la plancha, arroz, encurtidos Emilio) — todos · Para probar: **tortilla de verde** (porción pequeña junto al plato seguro)",
+        "snackTarde": "Carlitos: empanadita de nutella · Karlita: empanadita de queso",
+        "cena": "Liviana/sobras de parrillada — Emilio mantiene su fijo (res/pollo + arroz + encurtidos)"
+      }
+    },
+    {
+      "date": "2026-09-07",
+      "school": true,
+      "label": "Lun 7-sep",
+      "note": "Karlita actividad, llega ~4:30pm",
+      "meals": {
+        "desayuno": "Familia: pan tostado + huevo · Emilio: pancakes de proteína + 2 huevos",
+        "snack1": "Toni chocolatada (Carlitos y Karlita) + Pan de yuca (Carlitos) + Tequeños (Karlita)",
+        "snack2": "Nuggets (ambos)",
+        "almuerzo": "Salmón al horno + arroz + encurtidos (Emilio) — Emilio, Carlitos, Karla (puente válido) · Karlita: porción reducida (actividad, llega tarde)",
+        "snackTarde": "**Reforzado Karlita:** quesadilla + tortolines con queso crema · Carlitos: batido de guineo + 1 scoop proteína de huevo",
+        "cena": "Fideos carbonara con pollo + arroz + encurtidos (Emilio) — Emilio, Carlitos, Karlita · Karla aparte: pollo a la plancha + arroz (carbonara ≠ plancha, come aparte)"
+      }
+    },
+    {
+      "date": "2026-09-08",
+      "school": true,
+      "label": "Mar 8-sep",
+      "note": "",
+      "meals": {
+        "desayuno": "Familia: pancakes de banano con proteína (Karlita) · Emilio: batido proteína",
+        "snack1": "Toni chocolatada (Carlitos y Karlita) + Pan de yuca (Carlitos) + Tequeños (Karlita)",
+        "snack2": "Empanadita de queso (ambos)",
+        "almuerzo": "Camarones al ajillo + arroz + encurtidos (Emilio) — Emilio, Karlita, Karla · Carlitos (NUNCA camarones): pollo seco + arroz aparte",
+        "snackTarde": "Carlitos: tequeños (NO batido de guineo — ya hubo banano en desayuno) · Karlita: empanadita de queso",
+        "cena": "Fideos con carne (espinaca) + arroz + encurtidos (Emilio) — Emilio, Carlitos, Karlita · Karla aparte: res a la plancha + arroz"
+      }
+    },
+    {
+      "date": "2026-09-09",
+      "school": true,
+      "label": "Mié 9-sep",
+      "note": "mercado; niños fuera al mediodía",
+      "meals": {
+        "desayuno": "Familia: tortilla de fideos · Emilio: overnight oats + 2 huevos",
+        "snack1": "Toni chocolatada (Carlitos y Karlita) + Pan de yuca (Carlitos) + Tequeños (Karlita)",
+        "snack2": "Manzana roja sin pelar (ambos)",
+        "almuerzo": "**FIDEO COLE** (Carlitos y Karlita) · En casa: Emilio + Karla → pollo a la plancha + arroz + encurtidos",
+        "snackTarde": "Carlitos: empanadita de queso · Karlita: tortolines con queso crema",
+        "cena": "**Cena fuerte:** lasaña (Carlitos, Karlita) · Emilio: carne/queso de la lasaña SIN pasta + arroz + encurtidos · Karla aparte: pescado a la plancha + arroz"
+      }
+    },
+    {
+      "date": "2026-09-10",
+      "school": true,
+      "label": "Jue 10-sep",
+      "note": "",
+      "meals": {
+        "desayuno": "Familia: waffles con whey + miel · Emilio: pancakes de proteína + 2 huevos",
+        "snack1": "Toni chocolatada (Carlitos y Karlita) + Pan de yuca (Carlitos) + Tequeños (Karlita)",
+        "snack2": "Quesadilla (ambos)",
+        "almuerzo": "Pescado a la plancha (tilapia) + arroz + encurtidos (Emilio) — todos · Karla: misma tilapia a la plancha (puente válido)",
+        "snackTarde": "Carlitos: batido de guineo + 1 scoop proteína de huevo · Karlita: quesadilla",
+        "cena": "Pollo al horno + arroz + encurtidos (Emilio) — todos · Karla: misma porción de pollo al horno (puente válido)"
+      }
+    },
+    {
+      "date": "2026-09-11",
+      "school": true,
+      "label": "Vie 11-sep",
+      "note": "",
+      "meals": {
+        "desayuno": "Familia: sánduche de queso con huevo · Emilio: batido proteína",
+        "snack1": "Toni chocolatada (Carlitos y Karlita) + Pan de yuca (Carlitos) + Nuggets (Karlita)",
+        "snack2": "Tequeños (ambos)",
+        "almuerzo": "Tacos (Carlitos, Karlita): carne + queso + tortilla · Emilio aparte: carne a la plancha + arroz + encurtidos · Karla aparte: wrap de carne",
+        "snackTarde": "Carlitos: batido de guineo + 1 scoop proteína de huevo · Karlita: empanadita de queso",
+        "cena": "Hamburguesa de carne sin queso (Carlitos, Karlita) · Emilio: patty de res SIN pan + arroz + encurtidos · Karla: hamburguesa de pollo sin queso"
+      }
+    },
+    {
+      "date": "2026-09-12",
+      "school": false,
+      "label": "Sáb 12-sep",
+      "note": "",
+      "meals": {
+        "desayuno": "Familia: patacón con queso y huevo · Emilio: overnight oats + 2 huevos",
+        "snack1": "Manzana roja sin pelar (ambos)",
+        "snack2": "Tequeños (ambos)",
+        "almuerzo": "Liviana/sobras: hamburguesa de carne + arroz (batch del viernes) — Emilio, Carlitos, Karlita · Karla: hamburguesa de pollo (sobra de ayer, sin pan) + arroz",
+        "snackTarde": "Carlitos: empanadita de nutella · Karlita: tortolines con queso crema",
+        "cena": "**PIZZA casera** — Carlitos, Karlita · Emilio: porción sin vegetales (solo queso + proteína encima) · Karla aparte: plato ligero propio"
+      }
+    },
+    {
+      "date": "2026-09-13",
+      "school": false,
+      "label": "Dom 13-sep",
+      "note": "",
+      "meals": {
+        "desayuno": "Familia: tigrillo (SOLO Carlitos) + tostadas francesas (Karlita, Karla) · Emilio: overnight oats + 2 huevos",
+        "snack1": "Hot dog cortado (ambos)",
+        "snack2": "—",
+        "almuerzo": "**PARRILLADA** (res + pollo a la plancha, arroz, encurtidos Emilio) — todos · Para probar: **muchín de yuca** (porción pequeña junto al plato seguro)",
+        "snackTarde": "Carlitos: quesadilla (NO batido de guineo — no aplica banano hoy, pero ya hay batido reciente) · Karlita: empanadita de queso",
+        "cena": "Liviana/sobras de parrillada — Emilio mantiene su fijo (res/pollo + arroz + encurtidos)"
+      }
+    },
+    {
+      "date": "2026-09-14",
+      "school": true,
+      "label": "Lun 14-sep",
+      "note": "Karlita actividad, llega ~4:30pm",
+      "meals": {
+        "desayuno": "Familia: pancakes de banano con proteína (Karlita) · Emilio: pancakes de proteína + 2 huevos",
+        "snack1": "Toni chocolatada (Carlitos y Karlita) + Pan de yuca (Carlitos) + Tequeños (Karlita)",
+        "snack2": "Empanadita de queso (ambos)",
+        "almuerzo": "Pollo a la plancha + arroz + encurtidos (Emilio) — Emilio, Carlitos, Karla · Karlita: porción reducida (actividad, llega tarde)",
+        "snackTarde": "**Reforzado Karlita:** quesadilla + empanadita de queso · Carlitos: tequeños (NO batido de guineo — ya hubo banano en desayuno)",
+        "cena": "Fideos boloñesa (Emilio, Carlitos, Karlita) · Karla aparte (NUNCA boloñesa): pollo a la plancha + arroz"
+      }
+    }
+  ],
+  "shopping": {
+    "mercado": [
+      {
+        "name": "Pollo (pechuga/muslo, según plato)",
+        "qty": "5,2 kg",
+        "channel": "mercado",
+        "note": "Fresco. No va a Tipti."
+      },
+      {
+        "name": "Res (en trozo para plancha/frita/apanada y molida para fideos/tacos/hamburguesa)",
+        "qty": "5,8 kg",
+        "channel": "mercado",
+        "note": "Fresco. No va a Tipti."
+      },
+      {
+        "name": "Pescado dorado",
+        "qty": "1,4 kg",
+        "channel": "mercado",
+        "note": "Fresco. No va a Tipti."
+      },
+      {
+        "name": "Tilapia",
+        "qty": "1,0 kg",
+        "channel": "mercado",
+        "note": "Fresco. No va a Tipti."
+      },
+      {
+        "name": "Camarones",
+        "qty": "0,55 kg",
+        "channel": "mercado",
+        "note": "Fresco. No va a Tipti."
+      },
+      {
+        "name": "Salmón",
+        "qty": "1,3 kg",
+        "channel": "mercado",
+        "note": "Fresco. No va a Tipti."
+      },
+      {
+        "name": "Cebolla colorada",
+        "qty": "1,2 kg (encurtidos + pico de gallo + sofrito)",
+        "channel": "mercado",
+        "note": "Fresco. No va a Tipti."
+      },
+      {
+        "name": "Pepino",
+        "qty": "1,0 kg (encurtidos)",
+        "channel": "mercado",
+        "note": "Fresco. No va a Tipti."
+      },
+      {
+        "name": "Zanahoria",
+        "qty": "1,0 kg (encurtidos)",
+        "channel": "mercado",
+        "note": "Fresco. No va a Tipti."
+      },
+      {
+        "name": "Limón",
+        "qty": "18 unidades",
+        "channel": "mercado",
+        "note": "Fresco. No va a Tipti."
+      },
+      {
+        "name": "Tomate",
+        "qty": "1,2 kg (pico de gallo + sofrito)",
+        "channel": "mercado",
+        "note": "Fresco. No va a Tipti."
+      },
+      {
+        "name": "Cilantro",
+        "qty": "2 atados",
+        "channel": "mercado",
+        "note": "Fresco. No va a Tipti."
+      },
+      {
+        "name": "Plátano verde",
+        "qty": "10 unidades (tigrillo × 2 domingos + tortilla de verde + patacones sábado)",
+        "channel": "mercado",
+        "note": "Fresco. No va a Tipti."
+      },
+      {
+        "name": "Yuca",
+        "qty": "1,0 kg (muchín de yuca)",
+        "channel": "mercado",
+        "note": "Fresco. No va a Tipti."
+      },
+      {
+        "name": "Guineo / banano",
+        "qty": "10 unidades (desayunos pancakes de banano × 3 días + batidos de Carlitos)",
+        "channel": "mercado",
+        "note": "Fresco. No va a Tipti."
+      },
+      {
+        "name": "Manzana roja",
+        "qty": "10 unidades (snack colegio)",
+        "channel": "mercado",
+        "note": "Fresco. No va a Tipti."
+      },
+      {
+        "name": "Aguacate",
+        "qty": "2 unidades (guacamole para tacos)",
+        "channel": "mercado",
+        "note": "Fresco. No va a Tipti."
+      },
+      {
+        "name": "Ajo",
+        "qty": "1 cabeza (camarones al ajillo, sofrito)",
+        "channel": "mercado",
+        "note": "Fresco. No va a Tipti."
+      }
+    ],
+    "supermaxi": [
+      {
+        "name": "Huevos",
+        "qty": "65 unidades (aprox. 6 docenas)",
+        "brand": "Kikes o Supermaxi",
+        "tipti": "huevos kikes 30",
+        "channel": "tipti"
+      },
+      {
+        "name": "Leche",
+        "qty": "3,5 L",
+        "brand": "Toni",
+        "tipti": "leche toni 1L",
+        "channel": "tipti"
+      },
+      {
+        "name": "Queso mozzarella / rallado",
+        "qty": "2,2 kg",
+        "brand": "Supermaxi o Kiosko",
+        "tipti": "queso mozzarella rallado",
+        "channel": "tipti"
+      },
+      {
+        "name": "Queso crema",
+        "qty": "400 g",
+        "brand": "Philadelphia o Toni",
+        "tipti": "queso crema philadelphia",
+        "channel": "tipti"
+      },
+      {
+        "name": "Mantequilla",
+        "qty": "300 g",
+        "brand": "Laive o Supermaxi",
+        "tipti": "mantequilla laive",
+        "channel": "tipti"
+      },
+      {
+        "name": "Proteína en polvo whey / Isopure",
+        "qty": "1 tarro (≈ 14 porciones para desayunos/snacks)",
+        "brand": "Isopure",
+        "tipti": "isopure proteina",
+        "channel": "tipti"
+      },
+      {
+        "name": "Proteína de huevo en polvo (para batidos de Carlitos)",
+        "qty": "1 tarro (≈ 10 porciones)",
+        "brand": "Proteína de clara de huevo",
+        "tipti": "proteina clara de huevo",
+        "channel": "tipti"
+      },
+      {
+        "name": "Arroz",
+        "qty": "5,0 kg crudo",
+        "brand": "Flor o Supermaxi",
+        "tipti": "arroz flor 5kg",
+        "channel": "tipti"
+      },
+      {
+        "name": "Avena",
+        "qty": "500 g",
+        "brand": "Quaker",
+        "tipti": "avena quaker",
+        "channel": "tipti"
+      },
+      {
+        "name": "Fideos / pasta variada (espinaca, carbonara, boloñesa)",
+        "qty": "2,2 kg",
+        "brand": "Don Vittorio",
+        "tipti": "fideos don vittorio",
+        "channel": "tipti"
+      },
+      {
+        "name": "Pasta para lasaña",
+        "qty": "1 caja",
+        "brand": "Don Vittorio",
+        "tipti": "lasagna don vittorio",
+        "channel": "tipti"
+      },
+      {
+        "name": "Harina de trigo (pancakes, waffles, pizza)",
+        "qty": "1,2 kg",
+        "brand": "Ya o Supermaxi",
+        "tipti": "harina de trigo ya",
+        "channel": "tipti"
+      },
+      {
+        "name": "Pan de molde / sánduche",
+        "qty": "1 funda",
+        "brand": "Bimbo",
+        "tipti": "pan molde bimbo",
+        "channel": "tipti"
+      },
+      {
+        "name": "Pan de hamburguesa",
+        "qty": "6 unidades",
+        "brand": "Bimbo",
+        "tipti": "pan hamburguesa bimbo",
+        "channel": "tipti"
+      },
+      {
+        "name": "Tortillas de taco",
+        "qty": "12 unidades",
+        "brand": "Mission o Supermaxi",
+        "tipti": "tortillas taco mission",
+        "channel": "tipti"
+      },
+      {
+        "name": "Tortilla wrap",
+        "qty": "3 unidades",
+        "brand": "Mission",
+        "tipti": "tortilla wrap mission",
+        "channel": "tipti"
+      },
+      {
+        "name": "Masa / base de pizza",
+        "qty": "2 unidades",
+        "brand": "Supermaxi",
+        "tipti": "masa pizza",
+        "channel": "tipti"
+      },
+      {
+        "name": "Pan de yuca",
+        "qty": "10 unidades (fijo Carlitos, 10 días de colegio)",
+        "brand": "Supermaxi (horneados o congelados)",
+        "tipti": "pan de yuca",
+        "channel": "tipti"
+      },
+      {
+        "name": "Toni chocolatada",
+        "qty": "20 unidades (fijo diario, 10 días de colegio, ambos niños)",
+        "brand": "Toni",
+        "tipti": "toni chocolatada",
+        "channel": "tipti"
+      },
+      {
+        "name": "Hot dog",
+        "qty": "8 unidades (snack domingo ambos niños × 2 semanas)",
+        "brand": "Plumrose o Supermaxi",
+        "tipti": "hot dog plumrose",
+        "channel": "tipti"
+      },
+      {
+        "name": "Nuggets (congelados, solo colegio)",
+        "qty": "1 funda grande",
+        "brand": "Supermaxi o Sadia",
+        "tipti": "nuggets pollo",
+        "channel": "tipti"
+      },
+      {
+        "name": "Tequeños (o masa + queso para hacerlos)",
+        "qty": "42 unidades aprox. (incluye extra fijo de Karlita en el cole)",
+        "brand": "Supermaxi congelados",
+        "tipti": "tequeños",
+        "channel": "tipti"
+      },
+      {
+        "name": "Empanaditas de queso (o disco + queso)",
+        "qty": "30 unidades aprox. (incluye extra fijo de Karlita en el cole)",
+        "brand": "Supermaxi",
+        "tipti": "empanaditas queso",
+        "channel": "tipti"
+      },
+      {
+        "name": "Empanaditas de nutella",
+        "qty": "4 unidades (dom 6-sep Carlitos + sáb 12-sep Carlitos)",
+        "brand": "caseras o Supermaxi",
+        "tipti": "empanadas dulces",
+        "channel": "tipti"
+      },
+      {
+        "name": "Nutella",
+        "qty": "1 frasco",
+        "brand": "Nutella",
+        "tipti": "nutella",
+        "channel": "tipti"
+      },
+      {
+        "name": "Tortolines",
+        "qty": "4 fundas individuales (snack de casa Karlita, solo en casa)",
+        "brand": "Tortolines",
+        "tipti": "tortolines",
+        "channel": "tipti"
+      },
+      {
+        "name": "Miel",
+        "qty": "1 frasco",
+        "brand": "Supermaxi",
+        "tipti": "miel de abeja",
+        "channel": "tipti"
+      },
+      {
+        "name": "Canela",
+        "qty": "1 sobre",
+        "brand": "McCormick o Supermaxi",
+        "tipti": "canela molida",
+        "channel": "tipti"
+      },
+      {
+        "name": "Salsa de tomate",
+        "qty": "3 frascos",
+        "brand": "Heinz o Supermaxi",
+        "tipti": "salsa de tomate heinz",
+        "channel": "tipti"
+      },
+      {
+        "name": "Aceite de oliva / aceite de cocina",
+        "qty": "1 L",
+        "brand": "Supermaxi",
+        "tipti": "aceite de oliva",
+        "channel": "tipti"
+      },
+      {
+        "name": "Sal",
+        "qty": "1 funda (encurtidos + cocina general)",
+        "brand": "Cris-Sal o Supermaxi",
+        "tipti": "sal",
+        "channel": "tipti"
+      },
+      {
+        "name": "Pimienta negra",
+        "qty": "1 frasco pequeño",
+        "brand": "McCormick",
+        "tipti": "pimienta negra molida",
+        "channel": "tipti"
+      },
+      {
+        "name": "Crema / salsa para carbonara",
+        "qty": "1 frasco o 250 ml crema de leche",
+        "brand": "Supermaxi",
+        "tipti": "crema de leche",
+        "channel": "tipti"
+      },
+      {
+        "name": "Queso parmesano rallado",
+        "qty": "200 g (carbonara, lasaña)",
+        "brand": "Supermaxi",
+        "tipti": "queso parmesano rallado",
+        "channel": "tipti"
+      },
+      {
+        "name": "Pan rallado",
+        "qty": "300 g (apanados)",
+        "brand": "Supermaxi",
+        "tipti": "pan rallado",
+        "channel": "tipti"
+      },
+      {
+        "name": "Salsa de soja / condimento para res",
+        "qty": "1 frasco pequeño",
+        "brand": "Maggi o Kikkoman",
+        "tipti": "salsa de soya maggi",
+        "channel": "tipti"
+      }
+    ],
+    "limpieza": [
+      {
+        "name": "Papel higiénico (familia)",
+        "qty": "1 paquete grande",
+        "brand": "Familia",
+        "tipti": "papel higienico familia mega",
+        "channel": "tipti"
+      },
+      {
+        "name": "Papel higiénico (baño de visitas / baño secundario)",
+        "qty": "1 paquete pequeño",
+        "brand": "Familia",
+        "tipti": "papel higienico familia",
+        "channel": "tipti"
+      },
+      {
+        "name": "Detergente líquido de ropa",
+        "qty": "1 unidad",
+        "brand": "Deja o Supermaxi",
+        "tipti": "detergente liquido deja",
+        "channel": "tipti"
+      },
+      {
+        "name": "Suavizante de ropa",
+        "qty": "1 unidad",
+        "brand": "Downy o Suavitel",
+        "tipti": "suavizante downy",
+        "channel": "tipti"
+      },
+      {
+        "name": "Lavavajillas líquido",
+        "qty": "1 unidad",
+        "brand": "Axion",
+        "tipti": "lavavajilla axion",
+        "channel": "tipti"
+      },
+      {
+        "name": "Quitamanchas",
+        "qty": "1 unidad",
+        "brand": "Vanish",
+        "tipti": "vanish quitamanchas",
+        "channel": "tipti"
+      },
+      {
+        "name": "Limpia vidrios",
+        "qty": "1 unidad",
+        "brand": "Mr Musculo",
+        "tipti": "limpia vidrios mr musculo",
+        "channel": "tipti"
+      },
+      {
+        "name": "Servilletas",
+        "qty": "2 paquetes",
+        "brand": "Familia",
+        "tipti": "servilletas familia",
+        "channel": "tipti"
+      },
+      {
+        "name": "Papel toalla / toallas de cocina desechables",
+        "qty": "2 rollos",
+        "brand": "Familia",
+        "tipti": "papel toalla familia",
+        "channel": "tipti"
+      },
+      {
+        "name": "Jabón de baño en barra",
+        "qty": "4 unidades",
+        "brand": "Protex o Dove",
+        "tipti": "jabon protex barra",
+        "channel": "tipti"
+      },
+      {
+        "name": "Crema dental",
+        "qty": "2 unidades",
+        "brand": "Colgate",
+        "tipti": "crema dental colgate",
+        "channel": "tipti"
+      }
+    ]
+  },
+  "cooking": {
+    "ramona": {
+      "intro": "Cocina una vez. Separa por persona. Emilio siempre: 180 g de proteína + 1 taza de arroz + encurtidos. Sin vegetales ni papa.",
+      "dishes": [
+        {
+          "name": "Fideo del colegio",
+          "dates": "Mié 2 y 9 sep",
+          "text": "Los niños almuerzan fideo en el cole. En casa, plancha + arroz + encurtidos para Emilio y Karla (salmón el 2, pollo el 9). Karla puede el mismo plato porque es plancha."
+        },
+        {
+          "name": "Pescado a la plancha",
+          "dates": "Jue 3 (dorado) y Jue 10 (tilapia)",
+          "text": "Una sartén para todos. Emilio 180 g + arroz + encurtidos. Carlitos y Karlita, ración de niño. Karla la misma plancha."
+        },
+        {
+          "name": "Pizza casera",
+          "dates": "Sáb 5 y 12 sep",
+          "text": "Pizza para Carlitos y Karlita. A Emilio: porción solo queso y proteína, sin vegetales, más su arroz y encurtidos aparte. Karla plato ligero propio, no pizza."
+        },
+        {
+          "name": "Parrillada",
+          "dates": "Dom 6 y 13 sep",
+          "text": "Res y pollo a la plancha, arroz y encurtidos. El 6, al lado, una porción chica de tortilla de verde para probar. El 13, muchín de yuca para probar. La cena es sobra de la parrilla; Emilio mantiene su fijo. No armes otro plato de sobras."
+        },
+        {
+          "name": "Camarones al ajillo",
+          "dates": "Mar 8 sep",
+          "text": "Para Emilio, Karlita y Karla. Carlitos nunca come camarones: pollo seco y arroz en olla aparte."
+        },
+        {
+          "name": "Si no es plancha",
+          "dates": "Apanado, frito, seco, carbonara, lasaña, tacos, hamburguesa, boloñesa",
+          "text": "Karla siempre aparte, con su versión a la plancha del mismo día. Emilio no come la pasta de la lasaña ni el pan de la hamburguesa: proteína + arroz + encurtidos."
+        }
+      ]
+    },
+    "angelica": {
+      "intro": "Loncheras listas en la mañana. Toni y pan de yuca van todos los días de colegio, aunque el resto cambie.",
+      "dishes": [
+        {
+          "name": "Lonchera colegio 1",
+          "dates": "Días de cole",
+          "text": "Toni chocolatada para Carlitos y Karlita. Carlitos suma pan de yuca (una sola vez al día, nunca en el snack 2). Karlita suma un extra de su lista (tequeños, empanadita o nuggets) que no se repita con el snack compartido de ese día."
+        },
+        {
+          "name": "Pancakes de banano",
+          "dates": "Mié 2, Mar 8, Lun 14",
+          "text": "Vehículo de proteína de Karlita: la proteína va escondida en la masa. Si hubo banano en el desayuno, el snack de tarde de Carlitos no es batido de guineo: tequeños u otra cosa."
+        },
+        {
+          "name": "Tigrillo",
+          "dates": "Dom 6 y 13",
+          "text": "Solo Carlitos. Karlita y Karla: pancakes o tostadas. Emilio se hace el suyo."
+        },
+        {
+          "name": "Batido de guineo de Carlitos",
+          "dates": "Snack de tarde",
+          "text": "Solo si ese día no hubo banano en el desayuno. Nunca para Karlita: no toma batidos."
+        },
+        {
+          "name": "Tortolines",
+          "dates": "Casa",
+          "text": "Solo en casa para Karlita. Nunca al colegio."
+        }
+      ]
+    }
+  },
+  "summary": null,
+  "rules": {
+    "people": [
+      {
+        "name": "Emilio",
+        "rules": [
+          "Objetivo: ~1.835 kcal / 185g proteína / 150g carbos / 55g grasa.",
+          "SIEMPRE en almuerzo y cena: 180g proteína animal + 1 taza de arroz + encurtidos.",
+          "NUNCA: ensalada, vegetales, papa (horno/frita/puré). No agregar aceite extra.",
+          "Desayuno rota: batido (240ml leche + 1 scoop Isopure + 30g avena) / overnight oats + 2 huevos / pancakes de proteína + 2 huevos.",
+          "Encurtidos (cebolla colorada + pepino + zanahoria en limón/sal/agua) SIEMPRE en stock — es fijo semanal, no depende del menú del día."
+        ]
+      },
+      {
+        "name": "Karla",
+        "rules": [
+          "Come el plato base SOLO cuando es plancha (pollo/pescado/res/camarones).",
+          "Plato aparte cuando el menú es tacos, pizza, hamburguesa o lasaña.",
+          "NUNCA: fideos boloñesa.",
+          "Puentes válidos con la familia: salmón al horno, wrap de carne, pollo al horno, bowl de camarones."
+        ]
+      },
+      {
+        "name": "Carlitos",
+        "rules": [
+          "Objetivo: ~2.300 kcal, ~105g proteína/día (desayuno 25-30g / almuerzo-snack 30-35g / cena 35-40g).",
+          "Actividad: SOLO miércoles → no almuerza en casa (almuerzo = fideo del cole).",
+          "Fijo diario: pan de yuca (cole) + Toni chocolatada (cole).",
+          "SÍ: quesadilla, tequeños, empanadita de queso, nuggets (cole), lasaña, tigrillo, bolón de verde con queso, salmón, hamburguesa, batido de guineo + 1 scoop proteína de huevo.",
+          "NUNCA: camarones, mantequilla de maní, yogur griego.",
+          "Vehículo de proteína principal: batido de guineo + proteína de huevo."
+        ]
+      },
+      {
+        "name": "Karlita",
+        "rules": [
+          "Objetivo: ~35-45g proteína/día (días de actividad, hasta ~55-65g repartido en desayuno + 3 snacks + cena, sin almuerzo real).",
+          "Actividad: lunes y miércoles → llega ~4:30pm, casi no almuerza esos días.",
+          "Fijo diario: Toni chocolatada (cole).",
+          "SÍ: camarones, quesadilla, empanadita de queso, tequeños, nuggets (cole), manzana roja cortada sin pelar, tortolines con queso crema (SOLO casa, nunca al cole), pancakes de banano con proteína escondida en la masa, tostadas francesas, huevo, waffles.",
+          "NUNCA: bolón, batidos (no toma), yogur griego, mantequilla de maní, pan de yuca, sánduche de pollo, galletas.",
+          "Lista de proteína angosta. Vehículo principal: pancake de banano con proteína escondida. Respaldo: quesadillas, empanaditas, tequeños, nuggets, tortolines."
+        ]
+      },
+      {
+        "name": "Ambos niños",
+        "rules": [
+          "NUNCA: puré, aguacate solo (guacamole sí, poco frecuente).",
+          "Snacks de colegio SIEMPRE iguales entre los dos, MÁS un extra fijo propio para cada uno en el Snack colegio 1 (junto con el Toni): Carlitos siempre suma pan de yuca (Karlita nunca lo come) Y Karlita siempre suma un extra de su lista SÍ (tequeños / empanadita de queso / nuggets, rotando para no repetir con el snack compartido de ese día ni con su snack de tarde). El pan de yuca de Carlitos va UNA sola vez al día (en el Snack colegio 1) — nunca repetirlo también en el Snack colegio 2.",
+          "No repetir banano el mismo día (desayuno pancake de banano → snack de tarde de Carlitos NO es batido de guineo, usar tequeños u otro)."
+        ]
+      }
+    ],
+    "hardRules": [
+      "Nunca ensalada/vegetales/papa a Emilio.",
+      "Nunca camarones a Carlitos.",
+      "Nunca bolón a Karlita.",
+      "Nunca repetir banano el mismo día.",
+      "Nunca decir \"merienda\".",
+      "Nunca cena ligera (huevo/tortilla/sándwich).",
+      "Siempre escribir los fijos explícitos cada día (Toni, pan de yuca, encurtidos), aunque sean iguales todos los días.",
+      "Siempre especificar snacks día por día, nunca \"snack variado\".",
+      "Nunca ofrecer yogur griego, mantequilla de maní, o batido genérico a los niños.",
+      "Nunca meter a la Karla dentro de \"— todos\" si la preparación de ese almuerzo/cena NO es a la plancha (esto incluye \"seco\", apanada, frita, y sobras/batch de un plato que fue frito o apanado el día original). Si el plato no es a la plancha ni uno de los puentes válidos (salmón al horno, wrap de carne, pollo al horno, bowl de camarones), la Karla SIEMPRE va aparte con su propia versión a la plancha del mismo día — igual que ya se hace en los días donde el plato principal es apanado/frito."
+    ]
+  }
+}
