@@ -54,4 +54,24 @@ assert(
   "deberia exigir 14 dias"
 );
 
+const breadedFail = structuredClone(ciclo);
+breadedFail.days.slice(0, 7).forEach((day) => {
+  day.meals.snack2 = "Tequeños (ambos)";
+  day.meals.snackTarde = "Carlitos: tequeños · Karlita: empanadita de queso";
+});
+const breaded = validateCiclo(breadedFail);
+assert(
+  breaded.errors.some((e) => /apanados/i.test(e)),
+  "deberia detectar exceso de snacks apanados"
+);
+
+const manzanaFail = structuredClone(ciclo);
+manzanaFail.shopping.supermaxi = manzanaFail.shopping.supermaxi.filter((i) => !/manzana/i.test(i.name));
+manzanaFail.shopping.mercado.push({ name: "Manzana roja", qty: "10", channel: "mercado" });
+const manzana = validateCiclo(manzanaFail);
+assert(
+  manzana.errors.some((e) => /Manzana/i.test(e)),
+  "deberia exigir manzana en Tipti"
+);
+
 console.log("tests ok");

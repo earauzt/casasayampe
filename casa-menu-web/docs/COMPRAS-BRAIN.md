@@ -11,14 +11,16 @@ Sustitucion: si no hay stock de la marca preferida, listar alternativa y esperar
 | Item | Marca | Buscar en Tipti |
 | --- | --- | --- |
 | Huevos | Kikes o Supermaxi | huevos kikes 30 |
-| Leche | Toni | leche toni 1L |
+| Leche | Tru descremada y deslactosada | leche tru descremada deslactosada |
+| Manzana roja | Supermaxi (calidad; nunca mercado) | manzana roja |
+| Galletas permitidas | Amor Sabor original, Oreo, Lorena Schullo, coco, Club Social (validar) | galletas amor sabor |
 | Queso mozzarella / rallado | Supermaxi o Kiosko | queso mozzarella rallado |
 | Queso crema | Philadelphia o Toni | queso crema philadelphia |
 | Mantequilla | Laive o Supermaxi | mantequilla laive |
 | Proteina whey / Isopure | Isopure | isopure proteina |
 | Proteina de huevo (Carlitos) | Proteina de clara de huevo | proteina clara de huevo |
 | Arroz | Flor o Supermaxi | arroz flor 5kg |
-| Avena | Quaker | avena quaker |
+| Avena | Quaker (avena molida para Emilio) | avena quaker |
 | Fideos / pasta | Don Vittorio | fideos don vittorio |
 | Pasta lasaña | Don Vittorio | lasagna don vittorio |
 | Harina de trigo | Ya o Supermaxi | harina de trigo ya |
@@ -27,12 +29,12 @@ Sustitucion: si no hay stock de la marca preferida, listar alternativa y esperar
 | Tortillas de taco | Mission o Supermaxi | tortillas taco mission |
 | Tortilla wrap | Mission | tortilla wrap mission |
 | Masa / base de pizza | Supermaxi | masa pizza |
-| Pan de yuca | Supermaxi | pan de yuca |
+| Pan de yuca | Facundo | pan de yuca |
 | Toni chocolatada | Toni | toni chocolatada |
 | Hot dog | Plumrose o Supermaxi | hot dog plumrose |
-| Nuggets | Supermaxi o Sadia | nuggets pollo |
+| Nuggets | mr cook | nuggets pollo |
 | Tequeños | Supermaxi congelados | tequeños |
-| Empanaditas de queso | Supermaxi | empanaditas queso |
+| Empanaditas de queso | tati | empanaditas queso |
 | Empanaditas de nutella | caseras (Nutella + disco) o Supermaxi | empanadas dulces |
 | Nutella | Nutella | nutella |
 | Tortolines | Tortolines | tortolines |
@@ -64,7 +66,7 @@ Sustitucion: si no hay stock de la marca preferida, listar alternativa y esperar
 
 ## Mercado (NO Tipti)
 
-Pollo, res, pescado, camarones, salmon, verdura de encurtidos, limon, platano verde, yuca, guineo, manzana, aguacate, ajo. Lista en `shopping.mercado`. Se compra aparte el dia de mercado (miercoles del ciclo).
+Pescado, camarones, verdura de encurtidos, limon, platano verde, yuca, guineo, aguacate, ajo. Lista en `shopping.mercado`. Se compra aparte el dia de mercado (miercoles del ciclo). Manzana roja NO: va a Tipti.
 
 ## Como actualizar este archivo
 

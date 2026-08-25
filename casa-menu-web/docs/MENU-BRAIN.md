@@ -1,125 +1,139 @@
-# MENU-BRAIN — Casa Arauz
+# MENU-BRAIN — Casa Arauz (v2)
 
-Canonico de comida para el ciclo de 14 dias. La web lee `data/ciclo.json`. Este archivo manda sobre cualquier ocurrencia del modelo.
+Documento canónico del ciclo de 14 días.
+La web lee `data/ciclo.json`. Este archivo manda sobre cualquier otra instrucción.
 
-Cero emojis. Nunca la palabra "merienda" (usar snack colegio 1, snack colegio 2, snack de tarde).
+**Reglas generales de escritura**
+- Cero emojis.
+- Nunca usar la palabra "merienda". Usar siempre: `snack colegio 1`, `snack colegio 2`, `snack de tarde`.
+- Siempre escribir los fijos explícitos cada día (aunque se repitan).
+- Siempre especificar snacks día por día. Nunca "snack variado".
 
-## Gente
+---
 
-- Emilio (padre)
-- Karla (madre)
-- Carlitos (hijo)
-- Karlita (hija)
+## 1. Familia
 
-Cocina:
+| Persona | Rol | Edad |
+| --- | --- | --- |
+| Emilio | Padre | 43 |
+| Karla | Madre | 39 |
+| Carlitos | Hijo | 13 |
+| Karlita | Hija | 11 |
 
-- Ramona = almuerzos y cenas. Cocina una vez. Separa por persona.
-- Angelica = desayunos y loncheras. Loncheras listas en la manana.
+**Cocina**
+- **Ramona** → Almuerzos y cenas. Cocina una sola vez y separa por persona.
+- **Angélica** → Desayunos y loncheras. Loncheras listas en la mañana.
 
-## Emilio
+---
 
-Objetivo aproximado: 1835 kcal / 185 g proteina / 150 g carbos / 55 g grasa.
+## 2. Objetivos nutricionales
 
-SIEMPRE en almuerzo y cena: 180 g de proteina animal + 1 taza de arroz + encurtidos.
+### Emilio
+- 1835 kcal / 185 g proteína / 150 g carbos / 55 g grasa (ya definidos, no modificar).
+- **Siempre** en almuerzo y cena: 180 g de proteína animal + 1 taza de arroz + encurtidos.
+- **Nunca**: ensalada, vegetales, papa (horno, frita o puré). No agregar aceite extra.
+- Desayuno: rota entre Batido 1 y Batido 2 (receta aparte de los niños).
+  - Batido 1 y 2: 240 ml leche Tru descremada y deslactosada + 1 scoop proteína + 30 g avena molida.
+- Encurtidos (cebolla colorada + pepino + zanahoria en limón/sal/agua) siempre en stock. Es fijo semanal.
 
-NUNCA: ensalada, vegetales, papa (horno, frita o pure). No agregar aceite extra.
+**Adaptaciones cuando el plato familiar no le sirve:**
+- Lasaña → carne/queso sin pasta + arroz + encurtidos
+- Hamburguesa → patty sin pan + arroz + encurtidos
+- Pizza → solo queso + proteína (sin vegetales) + arroz + encurtidos aparte
 
-Desayuno rota, receta aparte de la de los ninos:
+### Karla
+- Come el plato base **solo** cuando es a la plancha (pollo, pescado, res, camarones).
+- Plato aparte cuando el menú es: tacos, pizza, hamburguesa, lasaña, carbonara, fideos, apanado, frito, seco, boloñesa o sobras de plato frito/apanado.
+- **Nunca**: fideos boloñesa.
+- Puentes válidos con la familia: salmón al horno, wrap de carne, pollo al horno, bowl de camarones.
+- Nunca incluirla dentro de "todos" si la preparación no es plancha ni puente válido.
 
-- Batido: 240 ml leche + 1 scoop Isopure + 30 g avena
-- Overnight oats + 2 huevos
-- Pancakes de proteina + 2 huevos
+### Carlitos (13 años)
+- Objetivo: 2200–2400 kcal / 100–120 g proteína al día.
+- Actividad: solo miércoles, viernes y sábado.
+- Los miércoles no almuerza en casa (fideo del colegio).
+- **Fijos diarios de colegio**: Toni chocolatada + pan de yuca (solo en snack colegio 1).
+- Vehículo principal de proteína: batido de guineo + 1 scoop proteína de huevo (**solo en casa**, nunca en el colegio ni fuera).
+- Si hubo banano/guineo en el desayuno → el snack de tarde **no** puede ser batido de guineo.
 
-Encurtidos (cebolla colorada + pepino + zanahoria en limon/sal/agua) SIEMPRE en stock. Es fijo semanal, no depende del menu del dia.
+**Sí come:**
+- Quesadilla, tequeños, empanadita de queso, nuggets (colegio), lasaña, tigrillo, bolón de verde con queso, salmón, hamburguesa, batido de guineo + proteína de huevo, sanduchón de atún o pollo, sánduche de queso frío, galletas (Amor Sabor original, Oreo, Lorena Schullo, de coco, Club Social – validar).
 
-En platos de ninos que el no come igual:
+**Nunca:**
+- Camarones, mantequilla de maní, yogur griego, pollo desmechado como snack o desayuno.
 
-- Lasaña: carne/queso SIN pasta + arroz + encurtidos
-- Hamburguesa: patty SIN pan + arroz + encurtidos
-- Pizza: porcion solo queso + proteina, sin vegetales, mas arroz y encurtidos aparte
+### Karlita (11 años)
+- Objetivo: 45–60 g proteína/día (días normales) y 55–70 g en días de actividad (lunes y miércoles).
+- Actividad: lunes y miércoles. Llega ~16:30. Casi no almuerza esos días → snack de tarde reforzado.
+- **Fijo diario de colegio**: Toni chocolatada. **Nunca** pan de yuca.
+- Vehículo principal de proteína: pancakes de banano con proteína escondida en la masa. Respaldo: quesadillas, empanaditas, tequeños, nuggets, tortolines con queso crema (solo casa).
 
-## Karla
+**Sí come:**
+- Camarones, quesadilla, empanadita de queso, tequeños, nuggets (colegio), manzana roja cortada sin pelar (comprar en Tipti por calidad), tortolines con queso crema (solo casa), pancakes de banano con proteína, tostadas francesas, huevo, waffles, sánduche de queso frío, galletas (mismas que Carlitos).
 
-Come el plato base SOLO cuando es a la plancha (pollo, pescado, res, camarones).
+**Nunca:**
+- Bolón, batidos (no toma), yogur griego, mantequilla de maní, pan de yuca, sánduche de pollo, galletas genéricas sin marca.
 
-Plato aparte cuando el menu es tacos, pizza, hamburguesa, lasaña, carbonara, fideos, apanado, frito, seco, boloñesa o sobras/batch de un plato que fue frito o apanado.
+---
 
-NUNCA: fideos boloñesa.
+## 3. Reglas de snacks de los niños (prioridad alta)
 
-Puentes validos con la familia: salmon al horno, wrap de carne, pollo al horno, bowl de camarones.
+### Principios
+- Buscar siempre proteína. Evitar días de solo almidón.
+- Preferir variedad sobre repetición.
+- Reducir comida apanada (tequeños, empanaditas, nuggets) — máximo 3–4 veces por semana entre todos los snacks.
+- Los snacks de colegio deben ser lo más iguales posible entre los dos, más el extra fijo propio.
 
-Nunca meterla dentro de "todos" si la preparacion no es plancha ni puente valido.
+### Estructura diaria de lonchera
+- **Snack colegio 1** (ambos): Toni chocolatada +
+  - Carlitos: siempre pan de yuca (solo una vez al día)
+  - Karlita: siempre un extra proteico de su lista SI (tequeños / empanadita de queso / nuggets / sánduche de queso), rotando.
+- **Snack colegio 2** (ambos): mismo snack compartido (preferir opciones con proteína: sánduche de queso frío, empanadita, tequeños, etc.).
 
-## Carlitos
+### Snacks de tarde (casa)
+- Carlitos: priorizar batido de guineo + proteína de huevo (si no hubo banano en desayuno). Alternativas: quesadilla, sanduchón de atún/pollo, huevo.
+- Karlita: priorizar pancakes de banano con proteína, quesadilla, tortolines con queso crema, huevo, manzana roja + queso.
 
-Objetivo aproximado: 2300 kcal, ~105 g proteina/dia (desayuno 25-30 / almuerzo-snack 30-35 / cena 35-40).
+### Galletas permitidas (rotar, no abusar)
+Amor Sabor original, Oreo, Lorena (Schullo), galletas de coco, Club Social (validar).
 
-Actividad: SOLO miercoles. No almuerza en casa (almuerzo = fideo del cole).
+---
 
-Fijo diario de colegio: pan de yuca (una sola vez al dia, en snack colegio 1) + Toni chocolatada.
-
-SI: quesadilla, tequeños, empanadita de queso, nuggets (cole), lasaña, tigrillo, bolon de verde con queso, salmon, hamburguesa, batido de guineo + 1 scoop proteina de huevo.
-
-NUNCA: camarones, mantequilla de mani, yogur griego.
-
-Vehiculo de proteina principal: batido de guineo + proteina de huevo. Si hubo banano/guineo en el desayuno, el snack de tarde NO es batido de guineo.
-
-## Karlita
-
-Objetivo aproximado: 35-45 g proteina/dia (dias de actividad, hasta 55-65 g repartido en desayuno + 3 snacks + cena, sin almuerzo real).
-
-Actividad: lunes y miercoles. Llega ~16:30. Casi no almuerza esos dias. Snack de tarde reforzado.
-
-Fijo diario de colegio: Toni chocolatada. NUNCA pan de yuca.
-
-SI: camarones, quesadilla, empanadita de queso, tequeños, nuggets (cole), manzana roja cortada sin pelar, tortolines con queso crema (SOLO casa, nunca al cole), pancakes de banano con proteina escondida en la masa, tostadas francesas, huevo, waffles.
-
-NUNCA: bolon, batidos (no toma), yogur griego, mantequilla de mani, pan de yuca, sanduche de pollo, galletas.
-
-Lista de proteina angosta. Vehiculo principal: pancake de banano con proteina escondida. Respaldo: quesadillas, empanaditas, tequeños, nuggets, tortolines.
-
-## Ambos ninos
-
-NUNCA: pure, aguacate solo (guacamole si, poco frecuente).
-
-Snacks de colegio SIEMPRE iguales entre los dos, MAS un extra fijo propio en el snack colegio 1 (junto con el Toni):
-
-- Carlitos siempre suma pan de yuca (Karlita nunca lo come).
-- Karlita siempre suma un extra de su lista SI (tequeños / empanadita de queso / nuggets), rotando para no repetir con el snack compartido de ese dia ni con su snack de tarde.
-
-El pan de yuca de Carlitos va UNA sola vez al dia (snack colegio 1), nunca tambien en snack colegio 2.
-
-No repetir banano el mismo dia.
-
-## Hard rules (el validador las comprueba)
+## 4. Hard Rules (el validador las comprueba)
 
 1. Nunca ensalada, vegetales o papa a Emilio.
 2. Nunca camarones a Carlitos.
-3. Nunca bolon a Karlita.
-4. Nunca repetir banano el mismo dia (si el desayuno lleva banano, el snack de tarde de Carlitos no es batido de guineo).
-5. Nunca decir merienda.
-6. Nunca cena ligera (huevo, tortilla o sandwich como cena).
-7. Siempre escribir los fijos explicitos cada dia (Toni, pan de yuca, encurtidos), aunque sean iguales todos los dias.
-8. Siempre especificar snacks dia por dia, nunca "snack variado".
-9. Nunca ofrecer yogur griego, mantequilla de mani o batido generico a los ninos.
-10. Nunca meter a Karla dentro de "todos" si el plato no es plancha ni puente valido.
+3. Nunca bolón a Karlita.
+4. Nunca repetir banano el mismo día (si desayuno lleva banano → snack de tarde de Carlitos no es batido de guineo).
+5. Nunca decir "merienda".
+6. Nunca cena ligera (huevo, tortilla o sándwich como cena).
+7. Siempre escribir los fijos explícitos cada día (Toni, pan de yuca, encurtidos).
+8. Siempre especificar snacks día por día.
+9. Nunca ofrecer yogur griego, mantequilla de maní o batido genérico a los niños.
+10. Nunca meter a Karla dentro de "todos" si el plato no es plancha ni puente válido.
+11. Máximo 3–4 veces por semana de comida apanada en snacks de los niños.
 
-## Forma del ciclo
+---
 
-14 dias. Cada dia tiene: desayuno, snack1, snack2, almuerzo, snackTarde, cena.
+## 5. Forma del ciclo (14 días)
 
-Fines de semana no llevan lonchera de colegio (snack1/snack2 pueden ir vacios o con snack de casa).
+Cada día tiene: `desayuno`, `snack1`, `snack2`, `almuerzo`, `snackTarde`, `cena`.
 
-Miercoles: fideo del colegio para los ninos. En casa, plancha + arroz + encurtidos para Emilio y Karla.
+- **Fines de semana**: no llevan lonchera de colegio (snack1/snack2 pueden ir vacíos o con snack de casa).
+- **Miércoles**: fideo del colegio para los niños. En casa: plancha + arroz + encurtidos para Emilio y Karla.
+- **Sábado**: pizza casera para los niños. Emilio no come pizza como plato. Karla plato ligero propio.
+- **Domingo**: parrillada. Cena = sobras de la parrilla. Emilio mantiene su fijo. Se puede agregar un "para probar" pequeño (tortilla de verde, muchín de yuca, etc.) sin repetir el del ciclo anterior.
+- Revisar el ciclo anterior día por día para no repetir el mismo plato en el mismo día de la semana.
+- Preferir **variedad**. Solo un almuerzo familiar de batch el fin de semana.
 
-Domingo: parrillada. Cena = sobras de la parrilla. Emilio mantiene su fijo. No armes otro plato de sobras. Un "para probar" pequeno junto al plato seguro (tortilla de verde, muchin de yuca, etc.), sin repetir el del ciclo anterior.
+---
 
-Sabado: pizza casera para los ninos. Emilio no come pizza como plato. Karla plato ligero propio.
+## 6. Salida
 
-Revisar el ciclo anterior dia por dia para no repetir el mismo plato en el mismo dia de la semana.
+El bot no inventa HTML.
+Edita `data/ciclo.json` (fechas ISO, comidas, cocina, compras, reglas), corre `npm test` y `npm run validate`, y publica. La web se construye sola.
 
-## Salida
-
-El bot no inventa HTML. Edita `data/ciclo.json` (fechas ISO, comidas, cocina, compras, reglas), corre `npm test` y `npm run validate`, y publica. La web se construye sola.
-
-Mercado fresco y Tipti van separados en `shopping.mercado` vs `shopping.supermaxi` + `shopping.limpieza`.
+**Compras**
+- Mercado fresco → `shopping.mercado`
+- Supermaxi + limpieza → `shopping.supermaxi` + `shopping.limpieza`
+- Manzana roja de Karlita → siempre Tipti (calidad).

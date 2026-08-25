@@ -1,4 +1,4 @@
-const CACHE = "casa-menu-v2";
+const CACHE = "casa-menu-v3";
 const ASSETS = ["./", "./index.html", "./css/app.css", "./js/app.js", "./ciclo.json", "./manifest.webmanifest", "./icons/icon.svg"];
 
 self.addEventListener("install", function (event) {
@@ -26,26 +26,17 @@ self.addEventListener("fetch", function (event) {
   if (req.method !== "GET") return;
   var url = new URL(req.url);
   if (url.origin !== location.origin) return;
-  var networkFirst = /ciclo\.json$/.test(url.pathname) || req.mode === "navigate";
-  if (networkFirst) {
-    event.respondWith(
-      fetch(req)
-        .then(function (res) {
-          var copy = res.clone();
-          caches.open(CACHE).then(function (cache) { cache.put(req, copy); });
-          return res;
-        })
-        .catch(function () {
-          return caches.match(req).then(function (hit) {
-            return hit || caches.match("./index.html");
-          });
-        })
-    );
-    return;
-  }
   event.respondWith(
-    caches.match(req).then(function (hit) {
-      return hit || fetch(req);
-    })
+    fetch(req)
+      .then(function (res) {
+        var copy = res.clone();
+        caches.open(CACHE).then(function (cache) { cache.put(req, copy); });
+        return res;
+      })
+      .catch(function () {
+        return caches.match(req).then(function (hit) {
+          return hit || caches.match("./index.html");
+        });
+      })
   );
 });

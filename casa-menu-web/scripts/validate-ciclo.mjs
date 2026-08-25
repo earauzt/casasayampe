@@ -116,6 +116,7 @@ export function validateCiclo(data) {
     const desayuno = meals.desayuno || "";
     const snackTarde = meals.snackTarde || "";
     const snack1 = meals.snack1 || "";
+    const snack2 = meals.snack2 || "";
 
     if (/camarones/i.test(blob) && mentions(blob, "Carlitos")) {
       if (!/Carlitos\s*\([^)]*NUNCA camarones/i.test(blob) && !/Carlitos[^·]*pollo/i.test(blob)) {
@@ -150,7 +151,29 @@ export function validateCiclo(data) {
     if (/cena ligera|huevo revuelto.*cena|s[aá]ndwich.*cena/i.test(cena)) {
       errors.push(`${loc}: posible cena ligera`);
     }
+
+    if (/pollo desmechado/i.test(desayuno + " " + snack1 + " " + snack2 + " " + snackTarde) && mentions(desayuno + snack1 + snack2 + snackTarde, "Carlitos")) {
+      errors.push(`${loc}: pollo desmechado como snack o desayuno de Carlitos`);
+    }
   });
+
+  const APANADO_RE = /teque[nñ]os|empanadita|nuggets/i;
+  function breadedSnackCount(daysSlice) {
+    let n = 0;
+    (daysSlice || []).forEach((day) => {
+      ["snack1", "snack2", "snackTarde"].forEach((k) => {
+        const t = (day.meals && day.meals[k]) || "";
+        if (APANADO_RE.test(t)) n += 1;
+      });
+    });
+    return n;
+  }
+  const week1 = (data.days || []).slice(0, 7);
+  const week2 = (data.days || []).slice(7, 14);
+  const b1 = breadedSnackCount(week1);
+  const b2 = breadedSnackCount(week2);
+  if (b1 > 4) errors.push(`Semana 1: ${b1} snacks apanados (máximo 4)`);
+  if (b2 > 4) errors.push(`Semana 2: ${b2} snacks apanados (máximo 4)`);
 
   for (let i = 1; i < dates.length; i++) {
     const prev = new Date(`${dates[i - 1]}T00:00:00`);
@@ -171,6 +194,10 @@ export function validateCiclo(data) {
   (shop.supermaxi || []).concat(shop.limpieza || []).forEach((item, i) => {
     if (!item.name) errors.push(`item Tipti ${i} sin name`);
   });
+  const manzanaMercado = (shop.mercado || []).some((item) => /manzana/i.test(item.name || ""));
+  const manzanaTipti = (shop.supermaxi || []).some((item) => /manzana/i.test(item.name || ""));
+  if (manzanaMercado) errors.push("Manzana roja no va al mercado: va a Tipti (calidad)");
+  if (!manzanaTipti) warnings.push("Falta manzana roja en shopping.supermaxi (Tipti)");
 
   const cooking = data.cooking || {};
   if (!cooking.ramona || !cooking.angelica) {

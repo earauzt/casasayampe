@@ -13,10 +13,18 @@
   var MEAL_KEYS = ["desayuno", "snack1", "snack2", "almuerzo", "snackTarde", "cena"];
   var MEAL_LABELS = {
     desayuno: "Desayuno",
-    snack1: "Snack colegio 1",
-    snack2: "Snack colegio 2",
+    snack1: "Lonchera 1",
+    snack2: "Lonchera 2",
     almuerzo: "Almuerzo",
-    snackTarde: "Snack de tarde",
+    snackTarde: "Tarde",
+    cena: "Cena",
+  };
+  var BOARD_LABELS = {
+    desayuno: "Desayuno",
+    snack1: "L1",
+    snack2: "L2",
+    almuerzo: "Almuerzo",
+    snackTarde: "Tarde",
     cena: "Cena",
   };
   var PEOPLE = ["Emilio", "Karla", "Carlitos", "Karlita"];
@@ -94,6 +102,11 @@
     if (m && DAY_MAP[m[1]]) return DAY_MAP[m[1]] + " " + m[2];
     return label;
   }
+  function formatDayShort(label) {
+    var m = String(label).match(/^(Mar|Mié|Jue|Vie|Sáb|Dom|Lun)\s+(\d+)/);
+    if (m) return m[1] + " " + m[2];
+    return label;
+  }
   function isWeekend(day) {
     if (day && day.school === false) return true;
     return /^(Sáb|Dom)\b/.test(String(day && day.label));
@@ -153,41 +166,188 @@
     });
   }
 
-  function parseDish(key, raw) {
-    var t = stripMarks(raw);
-    t = t.replace(/^Familia:\s*/i, "");
-    t = t.replace(/\s*[+,]\s*encurtidos\s*\(Emilio\)/gi, "");
-    t = t.replace(/\s*encurtidos\s*\(Emilio\)/gi, "");
-    t = t.replace(/\s{2,}/g, " ").replace(/\s+\)/g, ")").trim();
-    var tryItem = "";
-    var tm = t.match(/Para probar:\s*(.+?)(?:\s*\(|$)/i);
-    if (tm) tryItem = tm[1].replace(/\.$/, "").trim();
-    var paraProbar = /para probar/i.test(t);
-    if (key === "desayuno") t = t.replace(/\s*·\s*Emilio:[^·]*/gi, "").trim();
-    t = t.replace(/^\s*Cena fuerte:\s*/i, "");
-    var idx = t.indexOf(" — ");
-    var title = t;
-    if (idx !== -1) {
-      var after = t.slice(idx + 3).trim();
-      if (/^(Emilio|Karla|Carlitos|Karlita|todos)\b/i.test(after)) title = t.slice(0, idx).trim();
-    }
-    if (key === "desayuno" && title.indexOf(" · ") !== -1) title = title.split(" · ")[0].trim();
-    title = title.replace(/\s{2,}/g, " ").replace(/\s+\)/g, ")").trim();
-    return { title: title, paraProbar: paraProbar, tryItem: tryItem };
+  function capFirst(s) {
+    s = String(s || "").trim();
+    if (!s) return s;
+    return s.charAt(0).toUpperCase() + s.slice(1);
   }
 
-  function parseLonchera1(raw) {
+  function plateName(s) {
+    s = stripMarks(s);
+    s = s.replace(/^Familia:\s*/i, "");
+    s = s.replace(/^\s*Cena fuerte:\s*/i, "");
+    s = s.replace(/^En casa:\s*/i, "");
+    s = s.replace(/^Liviana\/sobras:\s*/i, "");
+    s = s.replace(/^sobras de\s+/i, "");
+    s = s.replace(/^Emilio\s*\+\s*Karla\s*→\s*/i, "");
+    s = s.replace(/^\s*Reforzado Karlita:\s*/i, "");
+    s = s.split(/\s+—\s+/)[0];
+    s = s.split(/\s+·\s+/)[0];
+    s = s.replace(/\([^)]*\)/g, " ");
+    if (!/^\s*arroz\b/i.test(s)) {
+      s = s.replace(/\s*[+,]\s*arroz(\s*[+,]\s*encurtidos)?.*$/i, "");
+    } else {
+      s = s.replace(/\s*[+,]\s*encurtidos\b.*$/i, "");
+    }
+    s = s.replace(/\s*encurtidos\s*$/i, "");
+    s = s.replace(/\s{2,}/g, " ").trim();
+    if (/fideo\s*(del\s*)?cole/i.test(s)) return "Fideo del colegio";
+    if (/batido de guineo/i.test(s)) return "Batido de guineo";
+    if (/tortolines/i.test(s)) return "Tortolines";
+    if (/toni chocolatada/i.test(s)) return "Toni";
+    if (/pan de yuca/i.test(s)) return "Pan de yuca";
+    if (/s[áa]nduche de queso con huevo/i.test(s)) return "Sánduche queso y huevo";
+    if (/s[áa]nduche de queso/i.test(s)) return "Sánduche de queso";
+    if (/pancakes de banano/i.test(s)) return "Pancakes de banano";
+    if (/huevo revuelto en tortilla/i.test(s)) return "Huevo en tortilla";
+    if (/tostadas francesas/i.test(s)) return "Tostadas francesas";
+    if (/\bwaffles\b/i.test(s)) return "Waffles";
+    if (/manzana roja.*queso/i.test(s)) return "Manzana y queso";
+    if (/manzana roja/i.test(s)) return "Manzana roja";
+    if (/galletas amor/i.test(s)) return "Galletas Amor";
+    if (/galletas de coco/i.test(s)) return "Galletas de coco";
+    if (/empanadita/i.test(s)) return "Empanadita";
+    if (/\bnuggets\b/i.test(s)) return "Nuggets";
+    if (/tequeños/i.test(s)) return "Tequeños";
+    if (/quesadilla/i.test(s)) return "Quesadilla";
+    if (/sanduch[oó]n de at[uú]n/i.test(s)) return "Sanduchón de atún";
+    if (/sanduch[oó]n de pollo/i.test(s)) return "Sanduchón de pollo";
+    if (/hot dog/i.test(s)) return "Hot dog";
+    if (/patac[oó]n/i.test(s)) return "Patacón con huevo";
+    if (/pan tostado/i.test(s)) return "Pan y huevo";
+    if (/tortilla de fideos/i.test(s)) return "Tortilla de fideos";
+    if (/fideos carbonara/i.test(s)) return "Carbonara";
+    if (/fideos boloñesa/i.test(s)) return "Boloñesa";
+    if (/fideos con carne/i.test(s)) return "Fideos con carne";
+    if (/arroz con pollo/i.test(s)) return "Arroz con pollo";
+    return capFirst(s);
+  }
+
+  function parseMeal(key, raw) {
     var t = stripMarks(raw);
-    var parts = t.split(/\s+\+\s+/);
-    var toni = "",
-      yuca = "",
-      extra = "";
-    parts.forEach(function (p) {
-      if (/toni/i.test(p)) toni = p.replace(/\s*\([^)]*\)\s*$/, "").trim();
-      else if (/pan de yuca/i.test(p)) yuca = p.replace(/\s*\([^)]*\)\s*$/, "").trim();
-      else extra = p.replace(/\s*\([^)]*\)\s*$/, "").trim() || p;
-    });
-    return { toni: toni, yuca: yuca, extra: extra, raw: t };
+    var out = { title: "", note: "", flag: "" };
+    var tryM = t.match(/Para probar:\s*(.+)$/i);
+    if (tryM) {
+      var tryDish = plateName(tryM[1].split("(")[0]);
+      out.note = "Probar: " + (tryDish || "porción chica");
+    }
+
+    if (key === "desayuno") {
+      var fam = t.replace(/^Familia:\s*/i, "").split(/\s*·\s*/)[0];
+      if (/tigrillo/i.test(fam)) {
+        out.title = "Tigrillo";
+        out.note = /tostadas/i.test(fam) ? "Karlita: tostadas" : "Karlita: pancakes";
+      } else {
+        out.title = plateName(fam);
+      }
+      var em = t.match(/Emilio:\s*(Batido\s*[12])/i);
+      if (em) out.note = (out.note ? out.note + " · " : "") + "Emilio: " + em[1];
+      return out;
+    }
+    if (key === "snack1") {
+      var items = parseLoncheraItems(t);
+      out.title = items.map(plateName).join(" · ") || plateName(t);
+      return out;
+    }
+    if (key === "snack2") {
+      out.title = plateName(t.replace(/\s*\([^)]*\)/g, " "));
+      return out;
+    }
+    if (key === "snackTarde") {
+      var parts = t.split(/\s*·\s*/).map(function (part) {
+        var who = "";
+        var m = part.match(/^(Carlitos|Karlita):\s*/i);
+        if (m) {
+          who = m[1];
+          part = part.slice(m[0].length);
+        }
+        part = part.replace(/\(NO batido[^)]*\)/gi, "");
+        part = part.replace(/^\s*Reforzado Karlita:\s*/i, "");
+        var dish = plateName(part);
+        if (/quesadilla\s*\+/i.test(part)) dish = plateName(part.split("+")[0]) + " + extra";
+        return who ? who + ": " + dish : dish;
+      });
+      out.title = parts.join(" · ");
+      return out;
+    }
+
+    if (/fideo\s*(del\s*)?cole/i.test(t)) {
+      out.title = "Fideo del colegio";
+      var casa = t.match(/En casa:\s*(.+)$/i);
+      if (casa) {
+        var casaPlate = plateName(casa[1].replace(/Emilio\s*\+\s*Karla\s*→\s*/i, ""));
+        out.note = "Casa: " + casaPlate;
+      }
+      return out;
+    }
+
+    if (/\bpizza\b/i.test(t)) {
+      out.title = "Pizza casera";
+      out.note = "Emilio: queso + proteína · Karla: aparte";
+      return out;
+    }
+    if (/\bparrillada\b/i.test(t)) {
+      out.title = /sobra/i.test(t) ? "Sobras de parrilla" : "Parrillada";
+      return out;
+    }
+    if (/\btacos\b/i.test(t)) {
+      out.title = "Tacos";
+      out.note = "Emilio: plancha · Karla: wrap";
+      return out;
+    }
+    if (/hamburguesa/i.test(t) && /patty|sin pan/i.test(t)) {
+      out.title = "Hamburguesa";
+      out.note = "Emilio: sin pan · Karla: pollo";
+      return out;
+    }
+    if (/lasaña/i.test(t)) {
+      out.title = "Lasaña";
+      out.note = "Emilio: sin pasta · Karla: plancha";
+      return out;
+    }
+    if (/liviana\/sobras/i.test(t)) {
+      out.title = "Sobras: " + plateName(t.replace(/^[^:]+:\s*/i, ""));
+    } else {
+      out.title = plateName(t);
+    }
+    var notes = [];
+    var karla = t.match(/Karla\s+aparte:\s*([^·]+)/i) || t.match(/Karla:\s*([^·]+)/i);
+    if (karla && /plancha/i.test(karla[1])) notes.push("Karla: plancha");
+    else if (karla && /wrap/i.test(karla[1])) notes.push("Karla: wrap");
+    else if (karla && /hamburguesa de pollo/i.test(karla[1])) notes.push("Karla: pollo");
+    else if (karla) notes.push("Karla: " + plateName(karla[1]));
+    if (/Karlita:.*reducid/i.test(t) || /Karlita: porción reducida/i.test(t)) notes.push("Karlita: ración niña");
+    if (/NUNCA camarones/i.test(t) || /Carlitos[^·]*pollo seco/i.test(t)) notes.push("Carlitos: pollo");
+    if (/SIN pasta|sin pasta/i.test(t)) notes.push("Emilio: sin pasta");
+    if (/hamburguesa/i.test(t) && /SIN pan|sin pan/i.test(t)) notes.push("Emilio: sin pan");
+    if (/NUNCA boloñesa/i.test(t)) notes.push("Karla: plancha");
+    out.note = notes.join(" · ");
+    return out;
+  }
+
+  function parseDish(key, raw) {
+    return parseMeal(key, raw);
+  }
+
+  function fillMeal(td, key, raw) {
+    if (isEmptyMeal(raw)) {
+      td.appendChild(el("div", { class: "dish-title" }, [txt("—")]));
+      return;
+    }
+    var parsed = parseMeal(key, raw);
+    var titleEl = el("div", { class: "dish-title" }, [txt(parsed.title || plateName(raw))]);
+    if (parsed.flag) titleEl.appendChild(el("span", { class: "stamp" }, [txt(parsed.flag)]));
+    td.appendChild(titleEl);
+    if (parsed.note) td.appendChild(el("div", { class: "dish-note" }, [txt(parsed.note)]));
+  }
+
+  function parseLoncheraItems(raw) {
+    return stripMarks(raw)
+      .split(/\s+\+\s+/)
+      .map(function (p) {
+        return p.replace(/\s*\([^)]*\)\s*$/, "").trim();
+      })
+      .filter(Boolean);
   }
 
   function findDay(data, iso) {
@@ -222,15 +382,13 @@
     app.appendChild(sheet);
 
     var mast = el("header", { class: "mast" });
-    mast.appendChild(el("p", { class: "brand" }, [txt((DATA.meta && DATA.meta.family) || "Casa Arauz")]));
-    mast.appendChild(el("h1", { class: "word-minuta" }, [txt("Minuta")]));
+    mast.appendChild(el("h1", { class: "word-minuta" }, [txt((DATA.meta && DATA.meta.family) || "Casa Arauz")]));
     mast.appendChild(el("p", { class: "range" }, [txt((DATA.meta && DATA.meta.range) || "")]));
     sheet.appendChild(mast);
 
     var sticky = el("div", { class: "sticky-nav" });
     var nav = el("nav", { class: "row", role: "navigation", "aria-label": "Secciones" });
-    TABS.forEach(function (t, i) {
-      if (i) nav.appendChild(el("span", { class: "dot", "aria-hidden": "true" }, [txt("·")]));
+    TABS.forEach(function (t) {
       nav.appendChild(
         el(
           "button",
@@ -275,24 +433,21 @@
       });
     }
 
-    function mealBlock(key, raw, personFilter) {
+    function mealRow(key, raw, personFilter) {
       var who = peopleFor(key, raw);
       if (personFilter && who.length && who.indexOf(personFilter) < 0) return null;
-      var wrap = el("div", { class: "hoy-meal" });
-      wrap.appendChild(el("p", { class: "lonch-label" }, [txt(MEAL_LABELS[key])]));
-      if (isEmptyMeal(raw)) {
-        wrap.appendChild(el("p", { class: "empty" }, [txt("Sin nada programado")]));
-        return wrap;
-      }
-      var parsed = parseDish(key, raw);
-      var titleEl = el("div", { class: "dish-title" }, [txt(parsed.title || stripMarks(raw))]);
-      if (parsed.paraProbar) {
-        titleEl.appendChild(el("span", { class: "stamp" }, [txt("Para probar")]));
-        if (parsed.tryItem) titleEl.appendChild(el("span", { class: "try-item" }, [txt(parsed.tryItem)]));
-      }
-      wrap.appendChild(titleEl);
-      if (who.length) wrap.appendChild(el("div", { class: "who" }, [txt(who.join(", "))]));
-      return wrap;
+      var empty = isEmptyMeal(raw);
+      if (empty && SNACK_KEYS[key]) return null;
+      var row = el("div", { class: "meal-row" });
+      row.appendChild(el("div", { class: "meal-k" }, [txt(MEAL_LABELS[key])]));
+      var val = el("div", { class: "meal-v" });
+      fillMeal(val, key, raw);
+      row.appendChild(val);
+      return row;
+    }
+
+    function mealBlock(key, raw, personFilter) {
+      return mealRow(key, raw, personFilter);
     }
 
     function buildHoy() {
@@ -308,15 +463,14 @@
         var n = daysBetween(today, startDate);
         status.appendChild(
           el("p", {}, [
-            txt("Hoy es " + weekdayLong(today) + ". El ciclo empieza el " + weekdayLong(startDate) + "."),
+            txt(weekdayLong(today) + ". El ciclo abre el " + weekdayLong(startDate) + "."),
           ])
         );
         status.appendChild(el("p", {}, [el("strong", {}, [txt(n === 1 ? "Falta 1 día." : "Faltan " + n + " días.")])]));
         day = DATA.days[0];
-        status.appendChild(el("p", { class: "lede" }, [txt("Así abre el primer día, para Ramona y Angélica.")]));
       } else if (today > endDate) {
         status.appendChild(
-          el("p", {}, [txt("Este ciclo ya cerró el " + weekdayLong(endDate) + ". Hay que armar el siguiente.")])
+          el("p", {}, [txt("Este ciclo cerró el " + weekdayLong(endDate) + ".")])
         );
         panel.appendChild(status);
         return;
@@ -329,30 +483,16 @@
       var grid = el("div", { class: "hoy-grid" });
       var angel = el("section", { class: "hoy-card" });
       angel.appendChild(el("h2", {}, [txt("Angélica")]));
-      angel.appendChild(el("p", { class: "role" }, [txt("Desayunos y loncheras")]));
       ["desayuno", "snack1", "snack2", "snackTarde"].forEach(function (k) {
         if (isWeekend(day) && (k === "snack1" || k === "snack2")) return;
-        var block = mealBlock(k, day.meals && day.meals[k]);
+        var block = mealRow(k, day.meals && day.meals[k]);
         if (block) angel.appendChild(block);
-      });
-      cookingFor(DATA, "angelica", day).forEach(function (d) {
-        var art = el("article", { class: "cook-dish" });
-        if (d.name) art.appendChild(el("h3", {}, [txt(d.name)]));
-        if (d.text) art.appendChild(el("p", { class: "cook-text" }, [txt(d.text)]));
-        angel.appendChild(art);
       });
       var ramona = el("section", { class: "hoy-card" });
       ramona.appendChild(el("h2", {}, [txt("Ramona")]));
-      ramona.appendChild(el("p", { class: "role" }, [txt("Almuerzos y cenas. Cocina una vez. Separa por persona.")]));
       ["almuerzo", "cena"].forEach(function (k) {
-        var block = mealBlock(k, day.meals && day.meals[k]);
+        var block = mealRow(k, day.meals && day.meals[k]);
         if (block) ramona.appendChild(block);
-      });
-      cookingFor(DATA, "ramona", day).forEach(function (d) {
-        var art = el("article", { class: "cook-dish" });
-        if (d.name) art.appendChild(el("h3", {}, [txt(d.name)]));
-        if (d.text) art.appendChild(el("p", { class: "cook-text" }, [txt(d.text)]));
-        ramona.appendChild(art);
       });
       grid.appendChild(angel);
       grid.appendChild(ramona);
@@ -381,50 +521,61 @@
 
       function renderWeek(idx) {
         list.innerHTML = "";
-        (weeks[idx] || []).forEach(function (day) {
+        var weekDays = weeks[idx] || [];
+
+        var board = el("div", { class: "week-board" });
+        board.appendChild(el("div", { class: "wb-cell wb-corner" }, [txt("")]));
+        weekDays.forEach(function (day) {
+          var head = el("div", { class: "wb-cell wb-head" + (day.date === today ? " today" : "") });
+          head.appendChild(txt(formatDayShort(day.label)));
+          board.appendChild(head);
+        });
+        MEAL_KEYS.forEach(function (key) {
+          var any = weekDays.some(function (day) {
+            var text = (day.meals && day.meals[key]) || "";
+            return !(isEmptyMeal(text) && SNACK_KEYS[key]);
+          });
+          if (!any) return;
+          board.appendChild(el("div", { class: "wb-cell wb-label" }, [txt(BOARD_LABELS[key] || MEAL_LABELS[key])]));
+          weekDays.forEach(function (day) {
+            var text = (day.meals && day.meals[key]) || "";
+            var empty = isEmptyMeal(text);
+            var who = peopleFor(key, text);
+            var dim = personFilter && who.length && who.indexOf(personFilter) < 0;
+            var cell = el("div", {
+              class: "wb-cell" + (dim ? " dim" : "") + (day.date === today ? " today" : ""),
+            });
+            if (empty && SNACK_KEYS[key]) {
+              cell.appendChild(el("div", { class: "dish-title muted" }, [txt("—")]));
+            } else {
+              fillMeal(cell, key, text);
+            }
+            board.appendChild(cell);
+          });
+        });
+        list.appendChild(board);
+
+        var stack = el("div", { class: "week-list" });
+        weekDays.forEach(function (day) {
           var band = el("section", { class: "day-band" + (day.date === today ? " today" : "") });
           var h = el("h2", { class: "day-name" }, [txt(formatDay(day.label))]);
           if (day.date === today) h.appendChild(el("span", { class: "today-mark" }, [txt("Hoy")]));
           band.appendChild(h);
           if (day.note) band.appendChild(el("p", { class: "day-note" }, [txt(day.note)]));
-          var table = el("table", { class: "meals" });
-          var cap = el("caption", {});
-          cap.style.cssText = "position:absolute;left:-9999px";
-          cap.textContent = formatDay(day.label);
-          table.appendChild(cap);
-          var hr = el("tr", {});
-          hr.appendChild(el("th", { scope: "col" }, [txt("Momento")]));
-          hr.appendChild(el("th", { scope: "col" }, [txt("Plato")]));
-          table.appendChild(el("thead", {}, [hr]));
-          var tb = el("tbody", {});
           MEAL_KEYS.forEach(function (key) {
             var text = (day.meals && day.meals[key]) || "";
             var empty = isEmptyMeal(text);
             if (empty && SNACK_KEYS[key]) return;
             var who = peopleFor(key, text);
             var dim = personFilter && who.length && who.indexOf(personFilter) < 0;
-            var tr = el("tr", { class: dim ? "dim" : "" });
-            tr.appendChild(el("td", { class: "moment" }, [txt(MEAL_LABELS[key])]));
-            var td = el("td", { class: "dish" });
-            if (empty) td.appendChild(el("div", { class: "dish-title" }, [txt("Sin nada programado")]));
-            else {
-              var parsed = parseDish(key, text);
-              var titleEl = el("div", { class: "dish-title" });
-              titleEl.appendChild(txt(parsed.title || stripMarks(text)));
-              if (parsed.paraProbar) {
-                titleEl.appendChild(el("span", { class: "stamp" }, [txt("Para probar")]));
-                if (parsed.tryItem) titleEl.appendChild(el("span", { class: "try-item" }, [txt(parsed.tryItem)]));
-              }
-              td.appendChild(titleEl);
-              if (who.length) td.appendChild(el("div", { class: "who" }, [txt(who.join(", "))]));
-            }
-            tr.appendChild(td);
-            tb.appendChild(tr);
+            var row = mealRow(key, text);
+            if (!row) return;
+            if (dim) row.className += " dim";
+            band.appendChild(row);
           });
-          table.appendChild(tb);
-          band.appendChild(table);
-          list.appendChild(band);
+          stack.appendChild(band);
         });
+        list.appendChild(stack);
       }
 
       weeks.forEach(function (w, idx) {
@@ -496,21 +647,19 @@
       });
       cb.checked = checked;
       row.appendChild(cb);
-      var box = el("div", {});
-      box.appendChild(el("label", { for: cid, class: "lonch-item" }, [txt(title)]));
-      if (hint) box.appendChild(el("p", { class: "lonch-hint" + (hintClass ? " " + hintClass : "") }, [txt(hint)]));
+      var box = el("div", { class: "pack-copy" });
+      var lab = el("label", { for: cid, class: "lonch-item" }, [txt(title)]);
+      if (hint) lab.appendChild(el("span", { class: "lonch-hint" + (hintClass ? " " + hintClass : "") }, [txt(" · " + hint)]));
+      box.appendChild(lab);
       row.appendChild(box);
       return row;
     }
 
     function buildLoncheras() {
       var panel = makePanel("loncheras");
-      var intro =
-        DATA.cooking && DATA.cooking.angelica && DATA.cooking.angelica.intro
-          ? DATA.cooking.angelica.intro
-          : "Loncheras listas en la mañana. Toni y pan de yuca van todos los días de colegio, aunque el resto cambie.";
-      panel.appendChild(el("p", { class: "lede" }, [txt(intro)]));
-      panel.appendChild(el("p", { class: "lede" }, [txt("Vista de Angélica. Marca lo que ya está en la lonchera.")]));
+      panel.appendChild(
+        el("p", { class: "lede" }, [txt("Toni todos los días de cole. Marca lo que ya está en la lonchera.")])
+      );
       (DATA.days || []).forEach(function (day) {
         if (isWeekend(day)) return;
         var snack1 = (day.meals && day.meals.snack1) || "";
@@ -523,21 +672,20 @@
         if (day.note) sec.appendChild(el("p", { class: "day-note" }, [txt(day.note)]));
         if (!isEmptyMeal(snack1)) {
           var b1 = el("div", { class: "lonch-block" });
-          b1.appendChild(el("p", { class: "lonch-label" }, [txt("Snack colegio 1")]));
-          var parts = parseLonchera1(snack1);
-          if (parts.toni) b1.appendChild(packRow(day.date, "toni", parts.toni, "Carlitos y Karlita"));
-          if (parts.yuca)
-            b1.appendChild(packRow(day.date, "yuca", parts.yuca, "solo Carlitos, una vez al día", "adobe"));
-          if (parts.extra) b1.appendChild(packRow(day.date, "extra", parts.extra, "extra Karlita", "adobe"));
-          if (!parts.toni && !parts.yuca && !parts.extra)
-            b1.appendChild(packRow(day.date, "s1", stripMarks(snack1), ""));
+          b1.appendChild(el("p", { class: "lonch-label" }, [txt("Lonchera 1")]));
+          var items = parseLoncheraItems(snack1);
+          if (!items.length) b1.appendChild(packRow(day.date, "s1", plateName(snack1), ""));
+          items.forEach(function (item, i) {
+            var hint = /toni/i.test(item) ? "ambos" : /pan de yuca/i.test(item) ? "solo Carlitos" : "Karlita";
+            var hintClass = /toni/i.test(item) ? "" : "adobe";
+            b1.appendChild(packRow(day.date, "s1-" + i, plateName(item), hint, hintClass));
+          });
           sec.appendChild(b1);
         }
         if (!isEmptyMeal(snack2)) {
           var b2 = el("div", { class: "lonch-block" });
-          b2.appendChild(el("p", { class: "lonch-label" }, [txt("Snack colegio 2")]));
-          var s2 = stripMarks(snack2).replace(/\s*\(ambos\)\s*$/i, "").trim();
-          b2.appendChild(packRow(day.date, "s2", s2, "ambos"));
+          b2.appendChild(el("p", { class: "lonch-label" }, [txt("Lonchera 2")]));
+          b2.appendChild(packRow(day.date, "s2", plateName(snack2), "ambos"));
           sec.appendChild(b2);
         }
         panel.appendChild(sec);
@@ -563,11 +711,18 @@
           var block = cooking[pair[0]] || {};
           var sec = el("section", { class: "cook-person" });
           sec.appendChild(el("h2", { class: "cook-name" }, [txt(pair[1])]));
-          if (block.intro) sec.appendChild(el("p", { class: "cook-intro" }, [txt(block.intro)]));
+          if (block.intro) {
+            var intro = el("details", { class: "cook-intro-box" });
+            intro.appendChild(el("summary", {}, [txt("Fijo de " + pair[1])]));
+            intro.appendChild(el("p", { class: "cook-intro" }, [txt(block.intro)]));
+            sec.appendChild(intro);
+          }
           (block.dishes || []).forEach(function (d) {
-            var dish = el("article", { class: "cook-dish" });
-            if (d.name) dish.appendChild(el("h3", {}, [txt(d.name)]));
-            if (d.dates) dish.appendChild(el("p", { class: "cook-dates" }, [txt(d.dates)]));
+            var dish = el("details", { class: "cook-dish" });
+            var sum = el("summary", {});
+            if (d.name) sum.appendChild(el("span", { class: "cook-dish-name" }, [txt(d.name)]));
+            if (d.dates) sum.appendChild(el("span", { class: "cook-dates" }, [txt(d.dates)]));
+            dish.appendChild(sum);
             if (d.text) dish.appendChild(el("p", { class: "cook-text" }, [txt(d.text)]));
             sec.appendChild(dish);
           });
@@ -634,9 +789,7 @@
       head.appendChild(el("h2", { class: "compras-title" }, [txt("Lista de 14 días")]));
       head.appendChild(
         el("p", { class: "tipti-line" }, [
-          txt(
-            "Cuando Emilio valide esta lista, se carga Supermaxi y limpieza en Tipti. El fresco (Mercado) se compra aparte. Él paga. El bot no hace checkout."
-          ),
+          txt("Emilio valida. Supermaxi y limpieza van a Tipti. Mercado no. Él paga. Sin checkout."),
         ])
       );
       panel.appendChild(head);

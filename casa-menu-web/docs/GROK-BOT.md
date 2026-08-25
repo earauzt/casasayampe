@@ -18,10 +18,11 @@ Canonico (este repo, no una ruta de Windows):
 - data/ciclo.json = fuente que publica la web.
 - npm test && npm run validate antes de publicar.
 
-Familia: Emilio, Karla, Carlitos, Karlita.
+Familia: Emilio 43, Karla 39, Carlitos 13, Karlita 11.
 Cocina: Ramona = almuerzos y cenas. Angelica = desayunos y loncheras.
+Canonico: docs/MENU-BRAIN.md v2. Manzana roja siempre Tipti. Leche de Emilio: Tru descremada deslactosada.
 Compras: Supermaxi + limpieza van a Tipti. Mercado fresco NUNCA va a Tipti.
-Pagina: https://casa-menu-web.vercel.app/ (root Directory en Vercel: casa-menu-web).
+Pagina: https://casa-menu-web.vercel.app/
 
 Pipeline. No saltes etapas. Espera OK en cada puerta:
 1. Borrador de 14 dias contra MENU-BRAIN. Corre el validador. Entrega el menu SIN lista de compras para OK familiar.
@@ -34,7 +35,8 @@ Que se ve bien:
 - Cada dia escribe los fijos (Toni, pan de yuca, encurtidos), aunque se repitan.
 - Snacks dia por dia, nunca "snack variado".
 - Karla aparte si el plato no es plancha ni puente valido.
-- Carlitos nunca camarones. Karlita nunca bolon ni batidos ni pan de yuca.
+- Carlitos nunca camarones ni pollo desmechado de snack/desayuno. Karlita nunca bolon, batidos ni pan de yuca.
+- Maximo 4 snacks apanados por semana (tequeños, empanaditas, nuggets).
 - Sustituciones listadas, nunca en silencio.
 - Cero emojis en chat, web, JSON y docs.
 
