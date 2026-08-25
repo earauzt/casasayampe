@@ -1,7 +1,22 @@
 # Casas Ayampe — Sandpiper Landing Page
 
+## Modelo actual (ago 2026) — pre-listing de casa completa
+
+**Esto sustituye el funnel de venta de lotes/obra gris.** El sitio se queda en pre-listing hasta la apertura; el trabajo de ahora es el previo para, al terminar, competir en la categoría de casa completa 4BR premium en Ayampe (sin nombrar competidores en el sitio público).
+
+- **Promotor:** Emilio (1 persona en WhatsApp **+1 305 988 5341**). Sitio: casasayampe.com.
+- **Vendido (ya no está a la venta, no se ofrece en el sitio):** Lote 13 y Casa EA4 / Casa Marea (vendida en obra gris). Ya no se busca liquidez para terminar la casa de renta.
+- **Producto público:** **Casa 1 (EA1)** — casa completa, 4 dormitorios, 4 baños, 331 m², lote 650 m², **hasta 8 huéspedes**. No suites, no 16 pax, no AC inventado, no 10 huéspedes.
+- **Apertura estimada:** noviembre 2026. Canal: lista de fundadores (sin pago) + WhatsApp.
+- **Colección:** si el alquiler funciona, el mismo modelo se replica en los **5 lotes que quedan**.
+- **Operación:** equipo y capacidad listos. Fotógrafo de arquitectura confirmado (sesión al terminar la obra). Los renders del sitio están etiquetados como renders.
+- **Posicionamiento:** entire home + ciudadela 24/7 + ops profesional. Amenities tipo listing premium (piscina, cocina, terraza, WiFi, parqueo techado, lavandería, jardín, sin fiestas).
+- **Home:** `index.html` / `en/index.html` = ficha Casita de **una** villa. Nav “El proyecto” → `inversion-sandpiper-ayampe.html` (ya no “¿Buscas comprar?”).
+- **Página de proyecto:** `inversion-sandpiper-ayampe.html` describe el modelo y la colección; no vende Lote 13 ni Casa Marea.
+- **Fuera de alcance inmediato:** fotos WhatsApp de obra en el hero, Pixel Meta, páginas SEO nuevas (`/villa-4-habitaciones-ayampe`), Google Business Profile (acción del usuario).
+
 ## Original Problem Statement
-Rediseñar casasayampe.com con enfoque editorial (estilo CasitaMX) — ciudadela privada Sandpiper en Ayampe, Ecuador, con narrativa del promotor: 8 lotes en total, solo Lote 13 a la venta + Casa Marea (antes Villa Lote 4) en obra gris a precio de costo para liquidez.
+Rediseñar casasayampe.com con enfoque editorial (estilo CasitaMX). El funnel original de venta (Lote 13 + Casa Marea a precio de costo) quedó **cerrado** al venderse esas unidades. Ver “Modelo actual” arriba.
 
 ## Architecture
 - Static site (HTML + Tailwind CDN + vanilla JS)
@@ -27,17 +42,18 @@ Rediseñar casasayampe.com con enfoque editorial (estilo CasitaMX) — ciudadela
 - Script accent: **Caveat** — logo + frases de promotor
 
 ## User Personas
-1. Inversionista nacional con interés en segunda residencia
-2. Comprador extranjero (EEUU/Canadá/Europa) buscando costa Pacífico
-3. Constructor/persona con gusto arquitectónico (target principal de Casa Marea en obra gris)
+1. Familia o grupo (hasta 8) que busca **casa completa** en Ayampe, no suite ni hostel
+2. Viajero internacional (EE.UU./Canadá/Europa) con ADR alto, EN primero
+3. Huésped fundador de preapertura (nov 2026) — lista sin compromiso
 
 ## Core Business Context (crítico)
 - **Promotor:** 1 persona (responde WhatsApp directamente)
-- **Sandpiper:** ciudadela privada de 8 lotes
-- **Solo 1 lote a la venta:** Lote 13 ($98,037 — 653.58 m²). Los otros 7 los conserva el promotor para desarrollar.
-- **Solo 1 casa a la venta:** Casa Marea (antes Villa Lote 4). Precio: $272,674 en OBRA GRIS (estructura terminada, falta acabados). Se vende a precio de costo para liquidez para financiar próximas villas.
-- **Nombre "Casa Marea":** propuesto por el agente (Tulum-style, Spanish, evocador, pairs elegantly con Sandpiper).
+- **Sandpiper:** ciudadela privada (13 lotes; 8 eran del promotor)
+- **Inventario vendido:** Lote 13 y Casa Marea / EA4. **No hay venta activa** en el sitio.
+- **Casa 1 (EA1):** primera villa de renta; 4BR / 4 baños / 8 pax / 331 m² / lote 650 m²
+- **5 lotes restantes:** réplica del modelo si Airbnb valida
 - **WhatsApp:** +1 305 988 5341 (único canal de conversión)
+- **Fotógrafo y equipo de operación:** listos; fotos profesionales en oct 2026 junto con tarifas
 
 ## What's been implemented (Jan 2026)
 ### Iteración 1 (descartada — dark luxury)
@@ -100,8 +116,9 @@ Rediseñar casasayampe.com con enfoque editorial (estilo CasitaMX) — ciudadela
 - [ ] Calculadora de acabados estimados para Casa Marea
 - [ ] Calendly para agendar visitas
 
-## Preapertura Sandpiper Villas (Jul 2026)
-**Página:** `/casas-vacacionales-ayampe.html` — landing de captación de leads para la preapertura de las 2 villas de renta vacacional (apertura estimada nov-2026).
+## Preapertura Sandpiper Villas (Jul 2026; actualizado ago 2026)
+**Página:** `index.html` (home) — landing de captación de leads para la preapertura de **una** villa de renta (casa completa, apertura estimada nov-2026). Ya no son “2 villas gemelas”.
+- **Estrategia:** lead con intención de reserva ("lista de huéspedes fundadores"), NO pre-booking con pago.
 - **Estrategia elegida:** lead con intención de reserva ("lista de huéspedes fundadores"), NO pre-booking con pago. Razones: fecha de obra no confirmada, sin motor de pagos, sin tarifas definidas. Se convierte a reserva real cuando se confirme fecha (oct-2026 según timeline).
 - **Datos usados (del brochure APX en Drive):** 2 villas gemelas, 4 dorm / 4 baños, 331 m² construcción, terreno 650 m², parqueo techado, bodega, lavandería, hasta 8 huéspedes.
 - **Form:** mismo Formspree (xrbekwgj) con hidden `_subject` + `origen=preapertura-villas`; campos: nombre, whatsapp, email, fechas tentativas, nº viajeros, motivo del viaje. Evento GA4 `generate_lead` al enviar.
