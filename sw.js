@@ -4,11 +4,8 @@ const ASSETS_TO_CACHE = [
     '/index.html',
     '/css/styles.css',
     '/js/main.js',
-    '/images/logo.webp',
-    '/images/hero-bg.webp',
     '/images/casa1.webp',
     '/images/casa2.webp',
-    '/images/mapa-aereo-sandpiper.webp',
     'https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;500;600;700&family=Roboto+Slab:wght@300;400;500;600;700&display=swap',
     'https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css',
     'https://unpkg.com/swiper@8/swiper-bundle.min.css',
@@ -66,11 +63,8 @@ self.addEventListener('fetch', event => {
                         return response;
                     })
                     .catch(() => {
-                        // Si falla la red y es una imagen, devolvemos una imagen de fallback
-                        if (event.request.destination === 'image') {
-                            return caches.match('/images/fallback.webp');
-                        }
-                        // Si es una página, devolvemos la página offline
+                        // Si es una página, devolvemos la página offline.
+                        // No hay imagen de respaldo en el árbol.
                         if (event.request.mode === 'navigate') {
                             return caches.match('/offline.html');
                         }
